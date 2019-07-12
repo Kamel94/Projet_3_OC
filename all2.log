@@ -1,0 +1,4 @@
+2019-07-06 11:40:50.307 [main] INFO  fr.escape.Log - Ceci est un message d'information 
+2019-07-06 11:40:50.309 [main] ERROR fr.escape.Log - Ceci est un message d'erreur
+2019-07-06 11:40:50.310 [main] WARN  fr.escape.Log - Ceci est un message d'avertissement
+2019-07-06 11:40:50.310 [main] FATAL fr.escape.Log - Ceci est un message fatal 

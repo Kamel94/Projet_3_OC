@@ -1,0 +1,4 @@
+2019-07-02 20:43:53 [main] INFO  Main:22 - Ceci est un message d'information 
+2019-07-02 20:43:53 [main] ERROR Main:23 - Ceci est un message d'erreur
+2019-07-02 20:43:53 [main] WARN  Main:24 - Ceci est un message d'avertissement
+2019-07-02 20:43:53 [main] FATAL Main:25 - Ceci est un message fatal 
