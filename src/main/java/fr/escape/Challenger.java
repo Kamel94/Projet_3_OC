@@ -31,8 +31,12 @@ public class Challenger {
 	
 	
 	public String challenger(int clef) {
-
-		System.out.println("Bienvenue dans le mode Challenger." +  
+		
+		if (conf.modeDev()) {
+            Log.logger.info("Mode développeur activé");
+        }
+		
+		System.out.println("\nBienvenue dans le mode Challenger." +  
 		"\nDans ce mode l'IA choisi une combinaison et vous devez trouver la bonne combinaison en " + nEssai + " essai. \nA vous de jouer !! \n");
 		
 		String reponse = "";
@@ -86,20 +90,23 @@ public class Challenger {
 		
 		 if(essai != nEssai) {
 			essai++;
-			System.out.println("Essai n° : " + essai);
+			Log.logger.info("\nEssai n° : " + essai);
 		}
 			
 			switch(reponse) {
 				case "====" :
 					System.out.println("Proposition : " + proposition + " -> Réponse : " + reponse + "\n");
 					reponse = "";
-					reponse = "Félicitation vous avez gagné !! \n" + 
+					reponse = "\nFélicitation vous avez gagné !! \n" + 
 					"Vous avez trouvé la bonne combinaison en " + essai + " essai.";
 					b = false;
 					break;
 				case "===" :
 					if(clef < 1111) {
-						System.out.println("Bravo vous avez gagné !");
+						System.out.println("Proposition : " + proposition + " -> Réponse : " + reponse + "\n");
+						reponse = "";
+						reponse = "\nFélicitation vous avez gagné !! \n" + 
+						"Vous avez trouvé la bonne combinaison en " + essai + " essai.";
 						b = false;
 						} else {
 							System.out.println("Proposition : " + proposition + " -> Réponse : " + reponse);
@@ -109,7 +116,10 @@ public class Challenger {
 					break;
 				case "==" :
 					if(clef < 111) {
-						System.out.println("Bravo vous avez gagné !");
+						System.out.println("Proposition : " + proposition + " -> Réponse : " + reponse + "\n");
+						reponse = "";
+						reponse = "\nFélicitation vous avez gagné !! \n" + 
+						"Vous avez trouvé la bonne combinaison en " + essai + " essai.";
 						b = false;
 						} else {
 							System.out.println("Proposition : " + proposition + " -> Réponse : " + reponse);
@@ -119,7 +129,10 @@ public class Challenger {
 					break;
 				case "=" :
 					if(clef < 11) {
-						System.out.println("Bravo vous avez gagné !");
+						System.out.println("Proposition : " + proposition + " -> Réponse : " + reponse + "\n");
+						reponse = "";
+						reponse = "\nFélicitation vous avez gagné !! \n" + 
+						"Vous avez trouvé la bonne combinaison en " + essai + " essai.";
 						b = false;
 						} else {
 							System.out.println("Proposition : " + proposition + " -> Réponse : " + reponse);
@@ -128,15 +141,17 @@ public class Challenger {
 						}
 					break;	
 				default :
-					System.out.println("Proposition : " + proposition + " -> Réponse : " + reponse + "\n");
+					Log.logger.info("\nProposition : " + proposition + " -> Réponse : " + reponse + "\n");
 					reponse = "";
 					b = true;
 			}
 			
 			if(essai == nEssai) {
-				System.out.println("Désolé vous avez atteint le nombre d'essai limité...");
+				Log.logger.info("Désolé vous avez atteint le nombre d'essai limité...");
 				proposition = "";
 				reponse = "La combinaison était : " + clef;
+			} else if(essai == nEssai - 1) {
+				Log.logger.warn("Attention il vous reste 1 essai !!\n");
 			}
 		
 		} //fin while

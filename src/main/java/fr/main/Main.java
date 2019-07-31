@@ -4,17 +4,19 @@ import java.lang.String;
 
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.logging.Logger;
 
+import fr.configuration.Configuration;
+import fr.escape.Challenger;
 import fr.escape.Menu;
 
-public class Main extends Menu {
+public class Main {
 
-	Menu menu = new Menu();
-	
 	
 	public static void main(String[] args) {
-		
-		System.out.println(mode());
+
+		Menu menu = new Menu();
+		System.out.println(menu.mode());
 		
 	}
 	 

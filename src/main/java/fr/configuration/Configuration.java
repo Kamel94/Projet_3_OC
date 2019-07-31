@@ -1,26 +1,18 @@
-package fr.escape;
+package fr.configuration;
 
-import java.util.ResourceBundle;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
 import java.util.ResourceBundle;
 
 public class Configuration {
 	
-	static ResourceBundle bundle = ResourceBundle.getBundle("config");
+	ResourceBundle bundle = ResourceBundle.getBundle("config");
 	
-	public static void main(final String[] args) {
-		
-		System.out.println("Nombre par défaut est : " + bundle.getString("nb.chif.combi"));
-		System.out.println("Le nombre d'essai maximum est de : " + getNbEssai());
-		System.out.println("Mode développeur : " + modeDev());
-		
+	public int nombreCombi() {
+		String nombre = bundle.getString("nb.chif.combi");
+		return Integer.parseInt(nombre);
 	}
 	
-	public static boolean modeDev() {
-		if(bundle.getString("mode.developpeur").equals("oui")) {
+	public boolean modeDev() {
+		if(bundle.getString("mode.developpeur").equals("true")) {
             return true;
         }
         else {
@@ -28,9 +20,9 @@ public class Configuration {
         }
 	}
 	
-	public static int getNbEssai() {
-		String nbEssai = bundle.getString("essai");
-		return Integer.parseInt(nbEssai);
+	public int nbEssai() {
+		String essai = bundle.getString("essai");
+		return Integer.parseInt(essai);
 	}
 	
 }

@@ -1,4 +1,209 @@
-2019-07-06 11:40:50.307 [main] INFO  fr.escape.Log - Ceci est un message d'information 
-2019-07-06 11:40:50.309 [main] ERROR fr.escape.Log - Ceci est un message d'erreur
-2019-07-06 11:40:50.310 [main] WARN  fr.escape.Log - Ceci est un message d'avertissement
-2019-07-06 11:40:50.310 [main] FATAL fr.escape.Log - Ceci est un message fatal 
+2019-07-30 20:42:48.635 [main] INFO  fr.configuration.Log - Démarrage du jeu
+2019-07-30 20:42:52.643 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
+
+2019-07-30 20:42:52.643 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-07-30 20:42:58.902 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-07-30 20:42:58.903 [main] INFO  fr.configuration.Log - 
+Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai.
+2019-07-30 20:42:58.903 [main] INFO  fr.configuration.Log - 
+Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-07-30 20:43:02.594 [main] INFO  fr.configuration.Log - 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+Fin du jeu
+2019-07-30 20:45:44.859 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 20:46:26.757 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 20:47:09.285 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 20:47:13.287 [main] INFO  fr.configuration.Log - Fin du jeu. Vous avez choisi de quitter le jeu.
+2019-07-30 20:47:27.703 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 20:47:30.265 [main] INFO  fr.configuration.Log - Fin du jeu. 
+Vous avez choisi de quitter le jeu.
+2019-07-30 20:47:48.696 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 20:47:52.984 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
+
+2019-07-30 20:47:52.985 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-07-30 20:47:57.521 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-07-30 20:47:57.521 [main] INFO  fr.configuration.Log - 
+Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai.
+2019-07-30 20:47:57.522 [main] INFO  fr.configuration.Log - 
+Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-07-30 20:48:03.629 [main] INFO  fr.configuration.Log - 
+Veuillez entrer uniquement des chiffres svp !
+2019-07-30 20:48:09.914 [main] INFO  fr.configuration.Log - Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-07-30 20:56:40.199 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 20:56:42.727 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
+
+2019-07-30 20:56:42.727 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-07-30 20:56:53.983 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-07-30 20:56:57.817 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-07-30 20:57:01.871 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+2019-07-30 20:57:01.871 [main] WARN  fr.configuration.Log - Désolé vous avez atteint le nombre d'essai limité...
+2019-07-30 20:57:01.872 [main] INFO  fr.configuration.Log - La combinaison était : 3815
+2019-07-30 20:57:01.872 [main] INFO  fr.configuration.Log - 
+Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-07-30 21:03:06.691 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:03:09.056 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
+
+2019-07-30 21:03:09.056 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-07-30 21:03:14.369 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-07-30 21:03:15.850 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-07-30 21:03:15.851 [main] WARN  fr.configuration.Log - Attention il vous reste 1 essai !!
+2019-07-30 21:03:32.906 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+2019-07-30 21:03:32.907 [main] INFO  fr.configuration.Log - Désolé vous avez atteint le nombre d'essai limité...
+2019-07-30 21:03:32.907 [main] INFO  fr.configuration.Log - La combinaison était : 761
+2019-07-30 21:03:32.907 [main] INFO  fr.configuration.Log - 
+Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-07-30 21:03:37.311 [main] INFO  fr.configuration.Log - Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-07-30 21:05:15.195 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:05:17.561 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
+
+2019-07-30 21:05:17.561 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-07-30 21:05:20.303 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-07-30 21:05:22.777 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-07-30 21:05:22.777 [main] WARN  fr.configuration.Log - Attention il vous reste 1 essai !!
+
+2019-07-30 21:05:25.924 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+2019-07-30 21:05:25.924 [main] INFO  fr.configuration.Log - Désolé vous avez atteint le nombre d'essai limité...
+2019-07-30 21:05:25.925 [main] INFO  fr.configuration.Log - La combinaison était : 2777
+2019-07-30 21:05:25.925 [main] INFO  fr.configuration.Log - 
+Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-07-30 21:07:27.465 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:07:29.794 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
+
+2019-07-30 21:07:29.794 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-07-30 21:07:32.377 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-07-30 21:07:34.230 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-07-30 21:07:34.230 [main] WARN  fr.configuration.Log - Attention il vous reste 1 essai !!
+
+2019-07-30 21:07:37.108 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+2019-07-30 21:07:37.108 [main] INFO  fr.configuration.Log - Désolé vous avez atteint le nombre d'essai limité...
+2019-07-30 21:07:37.108 [main] INFO  fr.configuration.Log - La combinaison était : 2451
+2019-07-30 21:07:37.109 [main] INFO  fr.configuration.Log - 
+Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-07-30 21:07:39.403 [main] INFO  fr.configuration.Log - Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-07-30 21:08:34.262 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:08:50.526 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
+
+2019-07-30 21:08:50.527 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-07-30 21:08:52.196 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-07-30 21:08:52.196 [main] INFO  fr.configuration.Log - Proposition : 2332 -> Réponse : +=++
+
+2019-07-30 21:08:54.059 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-07-30 21:08:54.060 [main] INFO  fr.configuration.Log - Proposition : 4322 -> Réponse : -=++
+
+2019-07-30 21:08:54.060 [main] WARN  fr.configuration.Log - Attention il vous reste 1 essai !!
+
+2019-07-30 21:08:55.976 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+2019-07-30 21:08:55.977 [main] INFO  fr.configuration.Log - Proposition : 3243 -> Réponse : =+++
+
+2019-07-30 21:08:55.977 [main] INFO  fr.configuration.Log - Désolé vous avez atteint le nombre d'essai limité...
+2019-07-30 21:08:55.977 [main] INFO  fr.configuration.Log - La combinaison était : 3354
+2019-07-30 21:08:55.977 [main] INFO  fr.configuration.Log - 
+Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-07-30 21:08:58.032 [main] INFO  fr.configuration.Log - Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-07-30 21:11:05.421 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:11:07.919 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
+
+2019-07-30 21:11:07.919 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-07-30 21:11:10.403 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-07-30 21:11:10.403 [main] INFO  fr.configuration.Log - 
+Proposition : 4334 -> Réponse : +-+-
+
+2019-07-30 21:11:13.850 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-07-30 21:11:13.851 [main] INFO  fr.configuration.Log - 
+Proposition : 3243 -> Réponse : +-+-
+
+2019-07-30 21:11:13.851 [main] WARN  fr.configuration.Log - Attention il vous reste 1 essai !!
+
+2019-07-30 21:11:32.395 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+2019-07-30 21:11:32.395 [main] INFO  fr.configuration.Log - Désolé vous avez atteint le nombre d'essai limité...
+2019-07-30 21:11:32.396 [main] INFO  fr.configuration.Log - La combinaison était : 9171
+2019-07-30 21:11:32.396 [main] INFO  fr.configuration.Log - 
+Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-07-30 21:11:34.175 [main] INFO  fr.configuration.Log - Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-07-30 21:16:01.633 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:16:05.550 [main] FATAL fr.configuration.Log - Vous avez entré : 0
+Veuillez entrer uniquement des chiffres svp !
+2019-07-30 21:16:05.550 [main] ERROR fr.configuration.Log - Vous avez entré : 0
+Vous n'avez pas choisi une réponse parmis les choix proposés.
+2019-07-30 21:16:28.415 [main] INFO  fr.configuration.Log - Fin du jeu. 
+Vous avez choisi de quitter le jeu.
+2019-07-30 21:16:34.226 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:16:37.253 [main] ERROR fr.configuration.Log - Vous avez entré : 7
+Vous n'avez pas choisi une réponse parmis les choix proposés.
+2019-07-30 21:19:27.666 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:19:30.533 [main] FATAL fr.configuration.Log - Vous avez entré : g
+Veuillez entrer uniquement des chiffres svp !
+2019-07-30 21:20:36.394 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:21:30.857 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:21:32.663 [main] FATAL fr.configuration.Log - Vous avez entré : d
+Veuillez entrer uniquement des chiffres svp !
+2019-07-30 21:24:00.958 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-30 21:24:03.072 [main] FATAL fr.configuration.Log - Vous avez entré : s
+Veuillez entrer uniquement des chiffres svp !
+2019-07-30 21:24:03.072 [main] ERROR fr.configuration.Log - Vous avez entré : 0
+Vous n'avez pas choisi une réponse parmis les choix proposés.
+2019-07-30 21:24:11.407 [main] ERROR fr.configuration.Log - Vous avez entré : 6
+Vous n'avez pas choisi une réponse parmis les choix proposés.
+2019-07-31 13:22:03.698 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-31 13:22:11.187 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
+
+2019-07-31 13:22:11.188 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-07-31 13:22:15.438 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-07-31 13:22:15.438 [main] INFO  fr.configuration.Log - 
+Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai.
+2019-07-31 13:22:15.439 [main] INFO  fr.configuration.Log - 
+Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-07-31 13:22:16.827 [main] INFO  fr.configuration.Log - Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-07-31 13:22:42.199 [main] INFO  fr.configuration.Log - Démarrage du jeu.
+2019-07-31 13:22:44.895 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
+
+2019-07-31 13:23:10.563 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-07-31 13:23:10.563 [main] INFO  fr.configuration.Log - 
+Proposition : 3456 -> Réponse : ---+
+
+2019-07-31 13:23:26.305 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-07-31 13:23:26.305 [main] INFO  fr.configuration.Log - 
+Proposition : 1238 -> Réponse : =++=
+
+2019-07-31 13:23:26.306 [main] WARN  fr.configuration.Log - Attention il vous reste 1 essai !!
+
+2019-07-31 13:23:46.171 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+2019-07-31 13:23:46.171 [main] INFO  fr.configuration.Log - Désolé vous avez atteint le nombre d'essai limité...
+2019-07-31 13:23:46.172 [main] INFO  fr.configuration.Log - La combinaison était : 1348
+2019-07-31 13:23:46.172 [main] INFO  fr.configuration.Log - 
+Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-07-31 13:23:50.019 [main] INFO  fr.configuration.Log - Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
