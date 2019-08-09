@@ -1,13 +1,18 @@
 package fr.escape;
 
 import java.util.Scanner;
+
+import fr.configuration.Configuration;
 import fr.configuration.Log;
 import fr.escape.Challenger;
 
 public class Menu {
 	
 	 Challenger modeC = new Challenger();
-	 int clef = modeC.combIA();
+	 Configuration conf = new Configuration();
+	 Defenseur modeD = new Defenseur();
+	 Ordinateur ordinateur = new Ordinateur();
+	 int clef = ordinateur.combinaisonAleatoire();
 	 String mode1 = "Challenger";
 	 String mode2 = "Défenseur";
 	 String mode3 = "Duel";
@@ -54,8 +59,8 @@ public class Menu {
 				        	  modeChoisi = "\nVous avez choisi le mode : " + mode2;
 				              b = false;
 				              if(b == false)
-				            	modeChoisi = modeChoisi + "\n" + "Merci d'avoir joué !"; // En attendant de créer le mode Défenseur.
-				              	Log.logger.info(modeChoisi);
+				            	//modeChoisi = modeChoisi + "\n" + "Merci d'avoir joué !"; // En attendant de créer le mode Défenseur.
+				            	Log.logger.info(modeD.defenseur());
 				        	  	System.out.println(finPartie(2));
 				        	  	modeChoisi = ""; // Réinitialise pour ne pas afficher tous les choix de l'utilisateur quand il quitte le jeu.
 				              break;
@@ -109,30 +114,31 @@ public class Menu {
 		String choix;
 		Scanner clavier = new Scanner(System.in);
 		choix = clavier.nextLine();
-		int ch = 0;
+		int c = 0;
         try {
-        	ch = Integer.parseInt(choix);
+        	c = Integer.parseInt(choix);
         } catch (NumberFormatException e) {
-        	Log.logger.fatal("Vous avez entré : " + ch + "\nVeuillez entrer uniquement des chiffres svp !");
+        	Log.logger.fatal("Vous avez entré : " + c + "\nVeuillez entrer uniquement des chiffres svp !");
         	b = true;
         } 
 		
-		switch (ch) {
+		switch (c) {
 		case 1 : // Entre directement dans le mode choisi précédemment sans passer par le menu.
 			b = false;
 			if (b == false)
 				if(choixFin == 1) { 
 					mode = mode1;
 					Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode + "\n");
-					clef = modeC.combIA();
+					clef = ordinateur.combinaisonAleatoire();
 					menuChoisi = modeC.challenger(clef);
 					Log.logger.info(menuChoisi);
 					menuChoisi = "";
 				} else if (choixFin == 2) {
 					mode = mode2;
 					Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode + "\n");
-					menuChoisi = "\nBienvenue dans le mode : " + mode2 + "\n" + "Merci d'avoir joué !";
-					Log.logger.info(menuChoisi);
+					clef = ordinateur.combinaisonAleatoire();
+					//menuChoisi = "\nBienvenue dans le mode : " + mode2 + "\n" + "Merci d'avoir joué !";
+					Log.logger.info(modeD.defenseur());
 					menuChoisi = "";
 				} else if (choixFin == 3) {
 					mode = mode3;
@@ -159,7 +165,7 @@ public class Menu {
 				menuChoisi = "";
 			break;
 		default :
-			Log.logger.error("Vous avez entré : " + ch + "\nVous n'avez pas choisi une réponse parmis les choix proposés.");
+			Log.logger.error("Vous avez entré : " + c + "\nVous n'avez pas choisi une réponse parmis les choix proposés.");
 			b = true;
 			}
 		}

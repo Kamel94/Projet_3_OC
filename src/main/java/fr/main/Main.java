@@ -7,8 +7,10 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 import fr.configuration.Configuration;
+import fr.configuration.Log;
 import fr.escape.Challenger;
 import fr.escape.Menu;
+import fr.escape.*;
 
 public class Main {
 
