@@ -9,10 +9,10 @@ import fr.escape.Challenger;
 public class Menu {
 	
 	 Challenger challenger = new Challenger();
-	 Configuration conf = new Configuration();
 	 Defenseur defenseur = new Defenseur();
-	 Ordinateur ordinateur = new Ordinateur();
 	 Duel duel = new Duel();
+	 Configuration conf = new Configuration();
+	 Ordinateur ordinateur = new Ordinateur();
 	 int clef = ordinateur.combinaisonAleatoire();
 	 String mode1 = "Challenger";
 	 String mode2 = "Défenseur";
@@ -53,7 +53,7 @@ public class Menu {
 				              if(b == false)
 				        	  	//System.out.println(modeChoisi);
 				              	Log.logger.info(challenger.challenger(clef));
-				            	//System.out.println(modeC.challenger(clef)); // Appel la méthode challenger.
+				            	//System.out.println(challenger.etapeJoueur(clef)); // Appel la méthode challenger.
 				        	  	System.out.println(finPartie(1));
 				        	  	modeChoisi = ""; // Réinitialise pour ne pas afficher tous les choix de l'utilisateur quand il quitte le jeu.
 				              break;
@@ -71,7 +71,7 @@ public class Menu {
 				              b = false;
 				              if(b == false)
 				              	modeChoisi = modeChoisi + "\n" + "Merci d'avoir joué !"; // En attendant de créer le mode Duel.
-				              	Log.logger.info(duel.etapeJoueur(clef));
+				              	Log.logger.info(duel.duel());
 				              	System.out.println(finPartie(3));
 				        	  	modeChoisi = ""; // Réinitialise pour ne pas afficher tous les choix de l'utilisateur quand il quitte le jeu.
 				              break;
@@ -132,21 +132,19 @@ public class Menu {
 					mode = mode1;
 					Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode + "\n");
 					clef = ordinateur.combinaisonAleatoire();
-					menuChoisi = challenger.challenger(clef);
-					Log.logger.info(menuChoisi);
+					Log.logger.info(challenger.challenger(clef));
 					menuChoisi = "";
 				} else if (choixFin == 2) {
 					mode = mode2;
 					Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode + "\n");
 					clef = ordinateur.combinaisonAleatoire();
-					//menuChoisi = "\nBienvenue dans le mode : " + mode2 + "\n" + "Merci d'avoir joué !";
 					Log.logger.info(defenseur.defenseur());
 					menuChoisi = "";
 				} else if (choixFin == 3) {
 					mode = mode3;
 					Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode + "\n");
 					clef = ordinateur.combinaisonAleatoire();
-					Log.logger.info(duel.etapeJoueur(clef));
+					Log.logger.info(duel.duel());
 					menuChoisi = "";
 				}
 			menuChoisi += finPartie(choixFin); 
