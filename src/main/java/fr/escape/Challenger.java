@@ -12,14 +12,21 @@ import fr.configuration.Log;
 public class Challenger extends ModeJeu {
 	
 	Configuration conf = new Configuration();
-	Ordinateur o = new Ordinateur();
+	Ordinateur ordinateur = new Ordinateur();
 	
 	int nbrEssai = conf.nbEssai();
-	boolean dev = conf.modeDev();
+	boolean dev = conf.modeDev(); // Récupère la valeur de la méthode dans la classe configuration pour déterminer l'activation ou non du mode développeur.
 	int chiffreCombi = conf.chiffreCombi();
-	int clef = o.combinaisonAleatoire();
+	int clef = ordinateur.combinaisonAleatoire();
 	
-	public String challenger(int clef) {
+	public void challenger(int clef) {
+		
+		String choix;
+		int code;
+		
+		Scanner clavier = new Scanner(System.in);
+		String proposition = "";
+		int essai = 0;
 		
 		if (dev) {
             Log.logger.info("Mode développeur activé");
@@ -27,17 +34,34 @@ public class Challenger extends ModeJeu {
 		
 		System.out.println("\nBienvenue dans le mode Challenger." +  
 		"\nDans ce mode l'IA choisi une combinaison de " + chiffreCombi + 
-		" chiffres et vous devez trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !! \n");
-		
-		String reponse = "";
+		" chiffres et vous devez trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !!");
 		
 		if (dev == true) {
-			System.out.println("La combinaison est : " + clef);
+			Log.logger.info("\nLa combinaison est : " + clef);
 		}
 		
-			reponse = modeChallenger(clef);
+		while(essai != nbrEssai) {
+			
+			if(essai != nbrEssai) {
+				essai++;
+				Log.logger.info("\nEssai n° : " + essai);
+			} 
+			
+			System.out.print("\nProposition joueur : ");
 		
-		return reponse;
+			if(String.valueOf(modeChallenger(clef)).equals(v.victoire())) {
+				Log.logger.info("Félicitation vous avez gagné !! \n" + 
+								"Vous avez trouvé la bonne combinaison en " + essai + " essai(s).");
+				essai = nbrEssai;
+			} else if (essai == nbrEssai){
+				Log.logger.info("\nDésolé vous avez atteint le nombre d'essai maximum... \nLa combinaison était : " + clef);
+				essai = nbrEssai;
+			} else if(essai == nbrEssai - 1) {
+				System.out.println("\nAttention il vous reste 1 essai !!");
+			}
+		
+		} //fin while
+		
 	}
 
 }

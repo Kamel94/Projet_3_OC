@@ -8,7 +8,4 @@ import fr.escape.Challenger;
 public class Log {
 	
 	public static Logger logger = LogManager.getLogger(Log.class);
-	
-	
-	
 } 

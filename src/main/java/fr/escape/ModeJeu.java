@@ -8,104 +8,131 @@ import fr.configuration.Log;
 public class ModeJeu   {
 	
 	Configuration conf = new Configuration();
-	Ordinateur o = new Ordinateur();
-	Joueur j = new Joueur();
+	Ordinateur ordinateur = new Ordinateur();
+	Victoire v = new Victoire();
 	
 	int nbrEssai = conf.nbEssai();
 	boolean dev = conf.modeDev();
 	int chiffreCombi = conf.chiffreCombi();
-	int clef = o.combinaisonAleatoire();
-	int premiereProposition = o.premiereProposition();
+	int clef = ordinateur.combinaisonAleatoire();
+	int premiereProposition = ordinateur.premiereProposition();
 	public String nouvelleProposition;
 	public int essai;
 	
-	public String modeChallenger(int clef) {
+	protected String modeChallenger(int clef) {
 		
 		Scanner clavier = new Scanner(System.in);
 		String reponse = "";
-		String resultat = "";
 		String proposition = "";
-		int essai = 0;
+		String resultat = "";
+		String victoireJoueur = v.victoire();
+		String expression = "^[0-9]+$";
 		
-		while(essai != nbrEssai) {
+		proposition = clavier.nextLine();
 			
-			reponse = "";
+		proposition.matches(expression);
 			
-			if(essai != nbrEssai) {
-				essai++;
-				System.out.println("\nEssai n° : " + essai);
-			} 
-			
+		while(proposition.matches(expression) == false) {
+			Log.logger.error("\nVeuillez entrer uniquement des chiffres svp !");
 			System.out.print("Proposition joueur : ");
+			proposition = clavier.nextLine();
+		}
 		
-			if(String.valueOf(j.rechercheCombi(clef)).equals(j.victoireJoueur())) {
-				reponse = "Félicitation vous avez gagné !! \n" + 
-								"Vous avez trouvé la bonne combinaison en " + essai + " essai(s).";
-				essai = nbrEssai;
-			} else if (essai == nbrEssai){
-				reponse = "\nDésolé vous avez atteint le nombre d'essai limité... \nLa combinaison était : " + clef;
-				essai = nbrEssai;
-			} else if(essai == nbrEssai - 1) {
-				System.out.println("\nAttention il vous reste 1 essai !!\n");
+		while(proposition.length() != chiffreCombi) {
+			Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!");
+			reponse = "Vous devez entrer " + chiffreCombi + " chiffres !";
+			Log.logger.fatal("\nProposition : " + proposition + " -> Réponse : " + reponse);
+			reponse = "";
+			System.out.print("\nProposition joueur : ");
+			proposition = clavier.nextLine();
+		}
+		
+		int taille = proposition.length();
+		
+		int[] joueur = new int[taille];
+		String combinaison = "" + clef;
+		int[] comb = new int[combinaison.length()];
+		
+		for (int i = 0; i < taille && i < combinaison.length(); i++) {
+			
+			try {
+				joueur[i] = Integer.parseInt(proposition.charAt(i) + "");
+			} catch(NumberFormatException e) {
 			}
-		
-		} //fin while
-	 
+			
+			comb[i] = Integer.parseInt("" + combinaison.charAt(i));
+			
+			if (joueur[i] == comb[i]) {
+				reponse += "=";
+			} else if (joueur[i] > comb[i]) {
+				reponse += "-";
+			} else {
+				reponse += "+";
+			}
+			
+		} // Fin for
+
+		try {
+			if(clef == Integer.parseInt(proposition)) {
+				Log.logger.info("Proposition : " + proposition + " -> Réponse : " + reponse + "\n");
+				reponse = "";
+				resultat = v.victoire();
+			} else {
+				Log.logger.info("Proposition : " + proposition + " -> Réponse : " + reponse);
+				reponse = "";
+			}
+		} catch (NumberFormatException e) {
+		}
 		return resultat;
 	}
 	
 	public String modeDefenseur() {
 		
 		Scanner clavier = new Scanner(System.in);
-		String reponse = "";
 		String reponseJoueur = "";
-		String proposition = "";
 		String victoireJoueur = "";
-		int essai = 0;
-		int essaiIA = 0;
 		String resultat = "";
 		int chiffreProposition = 0;
 		String propositionIA;
 		
-		victoireJoueur = j.victoireJoueur();
+		victoireJoueur = v.victoire();
 		
 		if(this.nouvelleProposition == null) {
-		propositionIA = String.valueOf(premiereProposition);
+			propositionIA = String.valueOf(premiereProposition);
 		} else {
 			propositionIA = this.nouvelleProposition;
 		}
 		
 		this.essai++;
 		
-		System.out.println("\nEssai n° : " + this.essai + "\n");
-	if(this.nouvelleProposition == null) {
-		System.out.println("Première combinaison IA : " + propositionIA);	
-	} else {
-		System.out.println("Nouvelle combinaison IA : " + this.nouvelleProposition);
-	}
+		Log.logger.info("\nEssai n° : " + this.essai + "\n");
+		
+		if(this.nouvelleProposition == null) {
+			Log.logger.info("Première combinaison IA : " + propositionIA);	
+		} else {
+			Log.logger.info("Nouvelle combinaison IA : " + this.nouvelleProposition);
+		}
+		
 		System.out.print("Réponse joueur : ");
 		
-		this.nouvelleProposition = "";
+		reponseJoueur = clavier.nextLine();
+	
+		String expression = "^[+=-]+$";
+		reponseJoueur.matches(expression);
 		
-	reponseJoueur = clavier.nextLine();
-	
-	String expression = "^[+=-]+$";
-	
-	reponseJoueur.matches(expression);
-	
-	if(reponseJoueur.matches(expression) == false) {
-		System.out.println("Vous devez entrer que +, -, =");
-		System.out.print("Réponse joueur : ");
-		reponseJoueur = clavier.nextLine();
-	}
-	
-	if(reponseJoueur.length() != chiffreCombi) {
-		System.out.println("\nVous n'avez pas entré le bon nombre de caractère !!");
-		reponseJoueur = "Vous devez entrer " + chiffreCombi + " caractères !";
-		System.out.println("\nProposition : " + propositionIA + " -> Réponse : " + reponseJoueur);
-		System.out.print("\nProposition joueur : ");
-		reponseJoueur = clavier.nextLine();
-	}
+		while(reponseJoueur.matches(expression) == false) {
+			Log.logger.error("Vous devez entrer que +, -, =");
+			System.out.print("Réponse joueur : ");
+			reponseJoueur = clavier.nextLine();
+		}
+		
+		while(reponseJoueur.length() != chiffreCombi) {
+			Log.logger.fatal("\nVous n'avez pas entré le bon nombre de caractère !!");
+			reponseJoueur = "Vous devez entrer " + chiffreCombi + " caractères !";
+			Log.logger.fatal("\nProposition : " + propositionIA + " -> Réponse : " + reponseJoueur);
+			System.out.print("\nProposition joueur : ");
+			reponseJoueur = clavier.nextLine();
+		}
 	
 		if(reponseJoueur.matches(expression) == true) {
 			nouvelleProposition = "";
@@ -133,30 +160,28 @@ public class ModeJeu   {
 					this.nouvelleProposition += chiffreProposition + 1;
 				}
 				
-				} else if (String.valueOf(indication).equals("-")) {
-					if ((chiffreProposition - 1) < 0) {
-						this.nouvelleProposition += 0;
-						Log.logger.error("Impossible de faire - que 0 !!");
-					} else if(this.essai == 1) {
-						this.nouvelleProposition += chiffreProposition - 3;
-					} else if(this.essai > 1){
-						this.nouvelleProposition += chiffreProposition - 1;
-					}
+			} else if (String.valueOf(indication).equals("-")) {
+				if ((chiffreProposition - 1) < 0) {
+					this.nouvelleProposition += 0;
+					Log.logger.error("Impossible de faire - que 0 !!");
+				} else if(this.essai == 1) {
+					this.nouvelleProposition += chiffreProposition - 3;
+				} else if(this.essai > 1){
+					this.nouvelleProposition += chiffreProposition - 1;
 				}
-				i++;
+			}
 			
-			} // fin for
+			i++;
+			
+		} // Fin for
 		
-		try {
-			if (String.valueOf(reponseJoueur).equals(j.victoireJoueur())) {
-				System.out.println("Proposition : " + propositionIA + " -> Réponse : " + reponseJoueur);
+			if (String.valueOf(reponseJoueur).equals(v.victoire())) {
+				Log.logger.info("Proposition : " + propositionIA + " -> Réponse : " + reponseJoueur);
 				resultat = victoireJoueur;
 				this.nouvelleProposition = String.valueOf(premiereProposition);
 				this.essai = 0;
-				essaiIA = nbrEssai + 1;
-				//break;
 			} else {
-				System.out.println("Proposition : " + propositionIA + " -> Réponse : " + reponseJoueur);
+				Log.logger.info("Proposition : " + propositionIA + " -> Réponse : " + reponseJoueur);
 			}
 			
 			if(this.essai == nbrEssai) {
@@ -164,63 +189,6 @@ public class ModeJeu   {
 				this.essai = 0;
 			}
 			
-			propositionIA = this.nouvelleProposition;
-			
-			} catch(NumberFormatException e) {
-			}
-		
-		return resultat;
-	}
-	
-	public String modeDuel(int clef) {
-			
-		String reponseJoueur = "";
-		String proposition = "";
-		String victoireJoueur = "";
-		String resultat = "";
-		String victoire = j.victoireJoueur();
-		int essai = 0;
-		
-		
-		while(essai < nbrEssai){
-			
-			if(essai != nbrEssai) {
-				essai++;
-				System.out.println("\nEssai n° : " + essai);
-			} 
-			
-			System.out.print("Proposition joueur : ");
-		
-			if(String.valueOf(j.rechercheCombi(clef)).equals(victoire)) {
-				resultat = "\nFélicitation vous avez gagné !! \n" + 
-							"Vous avez trouvé la bonne combinaison en " + essai + " essai(s).";
-				victoireJoueur = j.victoireJoueur();
-				essai = nbrEssai + 1;
-			}
-		
-			if(modeDefenseur().equals(victoire)) {
-				resultat = "\nDommage ! L'IA a gagné... \n" + 
-					"L'IA a trouvé la bonne combinaison en " + essai + " essai(s)." + "\nLa combinaison de l'IA était : " + clef;
-				reponseJoueur = victoire;
-				essai = nbrEssai + 1;
-			}
-		
-			if(String.valueOf(victoireJoueur).equals(victoire) && String.valueOf(reponseJoueur).equals(victoire)) {
-				resultat ="\nVous avez tous les deux trouvés la bonne combinaison de chacun !" + "\nIl n'y a pas de gagnant...";
-			} else if(essai == nbrEssai) {
-				resultat = "\nVous avez atteint le nombre d'essai limité !" + "\nIl n'y a pas de gagnant..." + "\nLa combinaison de l'IA était : " + clef;
-				essai = nbrEssai + 1;
-			}
-			
-			if(essai >= nbrEssai) {
-				this.nouvelleProposition = String.valueOf(premiereProposition);
-				this.essai = 0;
-			} else if(essai == nbrEssai - 1) {
-				System.out.println("\nAttention il vous reste 1 essai !!\n");
-			}
-		
-		} //fin while
-		
 		return resultat;
 	}
 }
