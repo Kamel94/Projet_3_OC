@@ -5202,3 +5202,148 @@ La combinaison de l'IA était : 4879
 2019-09-10 22:47:58.200 [main] TRACE fr.configuration.Log - 
 Fin du jeu. 
 Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-10 22:58:02.451 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-10 22:58:04.987 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Challenger
+2019-09-10 22:58:04.988 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-10 22:58:04.988 [main] INFO  fr.configuration.Log - 
+La combinaison est : 7011
+2019-09-10 22:58:04.988 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-10 22:58:08.702 [main] INFO  fr.configuration.Log - Proposition : 6546 -> Réponse : +---
+2019-09-10 22:58:08.702 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-09-10 22:58:11.910 [main] INFO  fr.configuration.Log - Proposition : 7011 -> Réponse : ====
+
+2019-09-10 22:58:11.910 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 2 essai(s).
+2019-09-10 22:58:11.911 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-10 22:58:14.346 [main] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-11 15:29:45.589 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-11 15:29:50.235 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Challenger
+2019-09-11 15:29:50.236 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-11 15:29:50.237 [main] INFO  fr.configuration.Log - 
+La combinaison est : 5336
+2019-09-11 15:29:50.237 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-11 15:29:51.657 [main] ERROR fr.configuration.Log - 
+Veuillez entrer uniquement des chiffres svp !
+2019-09-11 15:29:54.064 [main] ERROR fr.configuration.Log - 
+Veuillez entrer uniquement des chiffres svp !
+2019-09-11 15:29:55.381 [main] FATAL fr.configuration.Log - 
+Vous n'avez pas entré le bon nombre de chiffre !!
+2019-09-11 15:29:55.382 [main] FATAL fr.configuration.Log - 
+Proposition : 4 -> Réponse : Vous devez entrer 4 chiffres !
+2019-09-11 15:29:57.739 [main] FATAL fr.configuration.Log - 
+Vous n'avez pas entré le bon nombre de chiffre !!
+2019-09-11 15:29:57.739 [main] FATAL fr.configuration.Log - 
+Proposition : 53455 -> Réponse : Vous devez entrer 4 chiffres !
+2019-09-11 15:30:08.683 [main] INFO  fr.configuration.Log - Proposition : 5436 -> Réponse : =-==
+2019-09-11 15:30:08.683 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-09-11 15:30:30.818 [main] INFO  fr.configuration.Log - Proposition : 5236 -> Réponse : =+==
+2019-09-11 15:30:30.819 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+2019-09-11 15:30:36.644 [main] INFO  fr.configuration.Log - Proposition : 5336 -> Réponse : ====
+
+2019-09-11 15:30:36.644 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 3 essai(s).
+2019-09-11 15:30:36.645 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-11 15:30:42.025 [main] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-11 15:31:37.962 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-11 15:31:40.772 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Défenseur
+2019-09-11 15:31:40.773 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+
+2019-09-11 15:31:40.773 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
+2019-09-11 15:31:46.659 [main] FATAL fr.configuration.Log - 
+Vous n'avez pas entré le bon nombre de caractère !!
+2019-09-11 15:31:46.659 [main] FATAL fr.configuration.Log - 
+Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
+2019-09-11 15:31:51.524 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : ++--
+2019-09-11 15:31:51.524 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+
+2019-09-11 15:31:51.524 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7722
+2019-09-11 15:31:52.967 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
+2019-09-11 15:31:58.021 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
+2019-09-11 15:32:06.658 [main] INFO  fr.configuration.Log - Proposition : 7722 -> Réponse : --++
+2019-09-11 15:32:06.659 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+
+2019-09-11 15:32:06.659 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 6633
+2019-09-11 15:32:12.083 [main] INFO  fr.configuration.Log - Proposition : 6633 -> Réponse : ==++
+2019-09-11 15:32:12.083 [main] INFO  fr.configuration.Log - 
+Essai n° : 4
+
+2019-09-11 15:32:12.083 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 6644
+2019-09-11 15:32:14.285 [main] INFO  fr.configuration.Log - Proposition : 6644 -> Réponse : ====
+2019-09-11 15:32:14.285 [main] INFO  fr.configuration.Log - 
+Dommage ! L'IA a gagné... 
+L'IA a trouvé la bonne combinaison en 4 essai(s).
+2019-09-11 15:32:14.286 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-11 15:32:21.767 [main] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-11 16:29:20.495 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-11 16:29:23.419 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Défenseur
+2019-09-11 16:29:23.420 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+
+2019-09-11 16:29:23.420 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
+2019-09-11 16:30:13.147 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-11 16:30:15.158 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Défenseur
+2019-09-11 16:30:15.159 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+
+2019-09-11 16:30:15.159 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
+2019-09-11 16:30:39.561 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : +=-=
+2019-09-11 16:30:39.561 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+
+2019-09-11 16:30:39.562 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7525
+2019-09-11 16:36:19.202 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-11 16:38:30.682 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Défenseur
+2019-09-11 16:38:30.682 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+
+2019-09-11 16:38:30.683 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
+2019-09-11 16:38:44.114 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
+2019-09-11 16:39:32.734 [main] FATAL fr.configuration.Log - 
+Vous n'avez pas entré le bon nombre de caractère !!
+2019-09-11 16:39:32.734 [main] FATAL fr.configuration.Log - 
+Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
+2019-09-12 11:42:17.824 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-12 11:42:24.337 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Challenger
+2019-09-12 11:42:24.338 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-12 11:42:24.339 [main] INFO  fr.configuration.Log - 
+La combinaison est : 5460
+2019-09-12 11:42:24.339 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-12 11:42:27.822 [main] INFO  fr.configuration.Log - Proposition : 5460 -> Réponse : ====
+
+2019-09-12 11:42:27.822 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-12 11:42:27.823 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-12 11:42:35.351 [main] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-12 12:40:44.484 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
