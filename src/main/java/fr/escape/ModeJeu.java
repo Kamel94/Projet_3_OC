@@ -108,9 +108,9 @@ public class ModeJeu   {
 		Log.logger.info("\nEssai n° : " + this.essai + "\n");
 		
 		if(this.nouvelleProposition == null) {
-			Log.logger.info("Première combinaison IA : " + propositionIA);	
+			Log.logger.info("Première proposition IA : " + propositionIA);	
 		} else {
-			Log.logger.info("Nouvelle combinaison IA : " + this.nouvelleProposition);
+			Log.logger.info("Nouvelle proposition IA : " + this.nouvelleProposition);
 		}
 		
 		System.out.print("Réponse joueur : ");

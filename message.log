@@ -5347,3 +5347,163 @@ Fin du jeu.
 Vous avez choisi de quitter le jeu, merci et à bientôt.
 2019-09-12 12:40:44.484 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
 Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-13 23:15:36.747 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-13 23:16:12.057 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Challenger
+2019-09-13 23:16:12.057 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-13 23:16:12.058 [main] INFO  fr.configuration.Log - 
+La combinaison est : 6228
+2019-09-13 23:16:12.058 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-13 23:16:52.479 [main] INFO  fr.configuration.Log - Proposition : 7657 -> Réponse : ---+
+2019-09-13 23:16:52.479 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-09-13 23:17:05.619 [main] INFO  fr.configuration.Log - Proposition : 5413 -> Réponse : +-++
+2019-09-13 23:17:05.619 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+2019-09-13 23:17:10.839 [main] INFO  fr.configuration.Log - Proposition : 6228 -> Réponse : ====
+
+2019-09-13 23:17:10.839 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 3 essai(s).
+2019-09-13 23:17:10.840 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-13 23:17:38.639 [main] INFO  fr.configuration.Log - 
+Vous avez choisi de rejouer au mode : Challenger
+
+2019-09-13 23:17:38.640 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-13 23:17:38.640 [main] INFO  fr.configuration.Log - 
+La combinaison est : 5543
+2019-09-13 23:17:38.640 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-13 23:17:54.865 [main] INFO  fr.configuration.Log - Proposition : 5543 -> Réponse : ====
+
+2019-09-13 23:17:54.865 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-13 23:17:54.866 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-13 23:17:59.864 [main] INFO  fr.configuration.Log - 
+Vous avez choisi de changer de mode.
+
+2019-09-13 23:17:59.865 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-13 23:18:07.167 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Défenseur
+2019-09-13 23:18:07.168 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+
+2019-09-13 23:18:07.168 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
+2019-09-13 23:19:37.366 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : +---
+2019-09-13 23:19:37.367 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+
+2019-09-13 23:19:37.367 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7222
+2019-09-13 23:20:08.213 [main] INFO  fr.configuration.Log - Proposition : 7222 -> Réponse : +++-
+2019-09-13 23:20:08.213 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+
+2019-09-13 23:20:08.213 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 8331
+2019-09-13 23:20:13.131 [main] INFO  fr.configuration.Log - Proposition : 8331 -> Réponse : +++-
+2019-09-13 23:20:13.132 [main] INFO  fr.configuration.Log - 
+Essai n° : 4
+
+2019-09-13 23:20:13.132 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 9440
+2019-09-13 23:20:17.148 [main] INFO  fr.configuration.Log - Proposition : 9440 -> Réponse : ====
+2019-09-13 23:20:17.148 [main] INFO  fr.configuration.Log - 
+Dommage ! L'IA a gagné... 
+L'IA a trouvé la bonne combinaison en 4 essai(s).
+2019-09-13 23:20:17.148 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-13 23:20:33.938 [main] INFO  fr.configuration.Log - 
+Vous avez choisi de changer de mode.
+
+2019-09-13 23:20:33.938 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-13 23:20:36.547 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Duel
+2019-09-13 23:20:36.548 [main] INFO  fr.configuration.Log - 
+Mode développeur activé
+2019-09-13 23:20:36.548 [main] INFO  fr.configuration.Log - 
+La combinaison est : 8515
+2019-09-13 23:20:36.548 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+
+2019-09-13 23:20:55.597 [main] INFO  fr.configuration.Log - Proposition : 6546 -> Réponse : +=--
+2019-09-13 23:20:55.597 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+
+2019-09-13 23:20:55.598 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
+2019-09-13 23:21:10.718 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : =-+-
+2019-09-13 23:21:10.719 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+
+2019-09-13 23:21:25.127 [main] INFO  fr.configuration.Log - Proposition : 7654 -> Réponse : +--+
+2019-09-13 23:21:25.128 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+
+2019-09-13 23:21:25.128 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 5272
+2019-09-13 23:21:33.996 [main] INFO  fr.configuration.Log - Proposition : 5272 -> Réponse : ==++
+2019-09-13 23:21:33.996 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+
+2019-09-13 23:21:36.354 [main] INFO  fr.configuration.Log - Proposition : 5466 -> Réponse : ++--
+2019-09-13 23:21:36.354 [main] INFO  fr.configuration.Log - 
+Essai n° : 3
+
+2019-09-13 23:21:36.355 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 5283
+2019-09-13 23:21:40.174 [main] INFO  fr.configuration.Log - Proposition : 5283 -> Réponse : ====
+2019-09-13 23:21:40.174 [main] INFO  fr.configuration.Log - 
+Dommage ! L'IA a gagné... 
+L'IA a trouvé la bonne combinaison en 3 essai(s).
+La combinaison de l'IA était : 8515
+2019-09-13 23:21:40.174 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-13 23:21:53.200 [main] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-13 23:54:20.287 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-13 23:54:22.742 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Défenseur
+2019-09-13 23:54:22.743 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+
+2019-09-13 23:54:22.744 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
+2019-09-13 23:55:55.384 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-13 23:55:57.214 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Défenseur
+2019-09-13 23:55:57.215 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+
+2019-09-13 23:55:57.216 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
+2019-09-13 23:56:03.753 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : ++--
+2019-09-13 23:56:03.754 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+
+2019-09-13 23:56:03.754 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7722
+2019-09-13 23:56:05.424 [main] INFO  fr.configuration.Log - Proposition : 7722 -> Réponse : ====
+2019-09-13 23:56:05.425 [main] INFO  fr.configuration.Log - 
+Dommage ! L'IA a gagné... 
+L'IA a trouvé la bonne combinaison en 2 essai(s).
+2019-09-13 23:56:05.425 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-13 23:56:09.037 [main] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-13 23:56:45.576 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-13 23:56:47.343 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Défenseur
+2019-09-13 23:56:47.344 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+
+2019-09-13 23:56:47.344 [main] INFO  fr.configuration.Log - Première proposition IA : 5555
+2019-09-13 23:56:53.489 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : +++=
+2019-09-13 23:56:53.490 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+
+2019-09-13 23:56:53.490 [main] INFO  fr.configuration.Log - Nouvelle proposition IA : 7775
+2019-09-13 23:56:58.249 [main] INFO  fr.configuration.Log - Proposition : 7775 -> Réponse : ====
+2019-09-13 23:56:58.249 [main] INFO  fr.configuration.Log - 
+Dommage ! L'IA a gagné... 
+L'IA a trouvé la bonne combinaison en 2 essai(s).
+2019-09-13 23:56:58.249 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-13 23:57:00.494 [main] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
