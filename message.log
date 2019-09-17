@@ -5507,3 +5507,40 @@ L'IA a trouvé la bonne combinaison en 2 essai(s).
 2019-09-13 23:57:00.494 [main] TRACE fr.configuration.Log - 
 Fin du jeu. 
 Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-14 11:16:39.112 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-14 11:16:53.282 [main] TRACE fr.configuration.Log - Fin du jeu. 
+Vous avez choisi de quitter le jeu.
+2019-09-14 12:53:27.436 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-14 12:53:29.625 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Challenger
+2019-09-14 12:53:29.625 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-14 12:53:29.626 [main] INFO  fr.configuration.Log - 
+La combinaison est : 3213
+2019-09-14 12:53:29.626 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-14 12:53:31.789 [main] INFO  fr.configuration.Log - Proposition : 4244 -> Réponse : -=--
+2019-09-14 12:53:31.789 [main] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-09-14 12:53:35.108 [main] INFO  fr.configuration.Log - Proposition : 3213 -> Réponse : ====
+
+2019-09-14 12:53:35.109 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 2 essai(s).
+2019-09-14 12:53:35.109 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-14 12:53:36.451 [main] INFO  fr.configuration.Log - 
+Vous avez choisi de rejouer au mode : Challenger
+
+2019-09-14 12:53:36.451 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-14 12:53:36.451 [main] INFO  fr.configuration.Log - 
+La combinaison est : 8234
+2019-09-14 12:53:36.452 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-14 12:53:40.201 [main] INFO  fr.configuration.Log - Proposition : 8234 -> Réponse : ====
+
+2019-09-14 12:53:40.201 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-14 12:53:40.202 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-14 12:53:42.004 [main] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
