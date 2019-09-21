@@ -33,7 +33,7 @@ public class Defenseur extends ModeJeu {
 							"L'IA a trouvé la bonne combinaison en " + essai + " essai(s).");
 				essai = nbrEssai + 1;
 			} else if (essai == nbrEssai) {
-				Log.logger.info("\nL'IA a atteint le nombre d'essai limité, vous avez donc gagné !!!"
+				Log.logger.info("\nL'IA a atteint le nombre d'essais maximum, vous avez donc gagné !!!"
 						+ "\nLa partie est finie !" + "\nL'IA n'a pas réussi à trouver votre combinaison.");
 			}
 				

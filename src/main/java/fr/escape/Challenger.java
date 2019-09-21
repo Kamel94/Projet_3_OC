@@ -54,7 +54,7 @@ public class Challenger extends ModeJeu {
 								"Vous avez trouvé la bonne combinaison en " + essai + " essai(s).");
 				essai = nbrEssai;
 			} else if (essai == nbrEssai){
-				Log.logger.info("\nDésolé vous avez atteint le nombre d'essai maximum... \nLa combinaison était : " + clef);
+				Log.logger.info("\nDésolé vous avez atteint le nombre d'essais maximum... \nLa combinaison était : " + clef);
 				essai = nbrEssai;
 			} else if(essai == nbrEssai - 1) {
 				System.out.println("\nAttention il vous reste 1 essai !!");

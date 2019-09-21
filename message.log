@@ -1,642 +1,3 @@
-2019-09-02 18:57:47.833 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 18:57:49.158 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 18:58:03.180 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 18:58:10.770 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 19:03:05.201 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:03:35.761 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:03:42.121 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de rejouer au mode : Défenseur
-
-2019-09-02 19:06:52.485 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:06:54.116 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
-
-2019-09-02 19:06:54.117 [main] INFO  fr.configuration.Log - Mode développeur activé
-2019-09-02 19:07:08.567 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:07:24.803 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 19:09:31.450 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:09:39.196 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:09:59.128 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 19:25:11.479 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:25:13.491 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:25:13.491 [main] INFO  fr.configuration.Log - 
-La combinaison est : 9251
-2019-09-02 19:25:22.848 [main] INFO  fr.configuration.Log - 
-Vous avez chacun trouvé la bonne combinaison de l'autre !
-Il n'y a pas de gagnant...
-2019-09-02 19:25:22.849 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:25:28.276 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de rejouer au mode : Duel
-
-2019-09-02 19:25:28.276 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:25:28.276 [main] INFO  fr.configuration.Log - 
-La combinaison est : 2583
-2019-09-02 19:25:35.750 [main] INFO  fr.configuration.Log - 
-Dommage ! L'IA a gagné... 
-L'IA a trouvé la bonne combinaison en 1 essai(s).
-La combinaison de l'IA était : 2583
-2019-09-02 19:25:35.750 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:25:40.923 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de rejouer au mode : Duel
-
-2019-09-02 19:25:40.923 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:25:40.923 [main] INFO  fr.configuration.Log - 
-La combinaison est : 6381
-2019-09-02 19:25:48.042 [main] INFO  fr.configuration.Log - 
-Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 1 essai(s).
-2019-09-02 19:25:48.043 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:25:52.201 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 19:26:50.201 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:26:53.030 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:26:53.031 [main] INFO  fr.configuration.Log - 
-La combinaison est : 3668
-2019-09-02 19:27:28.327 [main] INFO  fr.configuration.Log - 
-Vous avez atteint le nombre d'essai limité !
-Il n'y a pas de gagnant...
-La combinaison de l'IA était : 3668
-2019-09-02 19:27:28.327 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:27:39.655 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 19:28:54.797 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:28:56.723 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:28:56.723 [main] INFO  fr.configuration.Log - 
-La combinaison est : 8695
-2019-09-02 19:29:21.309 [main] INFO  fr.configuration.Log - 
-Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 4 essai(s).
-2019-09-02 19:29:21.309 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:30:39.180 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:30:40.457 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:30:40.458 [main] INFO  fr.configuration.Log - 
-La combinaison est : 8594
-2019-09-02 19:31:16.010 [main] INFO  fr.configuration.Log - 
-Vous avez atteint le nombre d'essai limité !
-Il n'y a pas de gagnant...
-La combinaison de l'IA était : 8594
-2019-09-02 19:31:16.010 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:31:23.342 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de rejouer au mode : Duel
-
-2019-09-02 19:31:23.342 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:31:23.343 [main] INFO  fr.configuration.Log - 
-La combinaison est : 1943
-2019-09-02 19:32:02.647 [main] INFO  fr.configuration.Log - 
-Dommage ! L'IA a gagné... 
-L'IA a trouvé la bonne combinaison en 4 essai(s).
-La combinaison de l'IA était : 1943
-2019-09-02 19:32:02.648 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:32:07.122 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de rejouer au mode : Duel
-
-2019-09-02 19:32:07.123 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:32:07.123 [main] INFO  fr.configuration.Log - 
-La combinaison est : 6179
-2019-09-02 19:32:41.877 [main] INFO  fr.configuration.Log - 
-Vous avez chacun trouvé la bonne combinaison de l'autre !
-Il n'y a pas de gagnant...
-2019-09-02 19:32:41.878 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:32:56.153 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de rejouer au mode : Duel
-
-2019-09-02 19:32:56.154 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:32:56.154 [main] INFO  fr.configuration.Log - 
-La combinaison est : 9490
-2019-09-02 19:33:29.443 [main] INFO  fr.configuration.Log - 
-Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 5 essai(s).
-2019-09-02 19:33:29.444 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:33:34.857 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 19:40:05.773 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:40:07.515 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
-
-2019-09-02 19:40:07.516 [main] INFO  fr.configuration.Log - Mode développeur activé
-2019-09-02 19:40:07.516 [main] INFO  fr.configuration.Log - La combinaison est : 9585
-2019-09-02 19:40:18.200 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 3 essai(s).
-2019-09-02 19:40:18.201 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:40:28.893 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de changer de mode.
-2019-09-02 19:40:28.893 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:40:32.506 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:40:32.507 [main] INFO  fr.configuration.Log - 
-La combinaison est : 9876
-2019-09-02 19:40:35.839 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 19:40:35.839 [main] INFO  fr.configuration.Log - Réponse joueur : 
-2019-09-02 19:40:59.853 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7775
-2019-09-02 19:40:59.853 [main] INFO  fr.configuration.Log - Réponse joueur : 
-2019-09-02 19:41:07.978 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 8875
-2019-09-02 19:41:07.978 [main] INFO  fr.configuration.Log - Réponse joueur : 
-2019-09-02 19:41:14.073 [main] INFO  fr.configuration.Log - 
-Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 3 essai(s).
-2019-09-02 19:41:14.073 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:41:17.771 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de changer de mode.
-2019-09-02 19:41:17.771 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:41:18.643 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
-
-2019-09-02 19:41:18.643 [main] INFO  fr.configuration.Log - Mode développeur activé
-2019-09-02 19:41:18.644 [main] INFO  fr.configuration.Log - La combinaison est : 9585
-2019-09-02 19:41:28.548 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 2 essai(s).
-2019-09-02 19:41:28.548 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:41:30.178 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de rejouer au mode : Challenger
-
-2019-09-02 19:41:30.178 [main] INFO  fr.configuration.Log - Mode développeur activé
-2019-09-02 19:41:30.179 [main] INFO  fr.configuration.Log - La combinaison est : 8545
-2019-09-02 19:41:38.428 [main] INFO  fr.configuration.Log - 
-Désolé vous avez atteint le nombre d'essai limité... 
-La combinaison était : 8545
-2019-09-02 19:41:38.429 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:41:46.109 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 19:47:33.737 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:47:34.996 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
-
-2019-09-02 19:47:34.996 [main] INFO  fr.configuration.Log - Mode développeur activé
-2019-09-02 19:47:34.997 [main] INFO  fr.configuration.Log - La combinaison est : 9992
-2019-09-02 19:47:39.173 [main] INFO  fr.configuration.Log - 
-Proposition : 4234 -> Réponse : +++-
-2019-09-02 19:47:41.032 [main] INFO  fr.configuration.Log - 
-Proposition : 4234 -> Réponse : +++-
-2019-09-02 19:47:47.398 [main] INFO  fr.configuration.Log - Proposition : 9992 -> Réponse : ====
-
-2019-09-02 19:47:47.398 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 3 essai(s).
-2019-09-02 19:47:47.399 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:47:52.989 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de changer de mode.
-2019-09-02 19:47:52.990 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:47:53.930 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:47:53.930 [main] INFO  fr.configuration.Log - 
-La combinaison est : 4508
-2019-09-02 19:47:56.723 [main] INFO  fr.configuration.Log - 
-Proposition : 9992 -> Réponse : ---+
-2019-09-02 19:47:56.724 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 19:48:02.761 [main] INFO  fr.configuration.Log - 
-Proposition : 9992 -> Réponse : ---+
-2019-09-02 19:48:02.762 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7755
-2019-09-02 19:48:08.142 [main] INFO  fr.configuration.Log - 
-Proposition : 9992 -> Réponse : ---+
-2019-09-02 19:48:08.143 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 8855
-2019-09-02 19:48:10.207 [main] INFO  fr.configuration.Log - 
-Dommage ! L'IA a gagné... 
-L'IA a trouvé la bonne combinaison en 3 essai(s).
-La combinaison de l'IA était : 4508
-2019-09-02 19:48:10.208 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:48:15.233 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de rejouer au mode : Duel
-
-2019-09-02 19:48:15.233 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:48:15.233 [main] INFO  fr.configuration.Log - 
-La combinaison est : 5865
-2019-09-02 19:48:20.683 [main] INFO  fr.configuration.Log - Proposition : 5865 -> Réponse : ====
-
-2019-09-02 19:48:20.684 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 5555
-2019-09-02 19:48:22.840 [main] INFO  fr.configuration.Log - 
-Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 1 essai(s).
-2019-09-02 19:48:22.841 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:48:25.977 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 19:50:21.486 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:50:22.736 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
-
-2019-09-02 19:50:22.737 [main] INFO  fr.configuration.Log - Mode développeur activé
-2019-09-02 19:50:22.737 [main] INFO  fr.configuration.Log - La combinaison est : 2333
-2019-09-02 19:50:25.707 [main] INFO  fr.configuration.Log - 
-Proposition : 5865 -> Réponse : ----
-2019-09-02 19:50:28.013 [main] INFO  fr.configuration.Log - 
-Proposition : 5865 -> Réponse : ----
-2019-09-02 19:50:30.117 [main] INFO  fr.configuration.Log - 
-Proposition : 4234 -> Réponse : -+=-
-2019-09-02 19:50:37.333 [main] INFO  fr.configuration.Log - Proposition : 2333 -> Réponse : ====
-
-2019-09-02 19:50:37.333 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 4 essai(s).
-2019-09-02 19:50:37.333 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:50:40.900 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de changer de mode.
-2019-09-02 19:50:40.901 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:50:41.888 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:50:41.889 [main] INFO  fr.configuration.Log - 
-La combinaison est : 8195
-2019-09-02 19:50:43.940 [main] INFO  fr.configuration.Log - 
-Proposition : 2333 -> Réponse : +-++
-2019-09-02 19:50:43.940 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 19:50:52.633 [main] INFO  fr.configuration.Log - Proposition : 8195 -> Réponse : ====
-
-2019-09-02 19:50:52.633 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7755
-2019-09-02 19:50:54.955 [main] INFO  fr.configuration.Log - 
-Vous avez chacun trouvé la bonne combinaison de l'autre !
-Il n'y a pas de gagnant...
-2019-09-02 19:50:54.956 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:50:59.098 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 19:51:44.089 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:51:45.483 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
-
-2019-09-02 19:51:45.483 [main] INFO  fr.configuration.Log - Mode développeur activé
-2019-09-02 19:51:45.484 [main] INFO  fr.configuration.Log - La combinaison est : 6960
-2019-09-02 19:51:46.860 [main] INFO  fr.configuration.Log - 
-Proposition : 8195 -> Réponse : -+--
-2019-09-02 19:51:51.643 [main] INFO  fr.configuration.Log - 
-Proposition : 8195 -> Réponse : -+--
-2019-09-02 19:51:53.091 [main] INFO  fr.configuration.Log - Proposition : 6960 -> Réponse : ====
-
-2019-09-02 19:51:53.091 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 3 essai(s).
-2019-09-02 19:51:53.092 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:51:55.969 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de changer de mode.
-2019-09-02 19:51:55.969 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:51:56.629 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:51:56.629 [main] INFO  fr.configuration.Log - 
-La combinaison est : 1873
-2019-09-02 19:51:59.764 [main] INFO  fr.configuration.Log - 
-Proposition : 6960 -> Réponse : --++
-2019-09-02 19:51:59.765 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 19:52:06.334 [main] INFO  fr.configuration.Log - Proposition : 1873 -> Réponse : ====
-
-2019-09-02 19:52:06.335 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7755
-2019-09-02 19:52:09.059 [main] INFO  fr.configuration.Log - 
-Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 2 essai(s).
-2019-09-02 19:52:09.060 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:52:11.713 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 19:54:52.380 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:54:53.980 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 19:55:02.664 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7722
-2019-09-02 19:55:05.527 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 6633
-2019-09-02 19:55:09.610 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 5544
-2019-09-02 19:55:11.729 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 4444
-2019-09-02 19:55:14.456 [main] INFO  fr.configuration.Log - 
-Dommage ! L'IA a gagné... 
-L'IA a trouvé la bonne combinaison en 5 essai(s).
-2019-09-02 19:55:14.456 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:55:21.492 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de changer de mode.
-2019-09-02 19:55:21.493 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 19:55:22.938 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 19:55:22.938 [main] INFO  fr.configuration.Log - 
-La combinaison est : 2082
-2019-09-02 19:55:27.256 [main] INFO  fr.configuration.Log - 
-Proposition : 4325 -> Réponse : --+-
-2019-09-02 19:55:27.256 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 19:55:34.682 [main] INFO  fr.configuration.Log - 
-Proposition : 4354 -> Réponse : --+-
-2019-09-02 19:55:34.683 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7755
-2019-09-02 19:55:36.660 [main] INFO  fr.configuration.Log - 
-Dommage ! L'IA a gagné... 
-L'IA a trouvé la bonne combinaison en 2 essai(s).
-La combinaison de l'IA était : 2082
-2019-09-02 19:55:36.661 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 19:55:45.611 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 20:03:25.140 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 20:03:26.673 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 20:03:28.765 [main] FATAL fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:03:51.900 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:03:51.900 [main] INFO  fr.configuration.Log - 
-Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:04:26.685 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : ++==
-2019-09-02 20:04:26.686 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7755
-2019-09-02 20:04:31.836 [main] INFO  fr.configuration.Log - Proposition : 7755 -> Réponse : ++==
-2019-09-02 20:04:31.837 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 8855
-2019-09-02 20:04:34.928 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:04:34.928 [main] INFO  fr.configuration.Log - 
-Proposition : 8855 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:04:38.458 [main] INFO  fr.configuration.Log - Proposition : 8855 -> Réponse : +++=
-2019-09-02 20:04:38.458 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 9965
-2019-09-02 20:15:04.649 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 20:15:06.304 [main] INFO  fr.configuration.Log - Vous avez choisi le mode : Challenger
-
-2019-09-02 20:15:06.305 [main] INFO  fr.configuration.Log - Mode développeur activé
-2019-09-02 20:15:06.306 [main] INFO  fr.configuration.Log - La combinaison est : 2940
-2019-09-02 20:15:06.306 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-2019-09-02 20:15:07.510 [main] ERROR fr.configuration.Log - 
-Veuillez entrer uniquement des chiffres svp !
-2019-09-02 20:15:11.138 [main] INFO  fr.configuration.Log - 
-Proposition : 5345 -> Réponse : -+=-
-2019-09-02 20:15:11.138 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-2019-09-02 20:15:16.861 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de chiffre !!
-2019-09-02 20:15:16.862 [main] FATAL fr.configuration.Log - 
-Proposition : 43 -> Réponse : Vous devez entrer 4 chiffres !
-2019-09-02 20:15:19.127 [main] INFO  fr.configuration.Log - 
-Proposition : 5345 -> Réponse : -+=-
-2019-09-02 20:15:19.128 [main] INFO  fr.configuration.Log - 
-Essai n° : 3
-2019-09-02 20:16:23.133 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 20:16:24.843 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-
-2019-09-02 20:16:24.843 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 20:16:37.571 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : ++==
-2019-09-02 20:16:37.571 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-
-2019-09-02 20:16:37.571 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7755
-2019-09-02 20:16:39.909 [main] INFO  fr.configuration.Log - Proposition : 7755 -> Réponse : ++==
-2019-09-02 20:16:39.909 [main] INFO  fr.configuration.Log - 
-Essai n° : 3
-
-2019-09-02 20:16:39.910 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 8855
-2019-09-02 20:16:41.932 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:16:44.093 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:16:44.094 [main] FATAL fr.configuration.Log - 
-Proposition : 8855 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:16:46.493 [main] INFO  fr.configuration.Log - Proposition : 8855 -> Réponse : ++==
-2019-09-02 20:16:46.494 [main] INFO  fr.configuration.Log - 
-Essai n° : 4
-
-2019-09-02 20:16:46.494 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 9955
-2019-09-02 20:16:52.869 [main] INFO  fr.configuration.Log - Proposition : 9955 -> Réponse : ====
-2019-09-02 20:16:52.869 [main] INFO  fr.configuration.Log - 
-Dommage ! L'IA a gagné... 
-L'IA a trouvé la bonne combinaison en 4 essai(s).
-2019-09-02 20:16:52.870 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 20:16:57.477 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de changer de mode.
-2019-09-02 20:16:57.478 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 20:16:59.094 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 20:16:59.095 [main] INFO  fr.configuration.Log - 
-La combinaison est : 6431
-2019-09-02 20:16:59.095 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-2019-09-02 20:17:02.043 [main] INFO  fr.configuration.Log - 
-Proposition : 4234 -> Réponse : ++=-
-2019-09-02 20:17:02.043 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-
-2019-09-02 20:17:02.044 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 20:17:04.310 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : ++==
-2019-09-02 20:17:04.311 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-2019-09-02 20:17:09.219 [main] ERROR fr.configuration.Log - 
-Veuillez entrer uniquement des chiffres svp !
-2019-09-02 20:17:11.746 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de chiffre !!
-2019-09-02 20:17:11.746 [main] FATAL fr.configuration.Log - 
-Proposition : 4 -> Réponse : Vous devez entrer 4 chiffres !
-2019-09-02 20:17:13.416 [main] INFO  fr.configuration.Log - 
-Proposition : 4234 -> Réponse : ++=-
-2019-09-02 20:17:13.416 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-
-2019-09-02 20:17:13.416 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7755
-2019-09-02 20:17:33.709 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:17:36.060 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:17:36.060 [main] FATAL fr.configuration.Log - 
-Proposition : 7755 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:17:39.320 [main] INFO  fr.configuration.Log - Proposition : 7755 -> Réponse : ++==
-2019-09-02 20:17:39.320 [main] INFO  fr.configuration.Log - 
-Essai n° : 3
-2019-09-02 20:17:53.249 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de chiffre !!
-2019-09-02 20:17:53.249 [main] FATAL fr.configuration.Log - 
-Proposition : 63431 -> Réponse : Vous devez entrer 4 chiffres !
-2019-09-02 20:18:02.303 [main] INFO  fr.configuration.Log - Proposition : 6431 -> Réponse : ====
-
-2019-09-02 20:18:02.304 [main] INFO  fr.configuration.Log - 
-Essai n° : 3
-
-2019-09-02 20:18:02.304 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 8855
-2019-09-02 20:18:09.971 [main] INFO  fr.configuration.Log - Proposition : 8855 -> Réponse : ====
-2019-09-02 20:18:09.971 [main] INFO  fr.configuration.Log - 
-Vous avez chacun trouvé la bonne combinaison de l'autre !
-Il n'y a pas de gagnant...
-2019-09-02 20:18:09.971 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 20:18:19.718 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 20:18:40.200 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 20:18:42.051 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-
-2019-09-02 20:18:42.051 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 20:18:44.706 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : ++==
-2019-09-02 20:18:44.707 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-
-2019-09-02 20:18:44.707 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7755
-2019-09-02 20:18:46.402 [main] INFO  fr.configuration.Log - Proposition : 7755 -> Réponse : ++==
-2019-09-02 20:18:46.403 [main] INFO  fr.configuration.Log - 
-Essai n° : 3
-
-2019-09-02 20:18:46.403 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 8855
-2019-09-02 20:18:49.391 [main] INFO  fr.configuration.Log - Proposition : 8855 -> Réponse : ====
-2019-09-02 20:18:49.391 [main] INFO  fr.configuration.Log - 
-Dommage ! L'IA a gagné... 
-L'IA a trouvé la bonne combinaison en 3 essai(s).
-2019-09-02 20:18:49.391 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 20:18:51.292 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de changer de mode.
-2019-09-02 20:18:51.293 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 20:18:52.010 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 20:18:52.010 [main] INFO  fr.configuration.Log - 
-La combinaison est : 5210
-2019-09-02 20:18:52.011 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-2019-09-02 20:19:00.682 [main] INFO  fr.configuration.Log - 
-Proposition : 5435 -> Réponse : =---
-2019-09-02 20:19:00.682 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-
-2019-09-02 20:19:00.682 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 20:19:03.635 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : ++==
-2019-09-02 20:19:03.635 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-2019-09-02 20:19:06.273 [main] INFO  fr.configuration.Log - 
-Proposition : 5435 -> Réponse : =---
-2019-09-02 20:19:06.274 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-
-2019-09-02 20:19:06.274 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7755
-2019-09-02 20:19:09.712 [main] INFO  fr.configuration.Log - Proposition : 7755 -> Réponse : ++==
-2019-09-02 20:19:09.712 [main] INFO  fr.configuration.Log - 
-Essai n° : 3
-2019-09-02 20:19:17.021 [main] INFO  fr.configuration.Log - 
-Proposition : 5435 -> Réponse : =---
-2019-09-02 20:19:17.022 [main] INFO  fr.configuration.Log - 
-Essai n° : 3
-
-2019-09-02 20:19:17.022 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 8855
-2019-09-02 20:19:20.927 [main] INFO  fr.configuration.Log - Proposition : 8855 -> Réponse : ====
-2019-09-02 20:19:20.928 [main] INFO  fr.configuration.Log - 
-Dommage ! L'IA a gagné... 
-L'IA a trouvé la bonne combinaison en 3 essai(s).
-La combinaison de l'IA était : 5210
-2019-09-02 20:19:20.928 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 20:19:26.714 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de rejouer au mode : Duel
-
-2019-09-02 20:19:26.714 [main] INFO  fr.configuration.Log - 
-Mode développeur activé
-2019-09-02 20:19:26.715 [main] INFO  fr.configuration.Log - 
-La combinaison est : 9730
-2019-09-02 20:19:26.715 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-2019-09-02 20:19:29.368 [main] INFO  fr.configuration.Log - 
-Proposition : 4234 -> Réponse : ++=-
-2019-09-02 20:19:29.368 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-
-2019-09-02 20:19:29.368 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 5555
-2019-09-02 20:19:31.723 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : ++==
-2019-09-02 20:19:31.723 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-2019-09-02 20:19:39.362 [main] INFO  fr.configuration.Log - 
-Proposition : 4324 -> Réponse : +++-
-2019-09-02 20:19:39.362 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-
-2019-09-02 20:19:39.363 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7755
-2019-09-02 20:19:49.084 [main] INFO  fr.configuration.Log - Proposition : 7755 -> Réponse : --==
-2019-09-02 20:19:49.084 [main] INFO  fr.configuration.Log - 
-Essai n° : 3
-2019-09-02 20:19:50.550 [main] INFO  fr.configuration.Log - Proposition : 9730 -> Réponse : ====
-
-2019-09-02 20:19:50.550 [main] INFO  fr.configuration.Log - 
-Essai n° : 3
-
-2019-09-02 20:19:50.551 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 6655
-2019-09-02 20:19:57.808 [main] INFO  fr.configuration.Log - Proposition : 6655 -> Réponse : ----
-2019-09-02 20:19:57.809 [main] INFO  fr.configuration.Log - 
-Félicitation vous avez gagné !! 
-Vous avez trouvé la bonne combinaison en 3 essai(s).
-2019-09-02 20:19:57.809 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 20:20:03.979 [main] TRACE fr.configuration.Log - Fin du jeu. 
-Vous avez choisi de quitter le jeu, merci et à bientôt.
-2019-09-02 20:20:41.009 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 20:20:42.894 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-
-2019-09-02 20:20:42.894 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 20:20:45.052 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:20:47.353 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:20:47.353 [main] FATAL fr.configuration.Log - 
-Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:20:50.959 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : 543
-2019-09-02 20:20:50.959 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-
-2019-09-02 20:20:50.959 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 
-2019-09-02 20:21:11.074 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:24:14.368 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 20:24:15.695 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-
-2019-09-02 20:24:15.696 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 20:24:18.480 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:24:18.481 [main] FATAL fr.configuration.Log - 
-Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:24:24.450 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : 4324
-2019-09-02 20:24:24.451 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-
-2019-09-02 20:24:24.451 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 
-2019-09-02 20:24:53.746 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 20:24:56.120 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-
-2019-09-02 20:24:56.121 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 20:24:58.389 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:25:01.503 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:25:03.137 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:25:04.954 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:25:06.841 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:25:06.841 [main] FATAL fr.configuration.Log - 
-Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:25:09.559 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:25:09.559 [main] FATAL fr.configuration.Log - 
-Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:25:13.567 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : =+==
-2019-09-02 20:25:13.568 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-
-2019-09-02 20:25:13.568 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 5755
-2019-09-02 20:26:00.294 [main] TRACE fr.configuration.Log - Démarrage du jeu.
-2019-09-02 20:26:01.586 [main] INFO  fr.configuration.Log - 
-Essai n° : 1
-
-2019-09-02 20:26:01.586 [main] INFO  fr.configuration.Log - Première combinaison IA : 5555
-2019-09-02 20:26:04.578 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:26:06.032 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:26:07.193 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:26:08.462 [main] ERROR fr.configuration.Log - Vous devez entrer que +, -, =
-2019-09-02 20:26:09.771 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:26:09.771 [main] FATAL fr.configuration.Log - 
-Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:26:11.777 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:26:11.778 [main] FATAL fr.configuration.Log - 
-Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:26:13.346 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:26:13.347 [main] FATAL fr.configuration.Log - 
-Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:26:14.307 [main] FATAL fr.configuration.Log - 
-Vous n'avez pas entré le bon nombre de caractère !!
-2019-09-02 20:26:14.307 [main] FATAL fr.configuration.Log - 
-Proposition : 5555 -> Réponse : Vous devez entrer 4 caractères !
-2019-09-02 20:26:16.147 [main] INFO  fr.configuration.Log - Proposition : 5555 -> Réponse : +++=
-2019-09-02 20:26:16.148 [main] INFO  fr.configuration.Log - 
-Essai n° : 2
-
-2019-09-02 20:26:16.148 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 7775
-2019-09-02 20:26:18.345 [main] INFO  fr.configuration.Log - Proposition : 7775 -> Réponse : ++==
-2019-09-02 20:26:18.346 [main] INFO  fr.configuration.Log - 
-Essai n° : 3
-
-2019-09-02 20:26:18.346 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 8875
-2019-09-02 20:26:20.098 [main] INFO  fr.configuration.Log - Proposition : 8875 -> Réponse : ++==
-2019-09-02 20:26:20.099 [main] INFO  fr.configuration.Log - 
-Essai n° : 4
-
-2019-09-02 20:26:20.099 [main] INFO  fr.configuration.Log - Nouvelle combinaison IA : 9975
-2019-09-02 20:26:23.071 [main] INFO  fr.configuration.Log - Proposition : 9975 -> Réponse : ====
-2019-09-02 20:26:23.072 [main] INFO  fr.configuration.Log - 
-Dommage ! L'IA a gagné... 
-L'IA a trouvé la bonne combinaison en 4 essai(s).
-2019-09-02 20:26:23.072 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
-2019-09-02 20:26:25.877 [main] INFO  fr.configuration.Log - 
-Vous avez choisi de changer de mode.
 2019-09-02 20:26:25.878 [main] TRACE fr.configuration.Log - Démarrage du jeu.
 2019-09-02 20:26:26.655 [main] INFO  fr.configuration.Log - 
 Mode développeur activé
@@ -5542,5 +4903,187 @@ Essai n° : 1
 Vous avez trouvé la bonne combinaison en 1 essai(s).
 2019-09-14 12:53:40.202 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
 2019-09-14 12:53:42.004 [main] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-19 04:55:15.588 [main] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-19 04:55:19.712 [main] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Challenger
+2019-09-19 04:55:19.712 [main] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 04:55:19.713 [main] INFO  fr.configuration.Log - 
+La combinaison est : 2274
+2019-09-19 04:55:19.713 [main] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 04:55:21.012 [main] ERROR fr.configuration.Log - 
+Veuillez entrer uniquement des chiffres svp !
+2019-09-19 04:55:23.996 [main] FATAL fr.configuration.Log - 
+Vous n'avez pas entré le bon nombre de chiffre !!
+2019-09-19 04:55:23.997 [main] FATAL fr.configuration.Log - 
+Proposition : 4 -> Réponse : Vous devez entrer 4 chiffres !
+2019-09-19 04:55:32.156 [main] INFO  fr.configuration.Log - Proposition : 2274 -> Réponse : ====
+
+2019-09-19 04:55:32.156 [main] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 04:55:32.156 [main] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 04:55:34.066 [main] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-19 21:13:58.749 [fr.main.Main.main()] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-19 21:14:00.135 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Challenger
+2019-09-19 21:14:00.136 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 21:14:00.138 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 2606
+2019-09-19 21:14:00.138 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 21:14:06.541 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 2606 -> Réponse : ====
+
+2019-09-19 21:14:06.541 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 21:14:06.542 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 21:14:07.974 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi de rejouer au mode : Challenger
+
+2019-09-19 21:14:07.975 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 21:14:07.977 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 4387
+2019-09-19 21:14:07.977 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 21:14:14.458 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 4387 -> Réponse : ====
+
+2019-09-19 21:14:14.459 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 21:14:14.459 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 21:14:15.222 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi de rejouer au mode : Challenger
+
+2019-09-19 21:14:15.223 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 21:14:15.224 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 1727
+2019-09-19 21:14:15.224 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 21:14:20.363 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 1727 -> Réponse : ====
+
+2019-09-19 21:14:20.364 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 21:14:20.364 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 21:14:20.821 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi de rejouer au mode : Challenger
+
+2019-09-19 21:14:20.821 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 21:14:20.823 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 2724
+2019-09-19 21:14:20.823 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 21:14:26.389 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 2724 -> Réponse : ====
+
+2019-09-19 21:14:26.389 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 21:14:26.390 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 21:14:27.248 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi de rejouer au mode : Challenger
+
+2019-09-19 21:14:27.248 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 21:14:27.250 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 294
+2019-09-19 21:14:27.250 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 21:14:36.405 [fr.main.Main.main()] FATAL fr.configuration.Log - 
+Vous n'avez pas entré le bon nombre de chiffre !!
+2019-09-19 21:14:36.406 [fr.main.Main.main()] FATAL fr.configuration.Log - 
+Proposition : 294 -> Réponse : Vous devez entrer 4 chiffres !
+2019-09-19 21:14:45.007 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 0294 -> Réponse : ++-
+
+2019-09-19 21:14:45.007 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 21:14:45.007 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 21:15:28.110 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi de rejouer au mode : Challenger
+
+2019-09-19 21:15:28.111 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 21:15:28.112 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 3374
+2019-09-19 21:15:28.112 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 21:15:31.277 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 3374 -> Réponse : ====
+
+2019-09-19 21:15:31.277 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 21:15:31.278 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 21:15:32.651 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi de rejouer au mode : Challenger
+
+2019-09-19 21:15:32.651 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 21:15:32.652 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 8932
+2019-09-19 21:15:32.652 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 21:15:35.493 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 8932 -> Réponse : ====
+
+2019-09-19 21:15:35.493 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 21:15:35.494 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 21:15:36.109 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi de rejouer au mode : Challenger
+
+2019-09-19 21:15:36.109 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 21:15:36.111 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 2542
+2019-09-19 21:15:36.111 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 21:15:39.832 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 2542 -> Réponse : ====
+
+2019-09-19 21:15:39.832 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 21:15:39.832 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 21:15:40.681 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi de rejouer au mode : Challenger
+
+2019-09-19 21:15:40.682 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 21:15:40.682 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 284
+2019-09-19 21:15:40.682 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 21:15:46.950 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 0284 -> Réponse : ++-
+
+2019-09-19 21:15:46.950 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 21:15:46.950 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 21:15:51.460 [fr.main.Main.main()] TR2019-09-19 21:30:39.099 [fr.main.Main.main()] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-19 21:30:40.780 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Challenger
+2019-09-19 21:30:40.781 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-19 21:30:40.783 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 2162
+2019-09-19 21:30:40.783 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-19 21:30:45.156 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 2162 -> Réponse : ====
+
+2019-09-19 21:30:45.156 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 1 essai(s).
+2019-09-19 21:30:45.157 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-19 21:30:46.544 [fr.main.Main.main()] TRACE fr.configuration.Log - 
+Fin du jeu. 
+Vous avez choisi de quitter le jeu, merci et à bientôt.
+2019-09-21 11:10:05.806 [fr.main.Main.main()] TRACE fr.configuration.Log - Bienvenue dans notre jeu Escape Game ONLINE.
+Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.
+2019-09-21 11:10:11.569 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Vous avez choisi le mode : Challenger
+2019-09-21 11:10:11.569 [fr.main.Main.main()] INFO  fr.configuration.Log - Mode développeur activé
+2019-09-21 11:10:11.571 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+La combinaison est : 4174
+2019-09-21 11:10:11.571 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 1
+2019-09-21 11:10:14.558 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 5345 -> Réponse : --+-
+2019-09-21 11:10:14.558 [fr.main.Main.main()] INFO  fr.configuration.Log - 
+Essai n° : 2
+2019-09-21 11:10:37.939 [fr.main.Main.main()] INFO  fr.configuration.Log - Proposition : 4174 -> Réponse : ====
+
+2019-09-21 11:10:37.939 [fr.main.Main.main()] INFO  fr.configuration.Log - Félicitation vous avez gagné !! 
+Vous avez trouvé la bonne combinaison en 2 essai(s).
+2019-09-21 11:10:37.940 [fr.main.Main.main()] INFO  fr.configuration.Log - Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.
+2019-09-21 11:10:39.663 [fr.main.Main.main()] TRACE fr.configuration.Log - 
 Fin du jeu. 
 Vous avez choisi de quitter le jeu, merci et à bientôt.

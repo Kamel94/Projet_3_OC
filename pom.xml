@@ -27,9 +27,14 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+    		<groupId>org.apache.logging.log4j</groupId>
+    		<artifactId>log4j-api</artifactId>
+    		<version>2.12.1</version>
+  		</dependency>
+        <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-core</artifactId>
-            <version>2.11.2</version>
+            <version>2.12.1</version>
         </dependency>
     </dependencies>
 
@@ -47,7 +52,7 @@
               <goal>copy-dependencies</goal>
             </goals>
             <configuration>
-              <outputDirectory>${project.build.directory}/alternateLocation</outputDirectory>
+              <outputDirectory>${project.build.directory}/dépendances</outputDirectory>
               <overWriteReleases>false</overWriteReleases>
               <overWriteSnapshots>false</overWriteSnapshots>
               <overWriteIfNewer>true</overWriteIfNewer>
