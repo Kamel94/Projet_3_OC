@@ -21,7 +21,7 @@ Afin de récupérer le code du projet, il vous suffit de télécharger le reposi
 
 ## Compilation de l’application
 
-IMPORTANT : java version 8 et Maven 3.6.2
+IMPORTANT : java version 12.0.1 et Maven 3.6.2
 
 Pour compiler l’application il suffit d’ouvrir le terminal, de se placer dans le dossier qui contient le code de l’application que vous venez de télécharger et tapez cette commande :  mvn clean install
 
