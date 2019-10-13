@@ -9,59 +9,72 @@ import fr.escape.*;
 import fr.configuration.Configuration;
 import fr.configuration.Log;
 
-public class Challenger extends ModeJeu {
-	
+public class Challenger extends Jeu {
+
 	Configuration conf = new Configuration();
 	Ordinateur ordinateur = new Ordinateur();
-	
+
 	int nbrEssai = conf.nbEssai();
-	boolean dev = conf.modeDev(); // Récupère la valeur de la méthode dans la classe configuration pour déterminer l'activation ou non du mode développeur.
-	int chiffreCombi = conf.chiffreCombi();
+	int chiffreCombi = conf.tailleCombi();
 	int clef = ordinateur.combinaisonAleatoire();
-	
-	public void challenger(int clef) {
-		
-		String choix;
-		int code;
-		
-		Scanner clavier = new Scanner(System.in);
+
+	public void partie(int clef) {
+
 		String proposition = "";
 		int essai = 0;
-		
-		if (dev) {
-            Log.logger.info("Mode développeur activé");
-        }
-		
-		System.out.println("\nBienvenue dans le mode Challenger." +  
-		"\nDans ce mode l'IA choisi une combinaison de " + chiffreCombi + 
-		" chiffres et vous devez trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !!");
-		
-		if (dev == true) {
-			Log.logger.info("\nLa combinaison est : " + clef);
-		}
-		
-		while(essai != nbrEssai) {
-			
-			if(essai != nbrEssai) {
-				essai++;
-				Log.logger.info("\nEssai n° : " + essai);
-			} 
-			
-			System.out.print("\nProposition joueur : ");
-		
-			if(String.valueOf(modeChallenger(clef)).equals(v.victoire())) {
-				Log.logger.info("Félicitation vous avez gagné !! \n" + 
-								"Vous avez trouvé la bonne combinaison en " + essai + " essai(s).");
-				essai = nbrEssai;
-			} else if (essai == nbrEssai){
-				Log.logger.info("\nDésolé vous avez atteint le nombre d'essais maximum... \nLa combinaison était : " + clef);
-				essai = nbrEssai;
-			} else if(essai == nbrEssai - 1) {
-				System.out.println("\nAttention il vous reste 1 essai !!");
-			}
-		
-		} //fin while
-		
-	}
+		String reponse = "";
+		String combinaison = "" + clef;
 
+		System.out.println("\nBienvenue dans le mode Challenger." + "\nDans ce mode l'IA choisi une combinaison de " + chiffreCombi + " chiffres et vous devez trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !!");
+
+		activationModeDev(clef);
+
+		while(essai != nbrEssai) {
+
+			essai++;
+			Log.logger.info("\nEssai n° : " + essai);
+			System.out.print("\nProposition joueur : ");
+			proposition = ordinateur.lireSaisieUtilisateur();
+
+			while(proposition.length() != chiffreCombi) {
+				Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!");
+				reponse = "Vous devez entrer " + chiffreCombi + " chiffres !";
+				Log.logger.fatal("\nProposition : " + proposition + " -> Réponse : " + reponse);
+				System.out.print("\nProposition joueur : ");
+				proposition = ordinateur.lireSaisieUtilisateur();
+			}
+
+			reponse = comparaison(proposition, combinaison);
+
+			if(v.conditionGagnantPerdantChallenger(proposition, reponse, clef, essai).equals("victoire")) {
+				essai = nbrEssai;
+			}
+		} //fin while
+	} // fin méthode partie
+
+	public String conditionGagnantPerdant(String valeur1, String valeur2, int clef, int essai) {
+
+		String reponse = "";
+
+		try {
+			if(clef == Integer.parseInt(valeur1)) {
+				System.out.println("Proposition : " + valeur1 + " -> Réponse : " + valeur2 + "\n");
+				reponse = "victoire";
+			} else {
+				System.out.println("Proposition : " + valeur1 + " -> Réponse : " + valeur2);
+			}
+		} catch (NumberFormatException e) {
+		}
+
+		if(valeur2.equals(v.victoire())) {
+			System.out.println("Félicitation vous avez gagné !! \n" + "Vous avez trouvé la bonne combinaison en " + essai + " essai(s).");
+		} else if (essai == nbrEssai) {
+			System.out.println("\nDésolé vous avez atteint le nombre d'essais maximum... \nLa combinaison était : " + clef);
+		}
+
+		if(essai == nbrEssai - 1) {
+			System.out.println("\nAttention il vous reste 1 essai !!");
+		}
+		return reponse;
+	} // fin méthode conditionGagnantPerdant
 }

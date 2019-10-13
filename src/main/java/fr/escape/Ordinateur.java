@@ -6,42 +6,61 @@ import fr.configuration.Configuration;
 import fr.configuration.Log;
 
 public class Ordinateur {
-	
+
 	Configuration conf = new Configuration();
-	
-	int nEssai = conf.nbEssai();
-	boolean dev = conf.modeDev();
-	int chiffreCombi = conf.chiffreCombi();
-	
+
+	int tailleCombi = conf.tailleCombi();
+
 	public int combinaisonAleatoire() {
-		
-		char[] tailleCombiMin = new char [conf.chiffreCombi()];
-		char[] tailleCombiMax = new char [conf.chiffreCombi()];
-		
-		for(int i = 0; i < conf.chiffreCombi() ; i++) {
+
+		char[] tailleCombiMin = new char [tailleCombi];
+		char[] tailleCombiMax = new char [tailleCombi];
+
+		for(int i = 0; i < tailleCombi ; i++) {
 			tailleCombiMax[i] = '9';
 			tailleCombiMin[i] = '1';
 		}
-		
+
 		int max = Integer.parseInt(String.valueOf(tailleCombiMax));
 		int min = Integer.parseInt(String.valueOf(tailleCombiMin));
 		int nombreAleatoire = min + (int)(Math.random() * ((max - min) + 1));
-		
+
 		return nombreAleatoire;
 	}
-	
-	public int premiereProposition() {
-		
-		char[] tailleCombi = new char [conf.chiffreCombi()];
-		
-		for(int i = 0; i < conf.chiffreCombi() ; i++) {
-			tailleCombi[i] = '5';
+
+	public int premiereProposition(String valeur1) {
+
+		char[] taille = new char [tailleCombi];
+
+		for(int i = 0; i < tailleCombi ; i++) {
+			taille[i] = '5';
 		}
-		
+
 		String proposition = String.valueOf(tailleCombi);
 		int propositionIA = Integer.parseInt(proposition);
-		
-		return propositionIA;
-	}
 
+		if(valeur1 == null) {
+			Log.logger.info("Première proposition IA : " + propositionIA);	
+		} else {
+			propositionIA = Integer.parseInt(valeur1);
+			Log.logger.info("Nouvelle proposition IA : " + propositionIA);
+		}
+		return propositionIA;
+	} // fin méthode premiereProposition
+
+	public String lireSaisieUtilisateur() {
+
+		Scanner clavier = new Scanner(System.in);
+		String saisie = "";
+		String expression = "^[0-9]+$";
+		saisie = clavier.nextLine();
+		saisie.matches(expression);
+
+		while(saisie.matches(expression) == false) {
+			Log.logger.error("\nVeuillez entrer uniquement des chiffres svp !");
+			System.out.print("Recommencez : ");
+			saisie = clavier.nextLine();
+		}
+		return saisie;
+	}
 }
