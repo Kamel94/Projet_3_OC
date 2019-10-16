@@ -1,11 +1,8 @@
 package fr.escape;
 
-import java.util.Scanner;
-
 import fr.configuration.Configuration;
 import fr.configuration.Log;
 import fr.escape.Challenger;
-import fr.escape.Jeu;
 
 public class Menu {
 
@@ -14,6 +11,7 @@ public class Menu {
 	Defenseur defenseur = new Defenseur();
 	Duel duel = new Duel();
 	Ordinateur ordinateur = new Ordinateur();
+	Utilitaire utilitaire = new Utilitaire();
 
 	int clef = ordinateur.combinaisonAleatoire();
 	String mode1 = "Challenger";
@@ -29,9 +27,9 @@ public class Menu {
 
 			System.out.println("\nTapez :");
 			System.out.println("\n1 = Mode Challenger" + "\n2 = Mode Défenseur" + "\n3 = Mode Duel" + "\n4 = Quitter le jeu");
-			System.out.println("\nVeuillez entrer un chiffre entre 1 et 4. \nEntrez votre choix : ");
+			System.out.print("\nVeuillez entrer un chiffre entre 1 et 4. \nEntrez votre choix : ");
 
-			String choix = ordinateur.lireSaisieUtilisateur();
+			String choix = ordinateur.lireSaisieUtilisateur(1);
 			int c = 0;
 			try {
 				c = Integer.parseInt(choix);
@@ -66,8 +64,8 @@ public class Menu {
 				Log.logger.error("\nVous n'avez pas choisi une réponse parmis les choix proposés.");
 				menuChoisi = false;
 			}
-		} // fin while
-	} // fin méthode mode() 
+		} // Fin while
+	} // Fin méthode mode() 
 
 	public void finPartie(int choixFin) { // Méthode pour demander de rejouer, changer de mode ou quitter le jeu.
 
@@ -81,12 +79,10 @@ public class Menu {
 
 		boolean menuChoisi = false; // Pour boucler tant que le choix n'est pas fait.
 		while (!menuChoisi) {
-
 			System.out.println("\nTapez : " + "\n");
 			System.out.println("1 = Pour rejouer au même mode de jeu. \n2 = Pour changer de mode de jeu. \n3 = Pour quitter le jeu.");
 			System.out.print("\nVeuillez entrer un chiffre entre 1 et 3. \nEntrez votre choix : ");
-
-			choix = ordinateur.lireSaisieUtilisateur();
+			choix = ordinateur.lireSaisieUtilisateur(1);
 
 			try {
 				c = Integer.parseInt(choix);
@@ -126,6 +122,6 @@ public class Menu {
 				Log.logger.error("\nVous n'avez pas choisi une réponse parmis les choix proposés.");
 				menuChoisi = false;
 			}
-		}
-	}
+		} // Fin while
+	} // Fin méthode finPartie()
 }

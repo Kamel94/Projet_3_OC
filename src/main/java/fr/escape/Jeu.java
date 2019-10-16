@@ -1,7 +1,5 @@
 package fr.escape;
 
-import java.util.Scanner;
-
 import fr.configuration.Configuration;
 import fr.configuration.Log;
 
@@ -10,9 +8,11 @@ public abstract class Jeu   {
 	Configuration conf = new Configuration();
 	Ordinateur ordinateur = new Ordinateur();
 	Victoire v = new Victoire();
+	Utilitaire utilitaire = new Utilitaire();
+	Joueur joueur = new Joueur();
 
 	boolean dev = conf.modeDev(); // Récupère la valeur de la méthode dans la classe configuration pour déterminer l'activation ou non du mode développeur.
-	int chiffreCombi = conf.tailleCombi();
+	int tailleCombi = conf.tailleCombi();
 	public String nouvelleProposition;
 
 	public abstract void partie(int clef);
@@ -21,7 +21,8 @@ public abstract class Jeu   {
 
 		String reponse = "";
 
-		for (int i = 0; i < chiffreCombi; i++) {
+			try {
+		for (int i = 0; i < tailleCombi; i++) {
 			if (valeur1.charAt(i) > valeur2.charAt(i)) {
 				reponse += "-";
 			} else if (valeur1.charAt(i) < valeur2.charAt(i)) {
@@ -29,38 +30,11 @@ public abstract class Jeu   {
 			} else {
 				reponse += "=";
 			}
-		}
+		} // fin for
+			} catch (StringIndexOutOfBoundsException e) {
+			}
 		return reponse;
 	}
-
-	public String reponseJoueur() {
-
-		Scanner clavier = new Scanner(System.in);
-		String reponseJoueur = "";
-
-		reponseJoueur = clavier.nextLine();
-		String expression = "^[+=-]+$";
-		reponseJoueur.matches(expression);
-
-		while(reponseJoueur.matches(expression) == false) {
-			Log.logger.error("Vous devez entrer que +, -, =");
-			System.out.print("Réponse joueur : ");
-			reponseJoueur = clavier.nextLine();
-		}
-
-		while(reponseJoueur.length() != chiffreCombi) {
-			Log.logger.fatal("\nVous n'avez pas entré le bon nombre de caractère !!");
-			reponseJoueur = "Vous devez entrer " + chiffreCombi + " caractères !";
-			Log.logger.fatal("\n -> Réponse : " + reponseJoueur);
-			System.out.print("\nProposition joueur : ");
-			reponseJoueur = clavier.nextLine();
-		}
-
-		if(reponseJoueur.matches(expression) == true) {
-			nouvelleProposition = "";
-		}
-		return reponseJoueur;
-	} // fin méthode reponseJoueur
 
 	public String nouvelleProposition(String valeur1, String valeur2, int essai) {
 
@@ -97,7 +71,7 @@ public abstract class Jeu   {
 				}
 			}
 			i++;
-		}
+		} // fin for
 		return val;
 	}
 

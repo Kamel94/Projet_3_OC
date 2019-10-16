@@ -1,11 +1,5 @@
 package fr.escape;
 
-import java.util.Arrays;
-import java.util.Random;
-import java.util.ResourceBundle;
-import java.util.Scanner;
-import fr.escape.*;
-
 import fr.configuration.Configuration;
 import fr.configuration.Log;
 
@@ -34,20 +28,16 @@ public class Challenger extends Jeu {
 			essai++;
 			Log.logger.info("\nEssai n° : " + essai);
 			System.out.print("\nProposition joueur : ");
-			proposition = ordinateur.lireSaisieUtilisateur();
-
-			while(proposition.length() != chiffreCombi) {
-				Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!");
-				reponse = "Vous devez entrer " + chiffreCombi + " chiffres !";
-				Log.logger.fatal("\nProposition : " + proposition + " -> Réponse : " + reponse);
-				System.out.print("\nProposition joueur : ");
-				proposition = ordinateur.lireSaisieUtilisateur();
-			}
-
+			proposition = ordinateur.lireSaisieUtilisateur(tailleCombi);
 			reponse = comparaison(proposition, combinaison);
 
-			if(v.conditionGagnantPerdantChallenger(proposition, reponse, clef, essai).equals("victoire")) {
+			if(v.conditionGagnantPerdantChallenger(proposition, reponse, clef).equals("victoire")) {
+				Log.logger.info("Félicitation vous avez gagné !! \n" + "Vous avez trouvé la bonne combinaison en " + essai + " essai(s).");
 				essai = nbrEssai;
+			} else if (essai == nbrEssai) {
+				Log.logger.info("\nDésolé vous avez atteint le nombre d'essais maximum... \nLa combinaison était : " + clef);
+			} else if(essai == nbrEssai - 1) {
+				System.out.println("\nAttention il vous reste 1 essai !!");
 			}
 		} //fin while
 	} // fin méthode partie

@@ -1,13 +1,12 @@
 package fr.escape;
 
-import java.util.Scanner;
-
 import fr.configuration.Configuration;
 import fr.configuration.Log;
 
 public class Ordinateur {
 
 	Configuration conf = new Configuration();
+	Utilitaire utilitaire = new Utilitaire();
 
 	int tailleCombi = conf.tailleCombi();
 
@@ -36,7 +35,7 @@ public class Ordinateur {
 			taille[i] = '5';
 		}
 
-		String proposition = String.valueOf(tailleCombi);
+		String proposition = String.valueOf(taille);
 		int propositionIA = Integer.parseInt(proposition);
 
 		if(valeur1 == null) {
@@ -48,18 +47,26 @@ public class Ordinateur {
 		return propositionIA;
 	} // fin méthode premiereProposition
 
-	public String lireSaisieUtilisateur() {
+	public String lireSaisieUtilisateur(int tailleSaisie) {
 
-		Scanner clavier = new Scanner(System.in);
 		String saisie = "";
 		String expression = "^[0-9]+$";
-		saisie = clavier.nextLine();
+		saisie = utilitaire.clavier();
 		saisie.matches(expression);
 
 		while(saisie.matches(expression) == false) {
 			Log.logger.error("\nVeuillez entrer uniquement des chiffres svp !");
 			System.out.print("Recommencez : ");
-			saisie = clavier.nextLine();
+			saisie = utilitaire.clavier();
+		}
+		
+		if(tailleSaisie == tailleCombi) {
+			while(saisie.length() != tailleCombi) {
+				Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!" + "\nVous devez entrer " + tailleCombi + " chiffres !");
+				Log.logger.fatal("\nProposition : " + saisie);
+				System.out.print("\nProposition joueur : ");
+				saisie = lireSaisieUtilisateur(tailleSaisie);
+			}
 		}
 		return saisie;
 	}
