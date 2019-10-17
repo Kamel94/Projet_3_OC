@@ -4,10 +4,10 @@ import fr.configuration.*;
 
 public class Defenseur extends Jeu {
 
-	Configuration conf = new Configuration();
+	//Configuration conf = new Configuration();
 
-	int nbrEssai = conf.nbEssai();
-	int tailleCombi = conf.tailleCombi();
+	int nbrEssai = Singleton.getInstance().nbEssai();
+	int tailleCombi = Singleton.getInstance().tailleCombi();
 
 	@Override
 	public void partie(int essai) {

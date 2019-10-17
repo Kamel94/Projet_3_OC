@@ -1,18 +1,19 @@
 package fr.escape;
 
-import fr.configuration.Configuration;
+//import fr.configuration.Configuration;
 import fr.configuration.Log;
+import fr.configuration.Singleton;
 
 public abstract class Jeu   {
 
-	Configuration conf = new Configuration();
+	//Configuration conf = new Configuration();
 	Ordinateur ordinateur = new Ordinateur();
 	Victoire v = new Victoire();
 	Utilitaire utilitaire = new Utilitaire();
 	Joueur joueur = new Joueur();
 
-	boolean dev = conf.modeDev(); // Récupère la valeur de la méthode dans la classe configuration pour déterminer l'activation ou non du mode développeur.
-	int tailleCombi = conf.tailleCombi();
+	boolean dev = Singleton.getInstance().modeDev(); // Récupère la valeur de la méthode dans la classe configuration pour déterminer l'activation ou non du mode développeur.
+	int tailleCombi = Singleton.getInstance().tailleCombi();
 	public String nouvelleProposition;
 
 	public abstract void partie(int clef);
@@ -21,18 +22,18 @@ public abstract class Jeu   {
 
 		String reponse = "";
 
-			try {
-		for (int i = 0; i < tailleCombi; i++) {
-			if (valeur1.charAt(i) > valeur2.charAt(i)) {
-				reponse += "-";
-			} else if (valeur1.charAt(i) < valeur2.charAt(i)) {
-				reponse += "+";
-			} else {
-				reponse += "=";
-			}
-		} // fin for
-			} catch (StringIndexOutOfBoundsException e) {
-			}
+		try {
+			for (int i = 0; i < tailleCombi; i++) {
+				if (valeur1.charAt(i) > valeur2.charAt(i)) {
+					reponse += "-";
+				} else if (valeur1.charAt(i) < valeur2.charAt(i)) {
+					reponse += "+";
+				} else {
+					reponse += "=";
+				}
+			} // fin for
+		} catch (StringIndexOutOfBoundsException e) {
+		}
 		return reponse;
 	}
 

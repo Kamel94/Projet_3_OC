@@ -1,15 +1,16 @@
 package fr.escape;
 
-import fr.configuration.Configuration;
+//import fr.configuration.Configuration;
 import fr.configuration.Log;
+import fr.configuration.Singleton;
 
 public class Duel extends Jeu {
 
-	Configuration conf = new Configuration();
+	//Configuration conf = new Configuration();
 	Ordinateur ordinateur = new Ordinateur();
 
-	int nbrEssai = conf.nbEssai();
-	int tailleCombi = conf.tailleCombi();
+	int nbrEssai = Singleton.getInstance().nbEssai();
+	int tailleCombi = Singleton.getInstance().tailleCombi();
 	String victoire = v.victoire();
 
 	@Override

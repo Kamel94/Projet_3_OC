@@ -1,14 +1,15 @@
 package fr.escape;
 
-import fr.configuration.Configuration;
+//import fr.configuration.Configuration;
 import fr.configuration.Log;
+import fr.configuration.Singleton;
 
 public class Ordinateur {
 
-	Configuration conf = new Configuration();
+	//Configuration conf = new Configuration();
 	Utilitaire utilitaire = new Utilitaire();
 
-	int tailleCombi = conf.tailleCombi();
+	int tailleCombi = Singleton.getInstance().tailleCombi();
 
 	public int combinaisonAleatoire() {
 
@@ -59,7 +60,7 @@ public class Ordinateur {
 			System.out.print("Recommencez : ");
 			saisie = utilitaire.clavier();
 		}
-		
+
 		if(tailleSaisie == tailleCombi) {
 			while(saisie.length() != tailleCombi) {
 				Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!" + "\nVous devez entrer " + tailleCombi + " chiffres !");

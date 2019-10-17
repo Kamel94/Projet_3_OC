@@ -1,15 +1,16 @@
 package fr.escape;
 
-import fr.configuration.Configuration;
+//import fr.configuration.Configuration;
 import fr.configuration.Log;
+import fr.configuration.Singleton;
 
 public class Challenger extends Jeu {
 
-	Configuration conf = new Configuration();
+	//Configuration conf = new Configuration();
 	Ordinateur ordinateur = new Ordinateur();
 
-	int nbrEssai = conf.nbEssai();
-	int chiffreCombi = conf.tailleCombi();
+	int nbrEssai = Singleton.getInstance().nbEssai();
+	int chiffreCombi = Singleton.getInstance().tailleCombi();
 	int clef = ordinateur.combinaisonAleatoire();
 
 	public void partie(int clef) {
@@ -24,7 +25,6 @@ public class Challenger extends Jeu {
 		activationModeDev(clef);
 
 		while(essai != nbrEssai) {
-
 			essai++;
 			Log.logger.info("\nEssai n° : " + essai);
 			System.out.print("\nProposition joueur : ");
@@ -41,30 +41,4 @@ public class Challenger extends Jeu {
 			}
 		} //fin while
 	} // fin méthode partie
-
-	public String conditionGagnantPerdant(String valeur1, String valeur2, int clef, int essai) {
-
-		String reponse = "";
-
-		try {
-			if(clef == Integer.parseInt(valeur1)) {
-				System.out.println("Proposition : " + valeur1 + " -> Réponse : " + valeur2 + "\n");
-				reponse = "victoire";
-			} else {
-				System.out.println("Proposition : " + valeur1 + " -> Réponse : " + valeur2);
-			}
-		} catch (NumberFormatException e) {
-		}
-
-		if(valeur2.equals(v.victoire())) {
-			System.out.println("Félicitation vous avez gagné !! \n" + "Vous avez trouvé la bonne combinaison en " + essai + " essai(s).");
-		} else if (essai == nbrEssai) {
-			System.out.println("\nDésolé vous avez atteint le nombre d'essais maximum... \nLa combinaison était : " + clef);
-		}
-
-		if(essai == nbrEssai - 1) {
-			System.out.println("\nAttention il vous reste 1 essai !!");
-		}
-		return reponse;
-	} // fin méthode conditionGagnantPerdant
 }

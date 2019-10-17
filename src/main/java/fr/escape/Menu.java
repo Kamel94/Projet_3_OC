@@ -1,12 +1,10 @@
 package fr.escape;
 
-import fr.configuration.Configuration;
 import fr.configuration.Log;
 import fr.escape.Challenger;
 
 public class Menu {
 
-	Configuration conf = new Configuration();
 	Challenger challenger = new Challenger();
 	Defenseur defenseur = new Defenseur();
 	Duel duel = new Duel();
@@ -18,7 +16,7 @@ public class Menu {
 	String mode2 = "Défenseur";
 	String mode3 = "Duel";
 
-	public  void demarrage() {
+	public void demarrage() {
 
 		Log.logger.trace("Bienvenue dans notre jeu Escape Game ONLINE." + "\n" + "Pour commencer, choisissez un mode de jeu parmis les 3 modes suivant.");
 
@@ -34,38 +32,12 @@ public class Menu {
 			try {
 				c = Integer.parseInt(choix);
 			} catch (NumberFormatException e) {
-				menuChoisi = false;
 			} 
-
-			switch (c) {
-			case 1 :
-				Log.logger.info("\nVous avez choisi le mode : " + mode1);
-				challenger.partie(clef);// Appel la méthode challenger. 
-				finPartie(1);
-				menuChoisi = true; // Sort de la boucle une fois la partie quittée.
-				break;
-			case 2 :
-				Log.logger.info("\nVous avez choisi le mode : " + mode2);
-				defenseur.partie(clef);
-				finPartie(2);
+			if(choixDebut(c, menuChoisi) == true) {
 				menuChoisi = true;
-				break;
-			case 3 :
-				Log.logger.info("\nVous avez choisi le mode : " + mode3);
-				duel.partie(clef);
-				finPartie(3);
-				menuChoisi = true;
-				break;
-			case 4 :
-				Log.logger.trace("Fin du jeu. " + "\nVous avez choisi de quitter le jeu.");
-				menuChoisi = true;
-				break;
-			default :
-				Log.logger.error("\nVous n'avez pas choisi une réponse parmis les choix proposés.");
-				menuChoisi = false;
 			}
 		} // Fin while
-	} // Fin méthode mode() 
+	} // Fin méthode demarrage() 
 
 	public void finPartie(int choixFin) { // Méthode pour demander de rejouer, changer de mode ou quitter le jeu.
 
@@ -87,7 +59,6 @@ public class Menu {
 			try {
 				c = Integer.parseInt(choix);
 			} catch (NumberFormatException e) {
-				menuChoisi = false;
 			} 
 
 			switch (c) {
@@ -124,4 +95,35 @@ public class Menu {
 			}
 		} // Fin while
 	} // Fin méthode finPartie()
+	
+	public boolean choixDebut(int choix, boolean menuChoisi) {
+		switch (choix) {
+		case 1 :
+			Log.logger.info("\nVous avez choisi le mode : " + mode1);
+			challenger.partie(clef);// Appel la méthode challenger. 
+			finPartie(1);
+			menuChoisi = true; // Sort de la boucle une fois la partie quittée.
+			break;
+		case 2 :
+			Log.logger.info("\nVous avez choisi le mode : " + mode2);
+			defenseur.partie(clef);
+			finPartie(2);
+			menuChoisi = true;
+			break;
+		case 3 :
+			Log.logger.info("\nVous avez choisi le mode : " + mode3);
+			duel.partie(clef);
+			finPartie(3);
+			menuChoisi = true;
+			break;
+		case 4 :
+			Log.logger.trace("Fin du jeu. " + "\nVous avez choisi de quitter le jeu.");
+			menuChoisi = true;
+			break;
+		default :
+			Log.logger.error("\nVous n'avez pas choisi une réponse parmis les choix proposés.");
+			menuChoisi = false;
+		}
+		return menuChoisi;
+	}
 }

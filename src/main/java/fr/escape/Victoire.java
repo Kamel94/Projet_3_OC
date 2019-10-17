@@ -1,14 +1,15 @@
 package fr.escape;
 
-import fr.configuration.Configuration;
+//import fr.configuration.Configuration;
 import fr.configuration.Log;
+import fr.configuration.Singleton;
 
 public class Victoire {
 
-	Configuration conf = new Configuration();
+	//Configuration conf = new Configuration();
 
-	int nbrEssai = conf.nbEssai();
-	int chiffreCombi = conf.tailleCombi();
+	int nbrEssai = Singleton.getInstance().nbEssai();
+	int chiffreCombi = Singleton.getInstance().tailleCombi();
 
 	public String victoire() {
 
