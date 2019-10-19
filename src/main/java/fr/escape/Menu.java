@@ -28,12 +28,12 @@ public class Menu {
 			System.out.print("\nVeuillez entrer un chiffre entre 1 et 4. \nEntrez votre choix : ");
 
 			String choix = ordinateur.lireSaisieUtilisateur(1);
-			int c = 0;
+			int choixMode = 0;
 			try {
-				c = Integer.parseInt(choix);
+				choixMode = Integer.parseInt(choix);
 			} catch (NumberFormatException e) {
 			} 
-			if(choixDebut(c, menuChoisi) == true) {
+			if(menuDebut(choixMode, menuChoisi) == true) {
 				menuChoisi = true;
 			}
 		} // Fin while
@@ -41,10 +41,8 @@ public class Menu {
 
 	public void finPartie(int choixFin) { // Méthode pour demander de rejouer, changer de mode ou quitter le jeu.
 
-		String mode = "";
 		String choix;
-		int essai = 0;
-		int c = 0;
+		int choixMenu = 0;
 
 		System.out.println("");
 		Log.logger.info("Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.");
@@ -57,46 +55,16 @@ public class Menu {
 			choix = ordinateur.lireSaisieUtilisateur(1);
 
 			try {
-				c = Integer.parseInt(choix);
+				choixMenu = Integer.parseInt(choix);
 			} catch (NumberFormatException e) {
-			} 
-
-			switch (c) {
-			case 1 : // Entre directement dans le mode choisi précédemment sans passer par le menu.
-				if(choixFin == 1) { 
-					mode = mode1;
-					Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode + "\n");
-					clef = ordinateur.combinaisonAleatoire();
-					challenger.partie(clef);
-				} else if (choixFin == 2) {
-					mode = mode2;
-					Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode);
-					defenseur.partie(clef);
-				} else if (choixFin == 3) {
-					mode = mode3;
-					Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode);
-					duel.partie(essai);
-				}
+			}
+			if(menuFin(choixMenu, menuChoisi, choixFin) == true) {
 				menuChoisi = true;
-				finPartie(choixFin); 
-				break;
-			case 2 : // Sort de la boucle et revient dans le menu pour changer de mode.
-				Log.logger.info("\nVous avez choisi de changer de mode." + "\n");
-				demarrage(); // Appel le menu pour choisir un autre mode.
-				menuChoisi = true;
-				break;
-			case 3 : // Sort de la boucle et ne revient pas dans le menu.
-				Log.logger.trace("\nFin du jeu. " + "\nVous avez choisi de quitter le jeu, merci et à bientôt.");
-				menuChoisi = true;
-				break;
-			default :
-				Log.logger.error("\nVous n'avez pas choisi une réponse parmis les choix proposés.");
-				menuChoisi = false;
 			}
 		} // Fin while
 	} // Fin méthode finPartie()
-	
-	public boolean choixDebut(int choix, boolean menuChoisi) {
+
+	public boolean menuDebut(int choix, boolean menuChoisi) {
 		switch (choix) {
 		case 1 :
 			Log.logger.info("\nVous avez choisi le mode : " + mode1);
@@ -123,7 +91,41 @@ public class Menu {
 		default :
 			Log.logger.error("\nVous n'avez pas choisi une réponse parmis les choix proposés.");
 			menuChoisi = false;
-		}
+		} // Fin switch
 		return menuChoisi;
-	}
+	} // Fin méthode menuDebut
+
+	public boolean menuFin(int choix, boolean menuChoisi, int choixFin) {
+		int essai = 0;
+		switch (choix) {
+		case 1 : // Entre directement dans le mode choisi précédemment sans passer par le menu.
+			if(choixFin == 1) { 
+				Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode1 + "\n");
+				clef = ordinateur.combinaisonAleatoire();
+				challenger.partie(clef);
+			} else if (choixFin == 2) {
+				Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode2);
+				defenseur.partie(essai);
+			} else if (choixFin == 3) {
+				Log.logger.info("\nVous avez choisi de rejouer au mode : " + mode3);
+				duel.partie(essai);
+			}
+			menuChoisi = true;
+			finPartie(choixFin); 
+			break;
+		case 2 : // Sort de la boucle et revient dans le menu pour changer de mode.
+			Log.logger.info("\nVous avez choisi de changer de mode." + "\n");
+			demarrage(); // Appel le menu pour choisir un autre mode.
+			menuChoisi = true;
+			break;
+		case 3 : // Sort de la boucle et ne revient pas dans le menu.
+			Log.logger.trace("\nFin du jeu. " + "\nVous avez choisi de quitter le jeu, merci et à bientôt.");
+			menuChoisi = true;
+			break;
+		default :
+			Log.logger.error("\nVous n'avez pas choisi une réponse parmis les choix proposés.");
+			menuChoisi = false;
+		} // Fin switch
+		return menuChoisi;
+	} // Fin méthode menuFin
 }

@@ -79,7 +79,7 @@ public abstract class Jeu   {
 	public boolean activationModeDev(int clef) {
 		if (dev) {
 			Log.logger.info("\nMode développeur activé");
-			Log.logger.info("\nLa combinaison est : " + clef);
+			Log.logger.info("\nLa combinaison est : " + clef + "\n");
 		}
 		return true;
 	}

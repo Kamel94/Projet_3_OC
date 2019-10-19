@@ -31,7 +31,7 @@ public class Duel extends Jeu {
 		while(tentative < nbrEssai){
 			tentative++;
 			essai++;
-			Log.logger.info("\nEssai n° : " + essai + "\n");
+			Log.logger.info("Essai n° : " + essai + "\n");
 
 			System.out.print("Proposition joueur : ");
 			String proposition = ordinateur.lireSaisieUtilisateur(tailleCombi);
@@ -43,13 +43,11 @@ public class Duel extends Jeu {
 			this.nouvelleProposition = nouvelleProposition(reponseJoueur, propositionIA, essai);
 			System.out.println("");
 
-			if(v.conditionGagnantPerdantDuel(proposition, reponseIA, reponseJoueur, propositionIA, tentative, essai, clef).equals("victoire")) {
+			if(v.conditionGagnantPerdant(proposition, reponseIA, reponseJoueur, propositionIA, tentative, essai, clef).equals("victoire")) {
 				tentative = nbrEssai;
 				nouvelleProposition = null;
 			} else if(essai == nbrEssai){
 				nouvelleProposition = null;
-			} else if(essai == nbrEssai - 1) {
-				System.out.println("\nAttention il vous reste 1 essai !!");
 			}
 		} //fin while
 

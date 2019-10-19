@@ -26,18 +26,18 @@ public class Challenger extends Jeu {
 
 		while(essai != nbrEssai) {
 			essai++;
-			Log.logger.info("\nEssai n° : " + essai);
+			Log.logger.info("Essai n° : " + essai);
 			System.out.print("\nProposition joueur : ");
 			proposition = ordinateur.lireSaisieUtilisateur(tailleCombi);
 			reponse = comparaison(proposition, combinaison);
 
-			if(v.conditionGagnantPerdantChallenger(proposition, reponse, clef).equals("victoire")) {
-				Log.logger.info("Félicitation vous avez gagné !! \n" + "Vous avez trouvé la bonne combinaison en " + essai + " essai(s).");
+			if(v.conditionGagnantPerdant(reponse, proposition, clef, essai).equals("victoire")) {
+				Log.logger.info("\nFélicitation vous avez gagné !! \n" + "Vous avez trouvé la bonne combinaison en " + essai + " essai(s).");
 				essai = nbrEssai;
 			} else if (essai == nbrEssai) {
-				Log.logger.info("\nDésolé vous avez atteint le nombre d'essais maximum... \nLa combinaison était : " + clef);
+				Log.logger.info("Désolé vous avez atteint le nombre d'essais maximum... \nLa combinaison était : " + clef);
 			} else if(essai == nbrEssai - 1) {
-				System.out.println("\nAttention il vous reste 1 essai !!");
+				System.out.println("C'est le dernier essai !!" + "\n");
 			}
 		} //fin while
 	} // fin méthode partie
