@@ -2,14 +2,14 @@ package fr.main;
 
 import java.lang.String;
 
-import fr.escape.Demarrer;
-import fr.escape.Lancement;
+import fr.escape.MenuPrincipal;
+import fr.escape.ListeDuMenu;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		Demarrer m = new Demarrer(new Lancement());
-		m.choisirMenu("Début");
+		ListeDuMenu menu = new ListeDuMenu(new MenuPrincipal());
+		menu.choisirMenu("Début");
 	}
 }

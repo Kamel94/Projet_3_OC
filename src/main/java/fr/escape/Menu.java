@@ -1,6 +1,6 @@
 package fr.escape;
 
-public abstract class Menu implements ListeDuMenu {
+public abstract class Menu implements LancementDuMenu {
 
 	public abstract void titre();
 	public abstract void description();
@@ -11,11 +11,11 @@ public abstract class Menu implements ListeDuMenu {
 	}
 
 	@Override
-	public ListeDuMenu liste(String type) {
+	public LancementDuMenu lancement(String type) {
 
 		Menu liste = null;
 		if(type.equals("Début")) {
-			liste = new Lancement();
+			liste = new MenuPrincipal();
 		} else if(type.equals("Fin")) {
 			liste = new FinDePartie();
 		}

@@ -32,7 +32,7 @@ public class FinDePartie extends Menu {
 
 	@Override
 	public int choix(int choixFin) {
-		Demarrer menu = new Demarrer(new Lancement());
+		ListeDuMenu menu = new ListeDuMenu(new MenuPrincipal());
 		titre();
 		description();
 
