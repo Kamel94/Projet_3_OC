@@ -1,17 +1,14 @@
 package fr.escape;
 
-//import fr.configuration.Configuration;
 import fr.configuration.Log;
-import fr.configuration.Singleton;
 
 public class Duel extends Jeu {
 
-	//Configuration conf = new Configuration();
 	Ordinateur ordinateur = new Ordinateur();
 
-	int nbrEssai = Singleton.getInstance().nbEssai();
-	int tailleCombi = Singleton.getInstance().tailleCombi();
-	String victoire = v.victoire();
+	int nbrEssai = configuration.nbEssai();
+	int tailleCombi = configuration.tailleCombi();
+	String victoire = victoire();
 
 	@Override
 	public void partie(int clef) {
@@ -23,27 +20,25 @@ public class Duel extends Jeu {
 		clef = ordinateur.combinaisonAleatoire();
 		String combinaison = "" + clef;
 		String reponseJoueur = "";
+		boolean menuChoisi = true;
 
-		System.out.println("\nBienvenue dans le mode Duel ! \nDans ce mode, vous et l'IA jouez chacun votre tour pour deviner la combinaison de l'autre." + "\nLe premier qui aura trouvé la combinaison de son adversaire aura gagné la partie !!" + "\n" + "Attention !! Vous aurez chacun uniquement " + nbrEssai + " essai(s) pour trouver la bonne combinaison..." + "\n" + "Bonne partie et que le meilleur gagne !!!");
+		Log.logger.info("\nBienvenue dans le mode Duel ! \nDans ce mode, vous et l'IA jouez chacun votre tour pour deviner la combinaison de l'autre." + "\nLe premier qui aura trouvé la combinaison de son adversaire aura gagné la partie !!" + "\n" + "Attention !! Vous aurez chacun uniquement " + nbrEssai + " essai(s) pour trouver la bonne combinaison..." + "\n" + "Bonne partie et que le meilleur gagne !!!");
 
 		activationModeDev(clef);
 
 		while(tentative < nbrEssai){
 			tentative++;
 			essai++;
-			Log.logger.info("Essai n° : " + essai + "\n");
-
-			System.out.print("Proposition joueur : ");
-			String proposition = ordinateur.lireSaisieUtilisateur(tailleCombi);
+			Log.logger.info("Essai n° : " + essai);
+			String proposition = ordinateur.lireSaisieUtilisateur(tailleCombi, menuChoisi);
 			System.out.println("");
 			reponseIA = comparaison(proposition, combinaison);
 			String propositionIA = String.valueOf(ordinateur.premiereProposition(this.nouvelleProposition));
-			System.out.print("Réponse joueur : ");
 			reponseJoueur = joueur.reponseJoueur();
 			this.nouvelleProposition = nouvelleProposition(reponseJoueur, propositionIA, essai);
 			System.out.println("");
 
-			if(v.conditionGagnantPerdant(proposition, reponseIA, reponseJoueur, propositionIA, tentative, essai, clef).equals("victoire")) {
+			if(conditionGagnantPerdant(proposition, reponseIA, reponseJoueur, propositionIA, tentative, essai, clef).equals("victoire")) {
 				tentative = nbrEssai;
 				nouvelleProposition = null;
 			} else if(essai == nbrEssai){

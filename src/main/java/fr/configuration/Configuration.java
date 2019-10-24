@@ -2,17 +2,25 @@ package fr.configuration;
 
 import java.util.ResourceBundle;
 
-public class Configuration {
+public final class Configuration {
 
-	ResourceBundle bundle = ResourceBundle.getBundle("config");
+	private static volatile Configuration instance = null;
+	private ResourceBundle bundle = ResourceBundle.getBundle("config");
+	static {
+		instance = new Configuration();
+	}
 
-	public boolean modeDev() {
-		if(bundle.getString("mode.developpeur").equals("true")) {
-			return true;
+	private Configuration() {}
+
+	public static Configuration getInstance() {
+		if (Configuration.instance == null) {
+			synchronized(Configuration.class) {
+				if (Configuration.instance == null) {
+					Configuration.instance = new Configuration();
+				}
+			}
 		}
-		else {
-			return false;
-		}
+		return Configuration.instance;
 	}
 
 	public int nbEssai() {
@@ -23,5 +31,14 @@ public class Configuration {
 	public int tailleCombi() {
 		String nbrChiffre = bundle.getString("nbrChiffre");
 		return Integer.parseInt(nbrChiffre);
+	}
+
+	public boolean modeDev() {
+		if(bundle.getString("mode.developpeur").equals("true")) {
+			return true;
+		}
+		else {
+			return false;
+		}
 	}
 }
