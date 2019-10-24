@@ -11,6 +11,7 @@ public class Lancement extends Menu {
 	Utilitaire utilitaire = new Utilitaire();
 
 	int clef = ordinateur.combinaisonAleatoire();
+	public final static int MENU1 = 1;
 	public final static int MODE_CHALLENGER = 1;
 	public final static int MODE_DEFENSEUR = 2;
 	public final static int MODE_DUEL = 3;
@@ -30,9 +31,8 @@ public class Lancement extends Menu {
 	public int choix(int choixMenu) {
 
 		FinDePartie fin = new FinDePartie();
-		boolean menuChoisi = false;
 
-		String saisie = ordinateur.lireSaisieUtilisateur(1, menuChoisi);
+		String saisie = ordinateur.lireSaisieUtilisateur(MENU1);
 		choixMenu = 0;
 		try {
 			choixMenu = Integer.parseInt(saisie);

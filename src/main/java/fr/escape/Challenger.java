@@ -16,7 +16,6 @@ public class Challenger extends Jeu {
 		int essai = 0;
 		String reponse = "";
 		String combinaison = "" + clef;
-		boolean menuChoisi = true;
 
 		Log.logger.info("\nBienvenue dans le mode Challenger." + "\nDans ce mode l'IA choisi une combinaison de " + chiffreCombi + " chiffres et vous devez trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !!");
 
@@ -25,7 +24,7 @@ public class Challenger extends Jeu {
 		while(essai != nbrEssai) {
 			essai++;
 			Log.logger.info("Essai n° : " + essai);
-			proposition = ordinateur.lireSaisieUtilisateur(tailleCombi, menuChoisi);
+			proposition = ordinateur.lireSaisieUtilisateur(tailleCombi);
 			reponse = comparaison(proposition, combinaison);
 
 			if(conditionGagnantPerdant(reponse, proposition, clef, essai).equals("victoire")) {

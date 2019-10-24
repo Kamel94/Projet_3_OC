@@ -10,6 +10,7 @@ public class FinDePartie extends Menu {
 	Ordinateur ordinateur = new Ordinateur();
 	int clef = ordinateur.combinaisonAleatoire();
 
+	public final static int MENU2 = 2;
 	public final static int REJOUER = 1;
 	public final static int CHANGER_MODE = 2;
 	public final static int QUITTER = 3;
@@ -31,12 +32,11 @@ public class FinDePartie extends Menu {
 
 	@Override
 	public int choix(int choixFin) {
-		boolean menuChoisi = false;
 		Demarrer menu = new Demarrer(new Lancement());
 		titre();
 		description();
 
-		String saisie = ordinateur.lireSaisieUtilisateur(1, menuChoisi);
+		String saisie = ordinateur.lireSaisieUtilisateur(MENU2);
 		int choixMenu = 0;
 		try {
 			choixMenu = Integer.parseInt(saisie);

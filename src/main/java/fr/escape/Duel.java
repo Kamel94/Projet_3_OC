@@ -20,7 +20,6 @@ public class Duel extends Jeu {
 		clef = ordinateur.combinaisonAleatoire();
 		String combinaison = "" + clef;
 		String reponseJoueur = "";
-		boolean menuChoisi = true;
 
 		Log.logger.info("\nBienvenue dans le mode Duel ! \nDans ce mode, vous et l'IA jouez chacun votre tour pour deviner la combinaison de l'autre." + "\nLe premier qui aura trouvé la combinaison de son adversaire aura gagné la partie !!" + "\n" + "Attention !! Vous aurez chacun uniquement " + nbrEssai + " essai(s) pour trouver la bonne combinaison..." + "\n" + "Bonne partie et que le meilleur gagne !!!");
 
@@ -30,7 +29,7 @@ public class Duel extends Jeu {
 			tentative++;
 			essai++;
 			Log.logger.info("Essai n° : " + essai);
-			String proposition = ordinateur.lireSaisieUtilisateur(tailleCombi, menuChoisi);
+			String proposition = ordinateur.lireSaisieUtilisateur(tailleCombi);
 			System.out.println("");
 			reponseIA = comparaison(proposition, combinaison);
 			String propositionIA = String.valueOf(ordinateur.premiereProposition(this.nouvelleProposition));

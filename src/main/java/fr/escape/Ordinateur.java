@@ -9,6 +9,8 @@ public class Ordinateur {
 	Utilitaire utilitaire = new Utilitaire();
 
 	int tailleCombi = configuration.tailleCombi();
+	public final static int MENU1 = 1;
+	public final static int MENU2 = 2;
 
 	public int combinaisonAleatoire() {
 
@@ -47,19 +49,14 @@ public class Ordinateur {
 		return propositionIA;
 	} // fin méthode premiereProposition
 
-	public String lireSaisieUtilisateur(int tailleSaisie, boolean menuChoisi) {
+	public String lireSaisieUtilisateur(int menu) {
 
 		String saisie = "";
 		String expression = "^[0-9]+$";
-		String menu = "";
-
-
 		int saisieMenu = 0;
 
-		if(menuChoisi == false) {
+		if(menu == MENU1 || menu == MENU2) {
 			System.out.print("\nVeuillez entrer un chiffre parmis les choix proposés. \nEntrez votre choix : ");
-			menu = "Menu";
-
 			try {
 				saisieMenu = Integer.parseInt(saisie);
 			} catch (NumberFormatException e) {
@@ -72,10 +69,21 @@ public class Ordinateur {
 		saisie = utilitaire.clavier();
 		saisie.matches(expression);
 
-		if(menu.equals("Menu")) {
+		if(menu == MENU1) {
 			while(Integer.parseInt(saisie) < 1 || Integer.parseInt(saisie) > 4) {
 				Log.logger.fatal("\nVous n'avez pas entré le bon chiffre !!");
-				saisie = lireSaisieUtilisateur(tailleSaisie, menuChoisi);
+				saisie = lireSaisieUtilisateur(menu);
+			}
+		} else if(menu == MENU2) {
+			while(Integer.parseInt(saisie) < 1 || Integer.parseInt(saisie) > 3) {
+				Log.logger.fatal("\nVous n'avez pas entré le bon chiffre !!");
+				saisie = lireSaisieUtilisateur(menu);
+			}
+		} else {
+			while(saisie.length() != tailleCombi) {
+				Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!");
+				Log.logger.fatal("\nProposition : " + saisie + " -> Réponse : Vous devez entrer " + tailleCombi + " chiffres !");
+				saisie = lireSaisieUtilisateur(menu);
 			}
 		}
 
@@ -83,15 +91,6 @@ public class Ordinateur {
 			Log.logger.error("\nVeuillez entrer uniquement des chiffres svp !");
 			System.out.print("Recommencez : ");
 			saisie = utilitaire.clavier();
-		}
-
-		if(tailleSaisie == tailleCombi) {
-			while(saisie.length() != tailleCombi) {
-				Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!" + "\nVous devez entrer " + tailleCombi + " chiffres !");
-				Log.logger.fatal("\nProposition : " + saisie);
-				System.out.print("\nProposition joueur : ");
-				saisie = lireSaisieUtilisateur(tailleSaisie, menuChoisi);
-			}
 		}
 		return saisie;
 	}
