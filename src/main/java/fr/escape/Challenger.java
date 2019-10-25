@@ -27,11 +27,11 @@ public class Challenger extends Jeu {
 			proposition = ordinateur.lireSaisieUtilisateur(tailleCombi);
 			reponse = comparaison(proposition, combinaison);
 
-			if(conditionGagnantPerdant(reponse, proposition, clef, essai).equals("victoire")) {
-				Log.logger.info("\nFélicitation vous avez gagné !! \n" + "Vous avez trouvé la bonne combinaison en " + essai + " essai(s).");
+			if(conditionGagnantPerdant(reponse, proposition).equals("victoire")) {
+				Log.logger.info("\nFélicitation vous avez gagné !! \n" + "Vous avez trouvé la bonne combinaison en " + essai + " essai(s).\n");
 				essai = nbrEssai;
 			} else if (essai == nbrEssai) {
-				Log.logger.info("Désolé vous avez atteint le nombre d'essais maximum... \nLa combinaison était : " + clef);
+				Log.logger.info("Désolé vous avez atteint le nombre d'essais maximum... \nLa combinaison était : " + clef + "\n");
 			} else if(essai == nbrEssai - 1) {
 				System.out.println("C'est le dernier essai !!" + "\n");
 			}

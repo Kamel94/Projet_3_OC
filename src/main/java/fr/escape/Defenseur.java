@@ -22,13 +22,13 @@ public class Defenseur extends Jeu {
 			reponseJoueur = joueur.reponseJoueur();
 			this.nouvelleProposition = nouvelleProposition(reponseJoueur, propositionIA, essai);
 
-			if(conditionGagnantPerdant(reponseJoueur, propositionIA, 0, essai).equals("victoire")) {
-				nouvelleProposition = null;
-				Log.logger.info("\nDommage ! L'IA a gagné... \n" + "L'IA a trouvé la bonne combinaison en " + essai + " essai(s).");
+			if(conditionGagnantPerdant(reponseJoueur, propositionIA).equals("victoire")) {
+				this.nouvelleProposition = null;
+				Log.logger.info("\nDommage ! L'IA a gagné... \n" + "L'IA a trouvé la bonne combinaison en " + essai + " essai(s).\n");
 				essai = nbrEssai + 1;
 			} else if(essai == nbrEssai){
-				nouvelleProposition = null;
-				Log.logger.info("L'IA a atteint le nombre d'essais maximum, vous avez donc gagné !!!" + "\nLa partie est finie !" + "\nL'IA n'a pas réussi à trouver votre combinaison.");
+				this.nouvelleProposition = null;
+				Log.logger.info("L'IA a atteint le nombre d'essais maximum, vous avez donc gagné !!!" + "\nL'IA n'a pas réussi à trouver votre combinaison.\n");
 			} else if(essai == nbrEssai - 1) {
 				System.out.println("C'est le dernier essai !!" + "\n");
 			}

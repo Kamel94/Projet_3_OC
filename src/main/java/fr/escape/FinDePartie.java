@@ -22,7 +22,7 @@ public class FinDePartie extends Menu {
 
 	@Override
 	public void titre() {
-		System.out.println("\nVous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.\n" + "Tapez : \n");
+		System.out.println("Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.\n" + "Tapez : \n");
 	}
 
 	@Override
@@ -63,7 +63,7 @@ public class FinDePartie extends Menu {
 			menu.choisirMenu("Début");
 			choixMenu = 0;
 		} else if(choixMenu == QUITTER) {
-			Log.logger.info("Vous avez choisi de quitter.");
+			Log.logger.info("\nVous avez choisi de quitter.");
 			fin();
 		}
 		return choixMenu;

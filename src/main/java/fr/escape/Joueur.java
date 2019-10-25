@@ -30,5 +30,4 @@ public class Joueur {
 		}
 		return reponseJoueur;
 	} // fin méthode reponseJoueur
-
 }

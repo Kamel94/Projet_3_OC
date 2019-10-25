@@ -29,7 +29,7 @@ public class Ordinateur {
 		return nombreAleatoire;
 	}
 
-	public int premiereProposition(String valeur1) {
+	public int premiereProposition(String nouvelleProposition) {
 
 		char[] taille = new char [tailleCombi];
 
@@ -40,10 +40,10 @@ public class Ordinateur {
 		String proposition = String.valueOf(taille);
 		int propositionIA = Integer.parseInt(proposition);
 
-		if(valeur1 == null) {
+		if(nouvelleProposition == null) {
 			Log.logger.info("Première proposition IA : " + propositionIA);	
 		} else {
-			propositionIA = Integer.parseInt(valeur1);
+			propositionIA = Integer.parseInt(nouvelleProposition);
 			Log.logger.info("Nouvelle proposition IA : " + propositionIA);
 		}
 		return propositionIA;
@@ -70,23 +70,24 @@ public class Ordinateur {
 		saisie.matches(expression);
 
 		if(menu == MENU1) {
-			while(Integer.parseInt(saisie) < 1 || Integer.parseInt(saisie) > 4) {
-				Log.logger.fatal("\nVous n'avez pas entré le bon chiffre !!");
-				saisie = lireSaisieUtilisateur(menu);
-			}
+			try {
+				while(Integer.parseInt(saisie) < 1 || Integer.parseInt(saisie) > 4) {
+					Log.logger.fatal("\nVous n'avez pas entré le bon chiffre !!");
+					saisie = lireSaisieUtilisateur(menu);
+				}} catch (NumberFormatException e) {
+				}
 		} else if(menu == MENU2) {
 			while(Integer.parseInt(saisie) < 1 || Integer.parseInt(saisie) > 3) {
 				Log.logger.fatal("\nVous n'avez pas entré le bon chiffre !!");
 				saisie = lireSaisieUtilisateur(menu);
 			}
-		} else {
+		} else if(menu == tailleCombi) {
 			while(saisie.length() != tailleCombi) {
 				Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!");
 				Log.logger.fatal("\nProposition : " + saisie + " -> Réponse : Vous devez entrer " + tailleCombi + " chiffres !");
 				saisie = lireSaisieUtilisateur(menu);
 			}
-		}
-
+		} 
 		while(saisie.matches(expression) == false) {
 			Log.logger.error("\nVeuillez entrer uniquement des chiffres svp !");
 			System.out.print("Recommencez : ");

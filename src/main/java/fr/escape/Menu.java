@@ -7,7 +7,7 @@ public abstract class Menu implements LancementDuMenu {
 	public abstract int choix(int choix);
 
 	public void fin() {
-		System.out.println("Le jeu est fini.\n" + "Merci d'avoir joué et à bientôt !");
+		System.out.print("Le jeu est fini.\n" + "Merci d'avoir joué et à bientôt !");
 	}
 
 	@Override
