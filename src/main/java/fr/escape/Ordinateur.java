@@ -68,26 +68,28 @@ public class Ordinateur {
 
 		saisie = utilitaire.clavier();
 		saisie.matches(expression);
+		try {
+			if(menu == MENU1) {
 
-		if(menu == MENU1) {
-			try {
 				while(Integer.parseInt(saisie) < 1 || Integer.parseInt(saisie) > 4) {
 					Log.logger.fatal("\nVous n'avez pas entré le bon chiffre !!");
 					saisie = lireSaisieUtilisateur(menu);
-				}} catch (NumberFormatException e) {
 				}
-		} else if(menu == MENU2) {
-			while(Integer.parseInt(saisie) < 1 || Integer.parseInt(saisie) > 3) {
-				Log.logger.fatal("\nVous n'avez pas entré le bon chiffre !!");
-				saisie = lireSaisieUtilisateur(menu);
-			}
-		} else if(menu == tailleCombi) {
-			while(saisie.length() != tailleCombi) {
-				Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!");
-				Log.logger.fatal("\nProposition : " + saisie + " -> Réponse : Vous devez entrer " + tailleCombi + " chiffres !");
-				saisie = lireSaisieUtilisateur(menu);
-			}
-		} 
+			} else if(menu == MENU2) {
+				while(Integer.parseInt(saisie) < 1 || Integer.parseInt(saisie) > 3) {
+					Log.logger.fatal("\nVous n'avez pas entré le bon chiffre !!");
+					saisie = lireSaisieUtilisateur(menu);
+				}
+			} else if(menu == tailleCombi) {
+				while(saisie.length() != tailleCombi) {
+					Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!");
+					Log.logger.fatal("\nProposition : " + saisie + " -> Réponse : Vous devez entrer " + tailleCombi + " chiffres !");
+					saisie = lireSaisieUtilisateur(menu);
+				}
+			} 
+		} catch (NumberFormatException e) {
+			System.out.println("Vous n'avez rien saisie... ");
+		}
 		while(saisie.matches(expression) == false) {
 			Log.logger.error("\nVeuillez entrer uniquement des chiffres svp !");
 			System.out.print("Recommencez : ");

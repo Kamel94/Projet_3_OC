@@ -1,19 +1,20 @@
 package fr.escape;
 
 import fr.configuration.*;
+import static fr.escape.Utilitaire.*;
 
-public class Defenseur extends Jeu {
+public class Defenseur extends AbstractJeu {
 
-	int nbrEssai = Configuration.getInstance().nbEssai();
-	int tailleCombi = Configuration.getInstance().tailleCombi();
+	@Override
+	public void regleDuMode() {
+		Log.logger.info("\nBienvenue dans le mode Défenseur." + "\nDans ce mode vous devez choisir une combinaison de " + tailleCombi + " chiffres et l'IA doit trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !! \n");
+	}
 
 	@Override
 	public void partie(int essai) {
 
 		String reponseJoueur = "";
 		essai = 0;
-
-		Log.logger.info("\nBienvenue dans le mode Défenseur." + "\nDans ce mode vous devez choisir une combinaison de " + tailleCombi + " chiffres et l'IA doit trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !! \n");
 
 		while(essai < nbrEssai) {
 			essai++;

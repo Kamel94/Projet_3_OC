@@ -1,14 +1,14 @@
 package fr.escape;
 
 import fr.configuration.Log;
+import static fr.escape.Utilitaire.*;
 
-public class Challenger extends Jeu {
+public class Challenger extends AbstractJeu {
 
-	Ordinateur ordinateur = new Ordinateur();
-
-	int nbrEssai = configuration.nbEssai();
-	int chiffreCombi = configuration.tailleCombi();
-	int clef = ordinateur.combinaisonAleatoire();
+	@Override
+	public void regleDuMode() {
+		Log.logger.info("\nBienvenue dans le mode Challenger." + "\nDans ce mode l'IA choisi une combinaison de " + chiffreCombi + " chiffres et vous devez trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !!");
+	}
 
 	public void partie(int clef) {
 
@@ -16,8 +16,6 @@ public class Challenger extends Jeu {
 		int essai = 0;
 		String reponse = "";
 		String combinaison = "" + clef;
-
-		Log.logger.info("\nBienvenue dans le mode Challenger." + "\nDans ce mode l'IA choisi une combinaison de " + chiffreCombi + " chiffres et vous devez trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !!");
 
 		activationModeDev(clef);
 
