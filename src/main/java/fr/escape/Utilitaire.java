@@ -18,7 +18,7 @@ public class Utilitaire {
 	public final static int QUITTER = 3;
 
 	static Configuration configuration = Configuration.getInstance();
-	static Ordinateur ordinateur = new Ordinateur();
+	static IA IA = new IA();
 	public final static boolean dev = configuration.modeDev(); // Récupère la valeur de la méthode dans la classe configuration pour déterminer l'activation ou non du mode développeur.
 	public final static int tailleCombi = configuration.tailleCombi();
 	public final static int nbrEssai = configuration.nbEssai();

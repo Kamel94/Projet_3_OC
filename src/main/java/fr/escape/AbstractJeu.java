@@ -7,37 +7,19 @@ public abstract class AbstractJeu implements IJeu {
 
 	public String nouvelleProposition;
 
-	@Override
-	public IJeu creationDuMode(int type) {
-
-		AbstractJeu mode = null;
-
-		if(type == MODE_CHALLENGER) {
-			mode = new Challenger();
-		} else if(type == MODE_DEFENSEUR) {
-			mode = new Defenseur();
-		} else if(type == MODE_DUEL) {
-			mode = new Duel();
-		}
-		return mode;
-	}
-
 	public String comparaison(String proposition, String combinaisonIA) {
 
 		String reponse = "";
 
-		try {
-			for (int i = 0; i < tailleCombi; i++) {
-				if (proposition.charAt(i) > combinaisonIA.charAt(i)) {
-					reponse += "-";
-				} else if (proposition.charAt(i) < combinaisonIA.charAt(i)) {
-					reponse += "+";
-				} else {
-					reponse += "=";
-				}
-			} // fin for
-		} catch (StringIndexOutOfBoundsException e) {
-		}
+		for (int i = 0; i < tailleCombi; i++) {
+			if (proposition.charAt(i) > combinaisonIA.charAt(i)) {
+				reponse += "-";
+			} else if (proposition.charAt(i) < combinaisonIA.charAt(i)) {
+				reponse += "+";
+			} else {
+				reponse += "=";
+			}
+		} // fin for
 		return reponse;
 	}
 
@@ -49,10 +31,7 @@ public abstract class AbstractJeu implements IJeu {
 		char[] r = reponseJoueur.toCharArray();
 
 		for (char reponse : r) {
-			try {
-				proposition = Integer.parseInt(String.valueOf(propositionIA.charAt(i)));
-			} catch (StringIndexOutOfBoundsException e) {
-			}
+			proposition = Integer.parseInt(String.valueOf(propositionIA.charAt(i)));
 
 			if (String.valueOf(reponse).equals("=")) {
 				nouvelleProposition += proposition;

@@ -19,7 +19,7 @@ public class SecondMenu extends AbstractMenu {
 		if(menu.equalsIgnoreCase("choix 1")) {
 			if(choixFin == MODE_CHALLENGER) { 
 				Log.logger.info("\nVous avez choisi de rejouer au mode : Challenger.");
-				clef = ordinateur.combinaisonAleatoire();
+				clef = IA.combinaisonAleatoire();
 				mode.choisirMode(MODE_CHALLENGER);
 				choixMenu = choix(MODE_CHALLENGER);
 			} else if (choixFin == MODE_DEFENSEUR) {

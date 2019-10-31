@@ -1,15 +1,13 @@
 package fr.escape;
 
 import fr.configuration.Log;
-import fr.configuration.Configuration;
+import static fr.escape.Utilitaire.*;
 
 public class Joueur {
 
 	Utilitaire utilitaire = new Utilitaire();
-	Configuration configuration = Configuration.getInstance();
 
 	public String reponseJoueur() {
-		int tailleCombi = configuration.tailleCombi();
 		String reponseJoueur = "";
 		System.out.print("Réponse joueur : ");
 		reponseJoueur = utilitaire.clavier();

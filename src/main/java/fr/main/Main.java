@@ -2,14 +2,14 @@ package fr.main;
 
 import java.lang.String;
 
-import fr.escape.MenuPrincipal;
-import fr.escape.DeroulageMenu;
+import fr.factory.MenuFactory;
+import fr.escape.Menu;
 
 public class Main {
 
 	public static void main(String[] args) {
 
-		DeroulageMenu menu = new DeroulageMenu(new MenuPrincipal());
+		Menu menu = new Menu(new MenuFactory());
 		menu.choisirMenu("DEBUT");
 	}
 }

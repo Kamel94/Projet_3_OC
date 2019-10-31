@@ -19,7 +19,7 @@ public class Defenseur extends AbstractJeu {
 		while(essai < nbrEssai) {
 			essai++;
 			Log.logger.info("Essai n° : " + essai + "\n");
-			String propositionIA = String.valueOf(ordinateur.premiereProposition(this.nouvelleProposition));
+			String propositionIA = String.valueOf(IA.premiereProposition(this.nouvelleProposition));
 			reponseJoueur = joueur.reponseJoueur();
 			this.nouvelleProposition = nouvelleProposition(reponseJoueur, propositionIA, essai);
 

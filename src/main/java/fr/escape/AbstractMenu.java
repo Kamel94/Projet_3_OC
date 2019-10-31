@@ -6,7 +6,7 @@ import fr.configuration.Log;
 
 public abstract class AbstractMenu implements IMenu {
 
-	public int clef = ordinateur.combinaisonAleatoire();
+	public int clef = IA.combinaisonAleatoire();
 
 	public void fin() {
 		Log.logger.info("\nVous avez choisi de quitter.");
@@ -15,7 +15,8 @@ public abstract class AbstractMenu implements IMenu {
 
 	public String optionMenu(int typeDuMenu, int choixMenu, int secondChoix, int constante1, int constante2, int constante3) {
 
-		String saisie = ordinateur.lireSaisieUtilisateur(typeDuMenu);
+		System.out.print("\nVeuillez entrer un chiffre parmis les choix proposés. \nEntrez votre choix : ");
+		String saisie = IA.lireSaisieUtilisateur(typeDuMenu);
 		choixMenu = Integer.parseInt(saisie);
 
 		if(choixMenu == constante1) {
@@ -29,17 +30,5 @@ public abstract class AbstractMenu implements IMenu {
 			secondChoix = MODE_DUEL;
 		}
 		return saisie;
-	}
-
-	@Override
-	public IMenu creationMenu(String type) {
-
-		AbstractMenu liste = null;
-		if(type.equalsIgnoreCase("DEBUT")) {
-			liste = new MenuPrincipal();
-		} else if(type.equalsIgnoreCase("FIN")) {
-			liste = new SecondMenu();
-		}
-		return liste;
 	}
 }

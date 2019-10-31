@@ -28,10 +28,10 @@ public class Duel extends AbstractJeu {
 			tentative++;
 			essai++;
 			Log.logger.info("Essai n° : " + essai);
-			String proposition = ordinateur.lireSaisieUtilisateur(tailleCombi);
+			String proposition = IA.lireSaisieUtilisateur(tailleCombi);
 			System.out.println("");
 			reponseIA = comparaison(proposition, combinaison);
-			String propositionIA = String.valueOf(ordinateur.premiereProposition(this.nouvelleProposition));
+			String propositionIA = String.valueOf(IA.premiereProposition(this.nouvelleProposition));
 			reponseJoueur = joueur.reponseJoueur();
 			this.nouvelleProposition = nouvelleProposition(reponseJoueur, propositionIA, essai);
 			System.out.println("");

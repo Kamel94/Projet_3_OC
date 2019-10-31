@@ -22,7 +22,7 @@ public class Challenger extends AbstractJeu {
 		while(essai != nbrEssai) {
 			essai++;
 			Log.logger.info("Essai n° : " + essai);
-			proposition = ordinateur.lireSaisieUtilisateur(tailleCombi);
+			proposition = IA.lireSaisieUtilisateur(tailleCombi);
 			reponse = comparaison(proposition, combinaison);
 
 			if(conditionGagnantPerdant(reponse, proposition).equals("victoire")) {
