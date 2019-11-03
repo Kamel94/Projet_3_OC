@@ -25,7 +25,7 @@ public class Challenger extends AbstractJeu {
 			proposition = IA.lireSaisieUtilisateur(tailleCombi);
 			reponse = comparaison(proposition, combinaison);
 
-			if(conditionGagnantPerdant(reponse, proposition).equals("victoire")) {
+			if(conditionGagnantPerdant(reponse, proposition).equals(victoire())) {
 				Log.logger.info("\nFélicitation vous avez gagné !! \n" + "Vous avez trouvé la bonne combinaison en " + essai + " essai(s).\n");
 				essai = nbrEssai;
 			} else if (essai == nbrEssai) {

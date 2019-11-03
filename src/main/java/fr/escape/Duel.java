@@ -36,7 +36,7 @@ public class Duel extends AbstractJeu {
 			this.nouvelleProposition = nouvelleProposition(reponseJoueur, propositionIA, essai);
 			System.out.println("");
 
-			if(conditionGagnantPerdantDuel(proposition, reponseIA, reponseJoueur, propositionIA, tentative, essai, clef).equals("victoire")) {
+			if(conditionGagnantPerdantDuel(proposition, reponseIA, reponseJoueur, propositionIA, tentative, essai, clef).equals(victoire())) {
 				tentative = nbrEssai;
 				nouvelleProposition = null;
 			} else if(essai == nbrEssai){

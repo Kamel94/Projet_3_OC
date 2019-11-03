@@ -23,7 +23,7 @@ public class Defenseur extends AbstractJeu {
 			reponseJoueur = joueur.reponseJoueur();
 			this.nouvelleProposition = nouvelleProposition(reponseJoueur, propositionIA, essai);
 
-			if(conditionGagnantPerdant(reponseJoueur, propositionIA).equals("victoire")) {
+			if(conditionGagnantPerdant(reponseJoueur, propositionIA).equals(victoire())) {
 				this.nouvelleProposition = null;
 				Log.logger.info("\nDommage ! L'IA a gagné... \n" + "L'IA a trouvé la bonne combinaison en " + essai + " essai(s).\n");
 				essai = nbrEssai + 1;

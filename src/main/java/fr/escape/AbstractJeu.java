@@ -1,9 +1,10 @@
 package fr.escape;
 
 import fr.configuration.Log;
+
 import static fr.escape.Utilitaire.*;
 
-public abstract class AbstractJeu implements IJeu {
+public abstract class AbstractJeu implements IMode {
 
 	public String nouvelleProposition;
 
@@ -68,7 +69,7 @@ public abstract class AbstractJeu implements IJeu {
 	}
 
 	public String victoire() {
-		int chiffreCombi = configuration.tailleCombi();
+		int chiffreCombi = tailleCombi;
 		char[] tailleReponse = new char [chiffreCombi];
 		for(int i = 0; i < chiffreCombi ; i++) {
 			tailleReponse[i] = '=';
@@ -83,7 +84,7 @@ public abstract class AbstractJeu implements IJeu {
 		String resultat = "";
 		if (String.valueOf(reponse).equals(victoire())) {
 			Log.logger.info("Proposition : " + proposition + " -> Réponse : " + reponse);
-			resultat = "victoire";
+			resultat = victoire();
 		} else {
 			Log.logger.info("Proposition : " + proposition + " -> Réponse : " + reponse + "\n");
 		}
@@ -94,23 +95,22 @@ public abstract class AbstractJeu implements IJeu {
 		String resultat = "";
 		String reponse = "";
 		String egaux = "";
-		int nbrEssai = configuration.nbEssai();
 
-		if(conditionGagnantPerdant(reponseJoueur, propositionIA).equals("victoire")) {
-			resultat = "victoire";
-			egaux = "égalité"; // Pour déterminer si l'utilisateur et l'IA ont trouvé la bonne combinaison en même temps.
+		if(conditionGagnantPerdant(reponseJoueur, propositionIA).equals(victoire())) {
+			resultat = victoire();
+			egaux = EQUAL; // Pour déterminer si l'utilisateur et l'IA ont trouvé la bonne combinaison en même temps.
 			reponse = "\nDommage ! L'IA a gagné... \n" + "L'IA a trouvé la bonne combinaison en " + essai + " essai(s)." + "\nLa combinaison de l'IA était : " + clef;
 			essai = nbrEssai + 1;// Pour ne pas entrer dans la condition du nombre d'essai limite atteint.
 		}
 
 		if(clef == Integer.parseInt(proposition)) {
 			Log.logger.info("Proposition : " + proposition + " -> Réponse IA : " + reponseIA);
-			if(egaux.equals("égalité")) {
+			if(egaux.equals(EQUAL)) {
 				reponse = "\nIl n'y a pas de gagnant..." + "\nVous avez chacun trouvé la bonne combinaison de l'autre en " + tentative + " essai(s).";
 				tentative = nbrEssai; 
 			} else {
 				reponse = "\nFélicitation vous avez gagné !! \n" + "Vous avez trouvé la bonne combinaison en " + essai + " essai(s).";
-				resultat = "victoire";
+				resultat = victoire();
 				tentative = nbrEssai;
 			}
 		} else if(essai == nbrEssai){

@@ -3,9 +3,10 @@ package fr.escape;
 import static fr.escape.Utilitaire.*;
 
 import fr.configuration.Log;
+import fr.factory.ModeFactory;
 
 public class SecondMenu extends AbstractMenu {
-
+	
 	@Override
 	public int choix(int choixFin) {
 
@@ -14,12 +15,12 @@ public class SecondMenu extends AbstractMenu {
 
 		int choixMenu = 0;
 		int typeDuMenu = MENU2;
-		String menu = optionMenu(typeDuMenu, choixMenu, choixFin, MODE_CHALLENGER, MODE_DEFENSEUR, MODE_DUEL);
+		String menu = choisirOptionMenu(typeDuMenu, choixMenu, MODE_CHALLENGER, MODE_DEFENSEUR, MODE_DUEL);
 
-		if(menu.equalsIgnoreCase("choix 1")) {
+		if(menu.equalsIgnoreCase(CHOIX_1)) {
+			ModeFactory.clef = IA.combinaisonAleatoire();
 			if(choixFin == MODE_CHALLENGER) { 
 				Log.logger.info("\nVous avez choisi de rejouer au mode : Challenger.");
-				clef = IA.combinaisonAleatoire();
 				mode.choisirMode(MODE_CHALLENGER);
 				choixMenu = choix(MODE_CHALLENGER);
 			} else if (choixFin == MODE_DEFENSEUR) {
@@ -31,9 +32,10 @@ public class SecondMenu extends AbstractMenu {
 				mode.choisirMode(MODE_DUEL);
 				choixMenu = choix(MODE_DUEL);
 			}
-		} else if(menu.equalsIgnoreCase("choix 2")) {
+		} else if(menu.equalsIgnoreCase(CHOIX_2)) {
 			Log.logger.info("Vous avez choisi de changer de mode." + "\n");
-			principal.choix(choixFin);
+			ModeFactory.clef = IA.combinaisonAleatoire();
+			menuPrincipal.choix(choixFin);
 		}
 		return choixMenu;
 	}

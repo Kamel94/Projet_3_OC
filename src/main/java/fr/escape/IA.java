@@ -1,11 +1,13 @@
 package fr.escape;
 
 import fr.configuration.Log;
+import fr.factory.IMenuFactory;
+
 import static fr.escape.Utilitaire.*;
 
 public class IA {
 
-	Utilitaire utilitaire = new Utilitaire();
+	Utilitaire utilitaire = IMenuFactory.utilitaire;
 
 	public int combinaisonAleatoire() {
 
