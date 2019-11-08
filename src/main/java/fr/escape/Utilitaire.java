@@ -20,10 +20,6 @@ public class Utilitaire {
 	public final static String CHOIX_1 = "choix 1";
 	public final static String CHOIX_2 = "choix 2";
 	public final static String CHOIX_3 = "choix 3";
-	
-	public final static String DEBUT = "DEBUT";
-	public final static String FIN = "FIN";
-	public final static String EQUAL = "égaux";
 
 	static Configuration configuration = Configuration.getInstance();
 	public final static boolean dev = configuration.modeDev(); // Récupère la valeur de la méthode dans la classe configuration pour déterminer l'activation ou non du mode développeur.

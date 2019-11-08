@@ -1,13 +1,10 @@
 package fr.escape;
 
 import fr.configuration.Log;
-import fr.factory.IMenuFactory;
-
+import fr.factory.ModeFactory;
 import static fr.escape.Utilitaire.*;
 
 public class IA {
-
-	Utilitaire utilitaire = IMenuFactory.utilitaire;
 
 	public int combinaisonAleatoire() {
 
@@ -55,7 +52,7 @@ public class IA {
 			System.out.print("\nProposition joueur : ");
 		}
 
-		saisie = utilitaire.clavier();
+		saisie = ModeFactory.utilitaire.clavier();
 		saisie.matches(expression);
 
 		try {
@@ -85,7 +82,7 @@ public class IA {
 		while(saisie.matches(expression) == false) {
 			Log.logger.error("\nVeuillez entrer uniquement des chiffres svp !");
 			System.out.print("Recommencez : ");
-			saisie = utilitaire.clavier();
+			saisie = ModeFactory.utilitaire.clavier();
 		}
 		return saisie;
 	}

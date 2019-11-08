@@ -3,7 +3,7 @@ package fr.escape;
 import fr.configuration.Log;
 import static fr.escape.Utilitaire.*;
 
-public class Duel extends AbstractJeu {
+public class Duel extends AbstractMode {
 
 	String victoire = victoire();
 
@@ -21,7 +21,6 @@ public class Duel extends AbstractJeu {
 		int tentative = 0; // La condition de la boucle.
 		String combinaison = "" + clef;
 		String reponseJoueur = "";
-
 		activationModeDev(clef);
 
 		while(tentative < nbrEssai){
@@ -35,7 +34,6 @@ public class Duel extends AbstractJeu {
 			reponseJoueur = joueur.reponseJoueur();
 			this.nouvelleProposition = nouvelleProposition(reponseJoueur, propositionIA, essai);
 			System.out.println("");
-
 			if(conditionGagnantPerdantDuel(proposition, reponseIA, reponseJoueur, propositionIA, tentative, essai, clef).equals(victoire())) {
 				tentative = nbrEssai;
 				nouvelleProposition = null;

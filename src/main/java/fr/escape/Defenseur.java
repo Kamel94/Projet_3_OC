@@ -3,7 +3,7 @@ package fr.escape;
 import fr.configuration.*;
 import static fr.escape.Utilitaire.*;
 
-public class Defenseur extends AbstractJeu {
+public class Defenseur extends AbstractMode {
 
 	@Override
 	public void regleDuMode() {

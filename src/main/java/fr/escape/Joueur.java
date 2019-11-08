@@ -1,13 +1,13 @@
 package fr.escape;
 
 import fr.configuration.Log;
-import fr.factory.IMenuFactory;
+import fr.factory.ModeFactory;
 
 import static fr.escape.Utilitaire.*;
 
 public class Joueur {
 
-	Utilitaire utilitaire = IMenuFactory.utilitaire;
+	Utilitaire utilitaire = ModeFactory.utilitaire;
 
 	public String reponseJoueur() {
 		String reponseJoueur = "";

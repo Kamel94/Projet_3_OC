@@ -1,10 +1,17 @@
 package fr.escape;
 
+import fr.configuration.Configuration;
 import fr.configuration.Log;
+import fr.factory.ModeFactory;
 
 import static fr.escape.Utilitaire.*;
 
-public abstract class AbstractJeu implements IMode {
+public abstract class AbstractMode implements IMode {
+
+	Configuration configuration = Configuration.getInstance();
+	IA IA = ModeFactory.IA;
+	Utilitaire utilitaire = ModeFactory.utilitaire;
+	Joueur joueur = ModeFactory.joueur;
 
 	public String nouvelleProposition;
 
@@ -98,14 +105,14 @@ public abstract class AbstractJeu implements IMode {
 
 		if(conditionGagnantPerdant(reponseJoueur, propositionIA).equals(victoire())) {
 			resultat = victoire();
-			egaux = EQUAL; // Pour déterminer si l'utilisateur et l'IA ont trouvé la bonne combinaison en même temps.
+			egaux = "EGAUX"; // Pour déterminer si l'utilisateur et l'IA ont trouvé la bonne combinaison en même temps.
 			reponse = "\nDommage ! L'IA a gagné... \n" + "L'IA a trouvé la bonne combinaison en " + essai + " essai(s)." + "\nLa combinaison de l'IA était : " + clef;
 			essai = nbrEssai + 1;// Pour ne pas entrer dans la condition du nombre d'essai limite atteint.
 		}
 
 		if(clef == Integer.parseInt(proposition)) {
 			Log.logger.info("Proposition : " + proposition + " -> Réponse IA : " + reponseIA);
-			if(egaux.equals(EQUAL)) {
+			if(egaux.equals("EGAUX")) {
 				reponse = "\nIl n'y a pas de gagnant..." + "\nVous avez chacun trouvé la bonne combinaison de l'autre en " + tentative + " essai(s).";
 				tentative = nbrEssai; 
 			} else {

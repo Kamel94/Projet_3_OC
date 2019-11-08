@@ -2,8 +2,10 @@ package fr.escape;
 
 import static fr.escape.Utilitaire.*;
 
+import fr.factory.ModeFactory;
+
 public class MenuPrincipal extends AbstractMenu {
-	
+
 	@Override
 	public int choix(int choixMenu) {
 
@@ -12,19 +14,26 @@ public class MenuPrincipal extends AbstractMenu {
 
 		int typeDuMenu = MENU1;
 		String menu = choisirOptionMenu(typeDuMenu, choixMenu, MODE_CHALLENGER, MODE_DEFENSEUR, MODE_DUEL);
+		IMode mode;
 
 		if(menu.equalsIgnoreCase(CHOIX_1)) {
 			System.out.println("Vous avez choisi le mode : Challenger");
-			mode.choisirMode(MODE_CHALLENGER);
-			secondMenu.choix(MODE_CHALLENGER);
+			mode = ModeFactory.creerMode(MODE_CHALLENGER);
+			mode.regleDuMode();
+			mode.partie(ModeFactory.clef);
+			ModeFactory.secondMenu.choix(MODE_CHALLENGER);
 		} else if(menu.equalsIgnoreCase(CHOIX_2)) {
 			System.out.println("Vous avez choisi le mode : Défenseur");
-			mode.choisirMode(MODE_DEFENSEUR);
-			secondMenu.choix(MODE_DEFENSEUR);
+			mode = ModeFactory.creerMode(MODE_DEFENSEUR);
+			mode.regleDuMode();
+			mode.partie(ModeFactory.clef);
+			ModeFactory.secondMenu.choix(MODE_DEFENSEUR);
 		} else if(menu.equalsIgnoreCase(CHOIX_3)) {
 			System.out.println("Vous avez choisi le mode : Duel");
-			mode.choisirMode(MODE_DUEL);
-			secondMenu.choix(MODE_DUEL);
+			mode = ModeFactory.creerMode(MODE_DUEL);
+			mode.regleDuMode();
+			mode.partie(ModeFactory.clef);
+			ModeFactory.secondMenu.choix(MODE_DUEL);
 		}
 		return choixMenu;
 	}

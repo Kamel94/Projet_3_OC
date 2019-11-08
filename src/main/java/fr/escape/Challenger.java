@@ -1,9 +1,10 @@
 package fr.escape;
 
 import fr.configuration.Log;
+
 import static fr.escape.Utilitaire.*;
 
-public class Challenger extends AbstractJeu {
+public class Challenger extends AbstractMode {
 
 	@Override
 	public void regleDuMode() {
