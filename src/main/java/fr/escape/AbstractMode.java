@@ -10,7 +10,6 @@ public abstract class AbstractMode implements IMode {
 
 	Configuration configuration = Configuration.getInstance();
 	IA IA = ModeFactory.IA;
-	Utilitaire utilitaire = ModeFactory.utilitaire;
 	Joueur joueur = ModeFactory.joueur;
 
 	public String nouvelleProposition;

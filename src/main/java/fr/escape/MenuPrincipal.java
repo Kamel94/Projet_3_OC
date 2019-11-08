@@ -15,24 +15,25 @@ public class MenuPrincipal extends AbstractMenu {
 		int typeDuMenu = MENU1;
 		String menu = choisirOptionMenu(typeDuMenu, choixMenu, MODE_CHALLENGER, MODE_DEFENSEUR, MODE_DUEL);
 		IMode mode;
+		clef = IA.combinaisonAleatoire();
 
 		if(menu.equalsIgnoreCase(CHOIX_1)) {
 			System.out.println("Vous avez choisi le mode : Challenger");
 			mode = ModeFactory.creerMode(MODE_CHALLENGER);
 			mode.regleDuMode();
-			mode.partie(ModeFactory.clef);
+			mode.partie(clef);
 			ModeFactory.secondMenu.choix(MODE_CHALLENGER);
 		} else if(menu.equalsIgnoreCase(CHOIX_2)) {
 			System.out.println("Vous avez choisi le mode : Défenseur");
 			mode = ModeFactory.creerMode(MODE_DEFENSEUR);
 			mode.regleDuMode();
-			mode.partie(ModeFactory.clef);
+			mode.partie(clef);
 			ModeFactory.secondMenu.choix(MODE_DEFENSEUR);
 		} else if(menu.equalsIgnoreCase(CHOIX_3)) {
 			System.out.println("Vous avez choisi le mode : Duel");
 			mode = ModeFactory.creerMode(MODE_DUEL);
 			mode.regleDuMode();
-			mode.partie(ModeFactory.clef);
+			mode.partie(clef);
 			ModeFactory.secondMenu.choix(MODE_DUEL);
 		}
 		return choixMenu;

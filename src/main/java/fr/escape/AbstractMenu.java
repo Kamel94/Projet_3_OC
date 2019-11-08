@@ -6,6 +6,9 @@ import static fr.escape.Utilitaire.*;
 
 public abstract class AbstractMenu implements IMenu {
 
+	IA IA = ModeFactory.IA;
+	public int clef = IA.combinaisonAleatoire();
+
 	public void fin() {
 		Log.logger.info("\nVous avez choisi de quitter.");
 		System.out.print("\n" + "Merci d'avoir joué et à bientôt !");

@@ -17,31 +17,30 @@ public class SecondMenu extends AbstractMenu {
 		int typeDuMenu = MENU2;
 		String menu = choisirOptionMenu(typeDuMenu, choixMenu, MODE_CHALLENGER, MODE_DEFENSEUR, MODE_DUEL);
 		IMode mode;
+		clef = IA.combinaisonAleatoire();
 
 		if(menu.equalsIgnoreCase(CHOIX_1)) {
-			ModeFactory.clef = ModeFactory.IA.combinaisonAleatoire();
 			if(choixFin == MODE_CHALLENGER) { 
 				Log.logger.info("\nVous avez choisi de rejouer au mode : Challenger.");
 				mode = ModeFactory.creerMode(MODE_CHALLENGER);
 				mode.regleDuMode();
-				mode.partie(ModeFactory.clef);
+				mode.partie(clef);
 				choixMenu = choix(MODE_CHALLENGER);
 			} else if (choixFin == MODE_DEFENSEUR) {
 				Log.logger.info("\nVous avez choisi de rejouer au mode : Défenseur.");
 				mode = ModeFactory.creerMode(MODE_DEFENSEUR);
 				mode.regleDuMode();
-				mode.partie(ModeFactory.clef);
+				mode.partie(clef);
 				choixMenu = choix(MODE_DEFENSEUR);
 			} else if (choixFin == MODE_DUEL) {
 				Log.logger.info("\nVous avez choisi de rejouer au mode : Duel.");
 				mode = ModeFactory.creerMode(MODE_DUEL);
 				mode.regleDuMode();
-				mode.partie(ModeFactory.clef);
+				mode.partie(clef);
 				choixMenu = choix(MODE_DUEL);
 			}
 		} else if(menu.equalsIgnoreCase(CHOIX_2)) {
 			Log.logger.info("Vous avez choisi de changer de mode." + "\n");
-			ModeFactory.clef = ModeFactory.IA.combinaisonAleatoire();
 			ModeFactory.menuPrincipal.choix(choixFin);
 		}
 		return choixMenu;

@@ -16,7 +16,7 @@ public class Utilitaire {
 	public final static int REJOUER = 1;
 	public final static int CHANGER_MODE = 2;
 	public final static int QUITTER = 3;
-	
+
 	public final static String CHOIX_1 = "choix 1";
 	public final static String CHOIX_2 = "choix 2";
 	public final static String CHOIX_3 = "choix 3";

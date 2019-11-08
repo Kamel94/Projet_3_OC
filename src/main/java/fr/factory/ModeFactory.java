@@ -13,8 +13,6 @@ public class ModeFactory implements IModeFactory {
 	public static MenuPrincipal menuPrincipal = new MenuPrincipal();
 	public static SecondMenu secondMenu = new SecondMenu();
 
-	public static int clef = IA.combinaisonAleatoire();
-
 	public static IMode creerMode(int type) {
 		IMode mode = null;
 
