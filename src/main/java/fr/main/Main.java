@@ -8,7 +8,8 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		IMenu menu = (IMenu) MenuFactory.creerMenu("DEBUT");
+		MenuFactory menuFactory = MenuFactory.getInstance();
+		IMenu menu = (IMenu) menuFactory.creationMenu("DEBUT");
 		int choix = 0;
 
 		menu.choix(choix);

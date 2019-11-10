@@ -4,7 +4,5 @@ import fr.escape.IMenu;
 
 public interface IMenuFactory {
 
-	public static IMenu creationMenu(String type) {
-		return null;
-	}
+	public IMenu creationMenu(String type);
 }

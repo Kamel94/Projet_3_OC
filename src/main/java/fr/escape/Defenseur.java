@@ -1,9 +1,23 @@
 package fr.escape;
 
 import fr.configuration.*;
+import fr.factory.ModeFactory;
+
 import static fr.escape.Utilitaire.*;
 
 public class Defenseur extends AbstractMode {
+
+	private ModeFactory modeFactory = ModeFactory.getInstance();
+	private IA ia = modeFactory.getIA();
+	private Joueur joueur = modeFactory.getJoueur();
+
+	public Defenseur(ModeFactory modeFactory) {
+		this.modeFactory = modeFactory;
+	}
+
+	public Defenseur(IA ia) {
+		this.ia = ia;
+	}
 
 	@Override
 	public void regleDuMode() {
@@ -19,7 +33,7 @@ public class Defenseur extends AbstractMode {
 		while(essai < nbrEssai) {
 			essai++;
 			Log.logger.info("Essai n° : " + essai + "\n");
-			String propositionIA = String.valueOf(IA.premiereProposition(this.nouvelleProposition));
+			String propositionIA = String.valueOf(ia.premiereProposition(this.nouvelleProposition));
 			reponseJoueur = joueur.reponseJoueur();
 			this.nouvelleProposition = nouvelleProposition(reponseJoueur, propositionIA, essai);
 

@@ -1,11 +1,25 @@
 package fr.escape;
 
 import fr.configuration.Log;
+import fr.factory.ModeFactory;
+
 import static fr.escape.Utilitaire.*;
 
 public class Duel extends AbstractMode {
 
 	String victoire = victoire();
+
+	private ModeFactory modeFactory = ModeFactory.getInstance();
+	private IA ia = modeFactory.getIA();
+	private Joueur joueur = modeFactory.getJoueur();
+
+	public Duel(ModeFactory modeFactory) {
+		this.modeFactory = modeFactory;
+	}
+
+	public Duel(IA ia) {
+		this.ia = ia;
+	}
 
 	@Override
 	public void regleDuMode() {
@@ -27,10 +41,10 @@ public class Duel extends AbstractMode {
 			tentative++;
 			essai++;
 			Log.logger.info("Essai n° : " + essai);
-			String proposition = IA.lireSaisieUtilisateur(tailleCombi);
+			String proposition = ia.lireSaisieUtilisateur(tailleCombi);
 			System.out.println("");
 			reponseIA = comparaison(proposition, combinaison);
-			String propositionIA = String.valueOf(IA.premiereProposition(this.nouvelleProposition));
+			String propositionIA = String.valueOf(ia.premiereProposition(this.nouvelleProposition));
 			reponseJoueur = joueur.reponseJoueur();
 			this.nouvelleProposition = nouvelleProposition(reponseJoueur, propositionIA, essai);
 			System.out.println("");

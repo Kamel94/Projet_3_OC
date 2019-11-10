@@ -1,13 +1,15 @@
 package fr.escape;
 
 import fr.configuration.Log;
-import fr.factory.ModeFactory;
-
 import static fr.escape.Utilitaire.*;
 
 public class Joueur {
 
-	Utilitaire utilitaire = ModeFactory.utilitaire;
+	Utilitaire utilitaire;
+
+	public Joueur(Utilitaire utilitaire) {
+		this.utilitaire = utilitaire;
+	}
 
 	public String reponseJoueur() {
 		String reponseJoueur = "";

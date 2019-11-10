@@ -6,6 +6,14 @@ import fr.factory.ModeFactory;
 
 public class MenuPrincipal extends AbstractMenu {
 
+	private ModeFactory modeFactory = ModeFactory.getInstance();
+	private SecondMenu secondMenu;
+	private IA ia = modeFactory.getIA();
+
+	public MenuPrincipal(SecondMenu secondMenu) {
+		this.secondMenu = secondMenu;
+	}
+
 	@Override
 	public int choix(int choixMenu) {
 
@@ -15,26 +23,26 @@ public class MenuPrincipal extends AbstractMenu {
 		int typeDuMenu = MENU1;
 		String menu = choisirOptionMenu(typeDuMenu, choixMenu, MODE_CHALLENGER, MODE_DEFENSEUR, MODE_DUEL);
 		IMode mode;
-		clef = IA.combinaisonAleatoire();
+		clef = ia.combinaisonAleatoire();
 
 		if(menu.equalsIgnoreCase(CHOIX_1)) {
 			System.out.println("Vous avez choisi le mode : Challenger");
-			mode = ModeFactory.creerMode(MODE_CHALLENGER);
+			mode = modeFactory.creerMode(MODE_CHALLENGER);
 			mode.regleDuMode();
 			mode.partie(clef);
-			ModeFactory.secondMenu.choix(MODE_CHALLENGER);
+			secondMenu.choix(MODE_CHALLENGER);
 		} else if(menu.equalsIgnoreCase(CHOIX_2)) {
 			System.out.println("Vous avez choisi le mode : Défenseur");
-			mode = ModeFactory.creerMode(MODE_DEFENSEUR);
+			mode = modeFactory.creerMode(MODE_DEFENSEUR);
 			mode.regleDuMode();
 			mode.partie(clef);
-			ModeFactory.secondMenu.choix(MODE_DEFENSEUR);
+			secondMenu.choix(MODE_DEFENSEUR);
 		} else if(menu.equalsIgnoreCase(CHOIX_3)) {
 			System.out.println("Vous avez choisi le mode : Duel");
-			mode = ModeFactory.creerMode(MODE_DUEL);
+			mode = modeFactory.creerMode(MODE_DUEL);
 			mode.regleDuMode();
 			mode.partie(clef);
-			ModeFactory.secondMenu.choix(MODE_DUEL);
+			secondMenu.choix(MODE_DUEL);
 		}
 		return choixMenu;
 	}

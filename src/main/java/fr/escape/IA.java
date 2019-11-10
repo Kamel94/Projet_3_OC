@@ -1,10 +1,15 @@
 package fr.escape;
 
 import fr.configuration.Log;
-import fr.factory.ModeFactory;
 import static fr.escape.Utilitaire.*;
 
 public class IA {
+
+	private Utilitaire utilitaire;
+
+	public IA(Utilitaire utilitaire) {
+		this.utilitaire = utilitaire;
+	}
 
 	public int combinaisonAleatoire() {
 
@@ -52,7 +57,7 @@ public class IA {
 			System.out.print("\nProposition joueur : ");
 		}
 
-		saisie = ModeFactory.utilitaire.clavier();
+		saisie = utilitaire.clavier();
 		saisie.matches(expression);
 
 		try {
@@ -82,7 +87,7 @@ public class IA {
 		while(saisie.matches(expression) == false) {
 			Log.logger.error("\nVeuillez entrer uniquement des chiffres svp !");
 			System.out.print("Recommencez : ");
-			saisie = ModeFactory.utilitaire.clavier();
+			saisie = utilitaire.clavier();
 		}
 		return saisie;
 	}
