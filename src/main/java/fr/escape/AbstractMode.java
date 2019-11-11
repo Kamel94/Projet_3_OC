@@ -8,8 +8,13 @@ import static fr.escape.Utilitaire.*;
 public abstract class AbstractMode implements IMode {
 
 	protected ModeFactory modeFactory = ModeFactory.getInstance();
-	protected IA ia = modeFactory.getIA();
+	protected IA ia;
 	protected Joueur joueur = modeFactory.getJoueur();
+
+	public AbstractMode(IA ia) {
+		super();
+		this.ia = ia;
+	}
 
 	public String nouvelleProposition;
 

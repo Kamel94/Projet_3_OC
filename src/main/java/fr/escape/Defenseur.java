@@ -6,6 +6,10 @@ import static fr.escape.Utilitaire.*;
 
 public class Defenseur extends AbstractMode {
 
+	public Defenseur(IA ia) {
+		super(ia);
+	}
+
 	@Override
 	public void regleDuMode() {
 		Log.logger.info("\nBienvenue dans le mode Défenseur." + "\nDans ce mode vous devez choisir une combinaison de " + tailleCombi + " chiffres et l'IA doit trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !! \n");

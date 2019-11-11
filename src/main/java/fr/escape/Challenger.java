@@ -6,6 +6,11 @@ import static fr.escape.Utilitaire.*;
 
 public class Challenger extends AbstractMode {
 
+	public Challenger(IA ia) {
+		super(ia);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public void regleDuMode() {
 		Log.logger.info("\nBienvenue dans le mode Challenger." + "\nDans ce mode l'IA choisi une combinaison de " + chiffreCombi + " chiffres et vous devez trouver la bonne combinaison en " + nbrEssai + " essais. \nBonne partie !!");
