@@ -26,7 +26,7 @@ public final class MenuFactory implements IMenuFactory {
 	}
 
 	private SecondMenu secondMenu = new SecondMenu();
-	private MenuPrincipal menuPrincipal = new MenuPrincipal(secondMenu);
+	private MenuPrincipal menuPrincipal = new MenuPrincipal(this.secondMenu);
 
 	public MenuPrincipal getMenuPrincipal() {
 		return menuPrincipal;

@@ -6,10 +6,9 @@ import static fr.escape.Utilitaire.*;
 
 public abstract class AbstractMenu implements IMenu {
 
-	private ModeFactory modeFactory = ModeFactory.getInstance();
-	private IA ia = modeFactory.getIA();
-
-	public int clef = ia.combinaisonAleatoire();
+	protected ModeFactory modeFactory = ModeFactory.getInstance();
+	protected IA ia = modeFactory.getIA();
+	protected int clef = ia.combinaisonAleatoire();
 
 	public void fin() {
 		Log.logger.info("\nVous avez choisi de quitter.");

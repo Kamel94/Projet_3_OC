@@ -1,9 +1,15 @@
 package fr.escape;
 
 import fr.configuration.Log;
+import fr.factory.ModeFactory;
+
 import static fr.escape.Utilitaire.*;
 
 public abstract class AbstractMode implements IMode {
+
+	protected ModeFactory modeFactory = ModeFactory.getInstance();
+	protected IA ia = modeFactory.getIA();
+	protected Joueur joueur = modeFactory.getJoueur();
 
 	public String nouvelleProposition;
 

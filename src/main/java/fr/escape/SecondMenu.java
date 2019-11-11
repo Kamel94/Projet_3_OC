@@ -4,15 +4,14 @@ import static fr.escape.Utilitaire.*;
 
 import fr.configuration.Log;
 import fr.factory.MenuFactory;
-import fr.factory.ModeFactory;
 
 public class SecondMenu extends AbstractMenu {
 
-	private ModeFactory modeFactory = ModeFactory.getInstance();
-	private IA ia = modeFactory.getIA();
-
 	@Override
 	public int choix(int choixFin) {
+
+		MenuFactory menuFactory = MenuFactory.getInstance();
+		MenuPrincipal menuPrincipal = menuFactory.getMenuPrincipal();
 
 		System.out.println("Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.\n" + "Tapez : \n");
 		System.out.println("1 = Pour rejouer au même mode de jeu. \n2 = Pour changer de mode de jeu. \n3 = Pour quitter le jeu.");
@@ -45,7 +44,7 @@ public class SecondMenu extends AbstractMenu {
 			}
 		} else if(menu.equalsIgnoreCase(CHOIX_2)) {
 			Log.logger.info("Vous avez choisi de changer de mode." + "\n");
-			MenuFactory.getInstance().getMenuPrincipal().choix(choixFin);
+			menuPrincipal.choix(choixFin);
 		}
 		return choixMenu;
 	}

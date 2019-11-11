@@ -2,13 +2,9 @@ package fr.escape;
 
 import static fr.escape.Utilitaire.*;
 
-import fr.factory.ModeFactory;
-
 public class MenuPrincipal extends AbstractMenu {
 
-	private ModeFactory modeFactory = ModeFactory.getInstance();
 	private SecondMenu secondMenu;
-	private IA ia = modeFactory.getIA();
 
 	public MenuPrincipal(SecondMenu secondMenu) {
 		this.secondMenu = secondMenu;

@@ -1,22 +1,10 @@
 package fr.escape;
 
 import fr.configuration.Log;
-import fr.factory.ModeFactory;
 
 import static fr.escape.Utilitaire.*;
 
 public class Challenger extends AbstractMode {
-
-	private ModeFactory modeFactory = ModeFactory.getInstance();
-	private IA ia = modeFactory.getIA();
-
-	public Challenger(ModeFactory modeFactory) {
-		this.modeFactory = modeFactory;
-	}
-
-	public Challenger(IA ia) {
-		this.ia = ia;
-	}
 
 	@Override
 	public void regleDuMode() {

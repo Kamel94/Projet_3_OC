@@ -1,23 +1,10 @@
 package fr.escape;
 
 import fr.configuration.*;
-import fr.factory.ModeFactory;
 
 import static fr.escape.Utilitaire.*;
 
 public class Defenseur extends AbstractMode {
-
-	private ModeFactory modeFactory = ModeFactory.getInstance();
-	private IA ia = modeFactory.getIA();
-	private Joueur joueur = modeFactory.getJoueur();
-
-	public Defenseur(ModeFactory modeFactory) {
-		this.modeFactory = modeFactory;
-	}
-
-	public Defenseur(IA ia) {
-		this.ia = ia;
-	}
 
 	@Override
 	public void regleDuMode() {

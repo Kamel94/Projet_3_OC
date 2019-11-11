@@ -1,25 +1,12 @@
 package fr.escape;
 
 import fr.configuration.Log;
-import fr.factory.ModeFactory;
 
 import static fr.escape.Utilitaire.*;
 
 public class Duel extends AbstractMode {
 
 	String victoire = victoire();
-
-	private ModeFactory modeFactory = ModeFactory.getInstance();
-	private IA ia = modeFactory.getIA();
-	private Joueur joueur = modeFactory.getJoueur();
-
-	public Duel(ModeFactory modeFactory) {
-		this.modeFactory = modeFactory;
-	}
-
-	public Duel(IA ia) {
-		this.ia = ia;
-	}
 
 	@Override
 	public void regleDuMode() {

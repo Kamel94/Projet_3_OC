@@ -42,11 +42,11 @@ public final class ModeFactory implements IModeFactory {
 		IMode mode = null;
 
 		if(type == MODE_CHALLENGER) {
-			mode = new Challenger(IA);
+			mode = new Challenger();
 		} else if(type == MODE_DEFENSEUR) {
-			mode = new Defenseur(IA);
+			mode = new Defenseur();
 		} else if(type == MODE_DUEL) {
-			mode = new Duel(IA);
+			mode = new Duel();
 		}
 		return mode;
 	}
