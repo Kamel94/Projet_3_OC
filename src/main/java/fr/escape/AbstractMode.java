@@ -7,7 +7,7 @@ import static fr.escape.Utilitaire.*;
 
 public abstract class AbstractMode implements IMode {
 
-	protected ModeFactory modeFactory = ModeFactory.getInstance();
+	private ModeFactory modeFactory = ModeFactory.getInstance();
 	protected IA ia;
 	protected Joueur joueur = modeFactory.getJoueur();
 

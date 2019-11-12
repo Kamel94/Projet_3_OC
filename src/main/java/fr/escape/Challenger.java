@@ -8,7 +8,6 @@ public class Challenger extends AbstractMode {
 
 	public Challenger(IA ia) {
 		super(ia);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override

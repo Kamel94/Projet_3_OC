@@ -8,7 +8,6 @@ public class Duel extends AbstractMode {
 
 	public Duel(IA ia) {
 		super(ia);
-		// TODO Auto-generated constructor stub
 	}
 
 	String victoire = victoire();
