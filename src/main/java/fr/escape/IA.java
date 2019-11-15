@@ -48,7 +48,7 @@ public class IA {
 		return propositionIA;
 	} // fin méthode premiereProposition
 
-	public String lireSaisieUtilisateur(int menu) {
+	public String verifierSaisieUtilisateur(int menu) {
 
 		String saisie = "";
 		String expression = "^[0-9]+$";
@@ -57,7 +57,7 @@ public class IA {
 			System.out.print("\nProposition joueur : ");
 		}
 
-		saisie = utilitaire.clavier();
+		saisie = utilitaire.lireSaisieUtilisateur();
 		saisie.matches(expression);
 
 		try {
@@ -66,28 +66,28 @@ public class IA {
 				while(Integer.parseInt(saisie) < 1 || Integer.parseInt(saisie) > 4) {
 					Log.logger.fatal("\nVous n'avez pas entré le bon chiffre !!");
 					System.out.print("Recommencez : ");
-					saisie = lireSaisieUtilisateur(menu);
+					saisie = verifierSaisieUtilisateur(menu);
 				}
 			} else if(menu == MENU2) {
 				while(Integer.parseInt(saisie) < 1 || Integer.parseInt(saisie) > 3) {
 					Log.logger.fatal("\nVous n'avez pas entré le bon chiffre !!");
 					System.out.print("Recommencez : ");
-					saisie = lireSaisieUtilisateur(menu);
+					saisie = verifierSaisieUtilisateur(menu);
 				}
 			} else if(menu == tailleCombi) {
 				while(saisie.length() != tailleCombi) {
 					Log.logger.fatal("\nVous n'avez pas entré le bon nombre de chiffre !!");
 					Log.logger.fatal("\nProposition : " + saisie + " -> Réponse : Vous devez entrer " + tailleCombi + " chiffres !");
-					saisie = lireSaisieUtilisateur(menu);
+					saisie = verifierSaisieUtilisateur(menu);
 				}
 			} 
 		} catch (NumberFormatException e) {
-			System.out.println("Vous n'avez rien saisie... ");
+			System.out.println("\n--> Mauvaise saisie... ");
 		}
 		while(saisie.matches(expression) == false) {
 			Log.logger.error("\nVeuillez entrer uniquement des chiffres svp !");
 			System.out.print("Recommencez : ");
-			saisie = utilitaire.clavier();
+			saisie = verifierSaisieUtilisateur(menu);
 		}
 		return saisie;
 	}

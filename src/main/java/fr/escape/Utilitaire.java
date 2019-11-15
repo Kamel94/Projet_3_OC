@@ -27,7 +27,7 @@ public class Utilitaire {
 	public final static int nbrEssai = configuration.nbEssai();
 	public final static int chiffreCombi = configuration.tailleCombi();
 
-	public String clavier() {
+	public String lireSaisieUtilisateur() {
 		@SuppressWarnings("resource")
 		Scanner clavier = new Scanner(System.in);
 		String saisie = clavier.nextLine();

@@ -18,7 +18,7 @@ public abstract class AbstractMenu implements IMenu {
 	public String choisirOptionMenu(int typeDuMenu, int choixMenu, int constante1, int constante2, int constante3) {
 
 		System.out.print("\nVeuillez entrer un chiffre parmis les choix proposés. \nEntrez votre choix : ");
-		String saisie = ia.lireSaisieUtilisateur(typeDuMenu);
+		String saisie = ia.verifierSaisieUtilisateur(typeDuMenu);
 		choixMenu = Integer.parseInt(saisie);
 
 		if(choixMenu == constante1) {

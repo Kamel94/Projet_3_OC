@@ -32,7 +32,7 @@ public class Duel extends AbstractMode {
 			tentative++;
 			essai++;
 			Log.logger.info("Essai n° : " + essai);
-			String proposition = ia.lireSaisieUtilisateur(tailleCombi);
+			String proposition = ia.verifierSaisieUtilisateur(tailleCombi);
 			System.out.println("");
 			reponseIA = comparaison(proposition, combinaison);
 			String propositionIA = String.valueOf(ia.premiereProposition(this.nouvelleProposition));

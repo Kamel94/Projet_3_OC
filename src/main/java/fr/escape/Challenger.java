@@ -27,7 +27,7 @@ public class Challenger extends AbstractMode {
 		while(essai != nbrEssai) {
 			essai++;
 			Log.logger.info("Essai n° : " + essai);
-			proposition = ia.lireSaisieUtilisateur(tailleCombi);
+			proposition = ia.verifierSaisieUtilisateur(tailleCombi);
 			reponse = comparaison(proposition, combinaison);
 
 			if(conditionGagnantPerdant(reponse, proposition).equals(victoire())) {
