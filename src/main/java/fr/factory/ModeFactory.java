@@ -5,12 +5,17 @@ import fr.escape.*;
 
 public final class ModeFactory implements IModeFactory {
 
-	private static volatile ModeFactory singleton = null;
-	static {
-		singleton = new ModeFactory();
-	}
+	private Utilitaire utilitaire;
+	private IA iA;
+	private Joueur joueur;
 
-	private ModeFactory() {}
+	private static  ModeFactory singleton = null;
+
+	private ModeFactory() {
+		utilitaire = new Utilitaire();
+		iA = new IA(utilitaire);
+		joueur = new Joueur(utilitaire);
+	}
 
 	public static ModeFactory getInstance() {
 		if (ModeFactory.singleton == null) {
@@ -22,12 +27,9 @@ public final class ModeFactory implements IModeFactory {
 		}
 		return ModeFactory.singleton;
 	}
-	private Utilitaire utilitaire = new Utilitaire();
-	private IA IA = new IA(utilitaire);
-	private Joueur joueur = new Joueur(utilitaire);
 
 	public IA getIA() {
-		return IA;
+		return iA;
 	}
 
 	public Utilitaire getUtilitaire() {
@@ -42,11 +44,11 @@ public final class ModeFactory implements IModeFactory {
 		IMode mode = null;
 
 		if(type == MODE_CHALLENGER) {
-			mode = new Challenger(IA);
+			mode = new Challenger(iA);
 		} else if(type == MODE_DEFENSEUR) {
-			mode = new Defenseur(IA);
+			mode = new Defenseur(iA);
 		} else if(type == MODE_DUEL) {
-			mode = new Duel(IA);
+			mode = new Duel(iA);
 		}
 		return mode;
 	}

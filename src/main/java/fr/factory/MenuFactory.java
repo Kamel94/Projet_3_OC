@@ -1,18 +1,14 @@
 package fr.factory;
 
-import fr.escape.IMenu;
 import fr.escape.MenuPrincipal;
 import fr.escape.SecondMenu;
 
 public final class MenuFactory implements IMenuFactory {
 
-	private static volatile MenuFactory singleton = null;
+	private static MenuFactory singleton = null;
 
-	static {
-		singleton = new MenuFactory();
+	private MenuFactory() {
 	}
-
-	private MenuFactory() {}
 
 	public final static MenuFactory getInstance() {
 		if (MenuFactory.singleton == null) {
@@ -25,25 +21,12 @@ public final class MenuFactory implements IMenuFactory {
 		return MenuFactory.singleton;
 	}
 
-	private SecondMenu secondMenu = new SecondMenu();
-	private MenuPrincipal menuPrincipal = new MenuPrincipal(this.secondMenu);
+	public MenuPrincipal creationMenu() {
 
-	public MenuPrincipal getMenuPrincipal() {
+		MenuPrincipal menuPrincipal = new MenuPrincipal();
+		SecondMenu secondMenu = new SecondMenu();
+		menuPrincipal.setSecondMenu(secondMenu);
+		secondMenu.setMenuPrincipal(menuPrincipal);
 		return menuPrincipal;
-	}
-
-	public SecondMenu getSecondMenu() {
-		return secondMenu;
-	}
-
-	public IMenu creationMenu(String type) {
-
-		IMenu menu = null;
-		if(type.equalsIgnoreCase("DEBUT")) {
-			menu = new MenuPrincipal(secondMenu);
-		} else if(type.equalsIgnoreCase("FIN")) {
-			menu = new SecondMenu();
-		}
-		return menu;
 	}
 }

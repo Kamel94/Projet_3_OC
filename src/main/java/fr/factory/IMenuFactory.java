@@ -1,8 +1,8 @@
 package fr.factory;
 
-import fr.escape.IMenu;
+import fr.escape.MenuPrincipal;
 
 public interface IMenuFactory {
 
-	public IMenu creationMenu(String type);
+	public MenuPrincipal creationMenu();
 }

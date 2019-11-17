@@ -1,7 +1,7 @@
 package fr.main;
 
 import java.lang.String;
-import fr.escape.IMenu;
+import fr.escape.MenuPrincipal;
 import fr.factory.MenuFactory;
 
 public class Main {
@@ -9,10 +9,9 @@ public class Main {
 	public static void main(String[] args) {
 
 		MenuFactory menuFactory = MenuFactory.getInstance();
-		IMenu menu = (IMenu) menuFactory.creationMenu("DEBUT");
-		int choix = 0;
+		MenuPrincipal menu = menuFactory.creationMenu();
 
-		menu.choix(choix);
+		menu.choix(0);
 		menu.fin();
 	}
 }

@@ -4,10 +4,7 @@ import static fr.escape.Utilitaire.*;
 
 public class MenuPrincipal extends AbstractMenu {
 
-	private SecondMenu secondMenu;
-
-	public MenuPrincipal(SecondMenu secondMenu) {
-		this.secondMenu = secondMenu;
+	public MenuPrincipal() {
 	}
 
 	@Override

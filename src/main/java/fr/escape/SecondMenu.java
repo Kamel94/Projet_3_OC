@@ -1,17 +1,16 @@
 package fr.escape;
 
 import static fr.escape.Utilitaire.*;
-
 import fr.configuration.Log;
-import fr.factory.MenuFactory;
 
 public class SecondMenu extends AbstractMenu {
 
+	public SecondMenu() {
+		super();
+	}
+
 	@Override
 	public int choix(int choixFin) {
-
-		MenuFactory menuFactory = MenuFactory.getInstance();
-		MenuPrincipal menuPrincipal = menuFactory.getMenuPrincipal();
 
 		System.out.println("Vous avez fini ce mode de jeu, faites un choix parmis les 3 propositions suivantes.\n" + "\nTapez : \n");
 		System.out.println("1 = Pour rejouer au même mode de jeu. \n2 = Pour changer de mode de jeu. \n3 = Pour quitter le jeu.");

@@ -1,14 +1,43 @@
 package fr.escape;
 
 import fr.configuration.Log;
+import fr.factory.MenuFactory;
 import fr.factory.ModeFactory;
 import static fr.escape.Utilitaire.*;
 
-public abstract class AbstractMenu implements IMenu {
+public abstract class AbstractMenu {
 
-	protected ModeFactory modeFactory = ModeFactory.getInstance();
-	protected IA ia = modeFactory.getIA();
-	protected int clef = ia.combinaisonAleatoire();
+	protected ModeFactory modeFactory;
+	protected IA ia;
+	protected int clef;
+
+	protected MenuFactory menuFactory;
+	protected SecondMenu secondMenu;
+	protected MenuPrincipal menuPrincipal;
+
+	public MenuPrincipal getMenuPrincipal() {
+		return menuPrincipal;
+	}
+
+	public void setMenuPrincipal(MenuPrincipal menuPrincipal) {
+		this.menuPrincipal = menuPrincipal;
+	}
+
+	public SecondMenu getSecondMenu() {
+		return secondMenu;
+	}
+
+
+	public void setSecondMenu(SecondMenu secondMenu) {
+		this.secondMenu = secondMenu;
+	}
+
+	public AbstractMenu() {
+		super();
+		modeFactory = ModeFactory.getInstance();
+		ia = modeFactory.getIA();
+		menuFactory = MenuFactory.getInstance();
+	}
 
 	public void fin() {
 		Log.logger.info("\nVous avez choisi de quitter.");
@@ -30,4 +59,6 @@ public abstract class AbstractMenu implements IMenu {
 		}
 		return saisie;
 	}
+
+	public abstract int choix(int choix);
 }
