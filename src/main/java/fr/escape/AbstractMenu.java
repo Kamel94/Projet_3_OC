@@ -10,7 +10,6 @@ public abstract class AbstractMenu {
 	protected ModeFactory modeFactory;
 	protected IA ia;
 	protected int clef;
-
 	protected MenuFactory menuFactory;
 	protected SecondMenu secondMenu;
 	protected MenuPrincipal menuPrincipal;
@@ -27,13 +26,11 @@ public abstract class AbstractMenu {
 		return secondMenu;
 	}
 
-
 	public void setSecondMenu(SecondMenu secondMenu) {
 		this.secondMenu = secondMenu;
 	}
 
 	public AbstractMenu() {
-		super();
 		modeFactory = ModeFactory.getInstance();
 		ia = modeFactory.getIA();
 		menuFactory = MenuFactory.getInstance();

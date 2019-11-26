@@ -4,11 +4,8 @@ import java.util.ResourceBundle;
 
 public final class Configuration {
 
-	private static volatile Configuration instance = null;
+	private static Configuration instance = null;
 	private ResourceBundle bundle = ResourceBundle.getBundle("config");
-	static {
-		instance = new Configuration();
-	}
 
 	private Configuration() {}
 

@@ -5,6 +5,7 @@ import static fr.escape.Utilitaire.*;
 public class MenuPrincipal extends AbstractMenu {
 
 	public MenuPrincipal() {
+		super();
 	}
 
 	@Override

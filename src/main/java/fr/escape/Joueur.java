@@ -5,7 +5,7 @@ import static fr.escape.Utilitaire.*;
 
 public class Joueur {
 
-	Utilitaire utilitaire;
+	private Utilitaire utilitaire;
 
 	public Joueur(Utilitaire utilitaire) {
 		this.utilitaire = utilitaire;

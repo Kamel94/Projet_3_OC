@@ -1,6 +1,7 @@
 package fr.escape;
 
 import fr.configuration.Log;
+
 import static fr.escape.Utilitaire.*;
 
 public class IA {
