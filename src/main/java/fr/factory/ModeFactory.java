@@ -32,10 +32,6 @@ public final class ModeFactory implements IModeFactory {
 		return ia;
 	}
 
-	public Utilitaire getUtilitaire() {
-		return utilitaire;
-	}
-
 	public Joueur getJoueur() {
 		return joueur;
 	}

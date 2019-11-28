@@ -4,5 +4,5 @@ import fr.escape.MenuPrincipal;
 
 public interface IMenuFactory {
 
-	public MenuPrincipal creationMenu();
+	MenuPrincipal creationMenu();
 }

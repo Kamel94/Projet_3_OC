@@ -15,7 +15,7 @@ public class MenuPrincipal extends AbstractMenu {
 		System.out.println("\n1 = Pour le Mode Challenger" + "\n2 = Pour le Mode Défenseur" + "\n3 = Pour le Mode Duel" + "\n4 = Pour quitter le jeu");
 
 		int typeDuMenu = MENU1;
-		String menu = choisirOptionMenu(typeDuMenu, choixMenu, MODE_CHALLENGER, MODE_DEFENSEUR, MODE_DUEL);
+		String menu = choisirOptionMenu(typeDuMenu, MODE_CHALLENGER, MODE_DEFENSEUR, MODE_DUEL);
 		IMode mode;
 		clef = ia.combinaisonAleatoire();
 

@@ -11,7 +11,7 @@ public class Joueur {
 		this.utilitaire = utilitaire;
 	}
 
-	public String reponseJoueur() {
+	protected String reponseJoueur() {
 		String reponseJoueur = "";
 		System.out.print("Réponse joueur : ");
 		reponseJoueur = utilitaire.lireSaisieUtilisateur();

@@ -12,7 +12,7 @@ public class IA {
 		this.utilitaire = utilitaire;
 	}
 
-	public int combinaisonAleatoire() {
+	protected int combinaisonAleatoire() {
 
 		char[] tailleCombiMin = new char [tailleCombi];
 		char[] tailleCombiMax = new char [tailleCombi];
@@ -29,7 +29,7 @@ public class IA {
 		return nombreAleatoire;
 	}
 
-	public int premiereProposition(String nouvelleProposition) {
+	protected int premiereProposition(String nouvelleProposition) {
 
 		char[] taille = new char [tailleCombi];
 
@@ -49,7 +49,7 @@ public class IA {
 		return propositionIA;
 	} // fin méthode premiereProposition
 
-	public String verifierSaisieUtilisateur(int menu) {
+	protected String verifierSaisieUtilisateur(int menu) {
 
 		String saisie = "";
 		String expression = "^[0-9]+$";

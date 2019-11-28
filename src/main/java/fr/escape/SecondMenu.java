@@ -17,7 +17,7 @@ public class SecondMenu extends AbstractMenu {
 
 		int choixMenu = 0;
 		int typeDuMenu = MENU2;
-		String menu = choisirOptionMenu(typeDuMenu, choixMenu, MODE_CHALLENGER, MODE_DEFENSEUR, MODE_DUEL);
+		String menu = choisirOptionMenu(typeDuMenu, MODE_CHALLENGER, MODE_DEFENSEUR, MODE_DUEL);
 		IMode mode;
 		clef = ia.combinaisonAleatoire();
 

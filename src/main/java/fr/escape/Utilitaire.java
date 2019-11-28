@@ -21,13 +21,13 @@ public class Utilitaire {
 	public final static String CHOIX_2 = "choix 2";
 	public final static String CHOIX_3 = "choix 3";
 
-	static Configuration configuration = Configuration.getInstance();
+	private static Configuration configuration = Configuration.getInstance();
 	public final static boolean dev = configuration.modeDev(); // Récupère la valeur de la méthode dans la classe configuration pour déterminer l'activation ou non du mode développeur.
 	public final static int tailleCombi = configuration.tailleCombi();
 	public final static int nbrEssai = configuration.nbEssai();
 	public final static int chiffreCombi = configuration.tailleCombi();
 
-	public String lireSaisieUtilisateur() {
+	protected String lireSaisieUtilisateur() {
 		@SuppressWarnings("resource")
 		Scanner clavier = new Scanner(System.in);
 		String saisie = clavier.nextLine();

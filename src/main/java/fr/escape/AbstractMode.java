@@ -18,9 +18,9 @@ public abstract class AbstractMode implements IMode {
 		this.ia = modeFactory.getIA();
 	}
 
-	public String nouvelleProposition;
+	protected String nouvelleProposition;
 
-	public String comparaison(String proposition, String combinaisonIA) {
+	protected String comparaison(String proposition, String combinaisonIA) {
 
 		String reponse = "";
 
@@ -36,7 +36,7 @@ public abstract class AbstractMode implements IMode {
 		return reponse;
 	}
 
-	public String nouvelleProposition(String reponseJoueur, String propositionIA, int essai) {
+	protected String nouvelleProposition(String reponseJoueur, String propositionIA, int essai) {
 
 		int i = 0;
 		int proposition = 0;
@@ -72,7 +72,7 @@ public abstract class AbstractMode implements IMode {
 		return nouvelleProposition;
 	}
 
-	public boolean activationModeDev(int clef) {
+	protected boolean activationModeDev(int clef) {
 		if (dev) {
 			Log.logger.info("\nMode développeur activé");
 			Log.logger.info("\nLa combinaison est : " + clef + "\n");
@@ -80,7 +80,7 @@ public abstract class AbstractMode implements IMode {
 		return true;
 	}
 
-	public String victoire() {
+	protected String victoire() {
 		int chiffreCombi = tailleCombi;
 		char[] tailleReponse = new char [chiffreCombi];
 		for(int i = 0; i < chiffreCombi ; i++) {
@@ -91,7 +91,7 @@ public abstract class AbstractMode implements IMode {
 		return victoire;
 	}
 
-	public String conditionGagnantPerdant(String reponse, String proposition) {
+	protected String conditionGagnantPerdant(String reponse, String proposition) {
 
 		String resultat = "";
 		if (String.valueOf(reponse).equals(victoire())) {
@@ -103,7 +103,7 @@ public abstract class AbstractMode implements IMode {
 		return resultat;
 	} // fin méthode conditionGagnantPerdantDefenseur
 
-	public String conditionGagnantPerdantDuel(String proposition, String reponseIA, String reponseJoueur, String propositionIA, int tentative, int essai, int clef) {
+	protected String conditionGagnantPerdantDuel(String proposition, String reponseIA, String reponseJoueur, String propositionIA, int tentative, int essai, int clef) {
 		String resultat = "";
 		String reponse = "";
 		String egaux = "";

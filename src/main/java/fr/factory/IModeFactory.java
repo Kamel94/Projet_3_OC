@@ -4,5 +4,5 @@ import fr.escape.*;
 
 public interface IModeFactory {
 
-	public IMode creerMode(int type);
+	IMode creerMode(int type);
 }
